@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 500px;
+            height: 700px;
+            background-color: #171717;
+            margin: 0 auto;
+            border-radius: 6px;
+            margin-top: 15px;
+            opacity: 0.97;
+        }
+
+        .login-text {
+            padding-left: 70px;
+            padding-top: 70px;
+            font-size:xx-large;
+            color: white;
+        }
+
+        .email, .password {
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+            width: 360px;
+            height: 50px;
+            background-color: rgba(51, 51, 51, 1);
+            border-radius: 6px;
+            font-size:medium;
+            border:none;
+        }
+
+        .login-button {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 360px;
+            height: 50px;
+            display: block;
+            background-color: #e41a24;
+            color: white;
+            cursor: pointer;
+            font-size: medium;
+            border-radius: 6px;
+            border:none;
+        }
+
+        .checkbox {
+            margin-left: 70px;
+            margin-top: 20px;
+            width: 16px;
+            height: 16px;
+            accent-color: #737373;
+        }
+
+        .login-info {
+            color: hsl(0, 5%, 66%);
+        }
+
+        .help, .user {
+            margin-left: 50px;
+            color: hsl(0, 5%, 66%);
+        }
+
+        .user {
+            display: inline-block;
+            padding-top: 80px;
+            padding-left: 20px;
+            color: #737373;
+        }
+
+        .join {
+            color: white;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+
+        .ment {
+            color: #737373;
+            margin: 0 70px;
+            margin-top: 15px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 450px;
+            background-color: #171717;
+            margin-top: 120px;
+            opacity: 0.97;
+        }
+
+        .question {
+            color: #737373;
+            padding-top: 30px;
+            margin-left: 100px;
+            margin-bottom: 60px;
+        }
+
+        .info {
+            color: #737373;
+            margin-left: 100px;
+            margin-bottom: 5px;
+        }
+
+        .sns {
+            color: #737373;
+            margin-left: 100px;
+            padding: 10px;
+        }
+
+        .container {
+            background-image: url(./우주이미지.jpg);
+            background-repeat: no-repeat;
+            background-size: 1366px 1376px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="./KakaoTalk_20231027_111341350.png"></div>
+        <div class="main">
+            <p class="login-text">로그인</p>
+            <input type="email" class="email" placeholder="  이메일 주소 또는 전화번호">
+            <input type="password" class="password" placeholder="  비밀번호">
+            <button type="button" class="login-button">로그인</button>
+            <input type="checkbox" class="checkbox" checked> <span class="login-info">로그인 정보 저장</span>
+            <a><span class="help">도움이 필요하신가요?</span></a> <br>
+            <span class="user">C-Clip 회원이 아닌가요?</span> <a class="join" href="">지금 가입하세요.</a>
+            <p class="ment">C-Clip 회원이 되시면 각종 tv드라마, 영화를 무제한으로 감상하실 수 있습니다.</p>
+        </div>
+        <div class="footer">
+            <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
+            <p class="info">■ 대표이사 : 정용진</p>
+            <p class="info">■ 사업자정보확인</p>
+            <p class="info">■ 사업자등록번호 : 111-11-00001</p>
+            <p class="info">■ 통신판매신고번호 : 2023-충남천안-1234호</p>
+            <p class="info">■ 사업장 : 충청남도 천안시 동남구 대흥로 215 7층</p>
+            <p class="info">■ 호스팅사업자 : 휴먼교육센터</p>
+            <p class="info">■ 고객센터 (평일 9시~17시/점심시간 13~14시)</p>
+            <p class="info">■ 1:1 게시만 문의</p>
+            <p class="info">■ 대표메일 : 1234@test.com</p>
+            <p class="info">■ 전화번호(ARS) : 1588-1234</p>
+            <p class="info">■ Copyright 주식회사 휴먼 All right reserved.</p>
+            <div class="sns">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
