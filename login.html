@@ -21,7 +21,14 @@
             margin: 0 auto;
             border-radius: 6px;
             margin-top: 15px;
-            opacity: 0.97;
+            opacity: 0.9;
+        }
+
+        .c-clip {
+            width: 170px;
+            height: 120px;
+            object-fit: contain;
+            margin-left: 20px;
         }
 
         .login-text {
@@ -35,12 +42,14 @@
             display: block;
             margin: 0 auto;
             margin-top: 25px;
+            padding-left: 5px;
             width: 360px;
             height: 50px;
             background-color: rgba(51, 51, 51, 1);
             border-radius: 6px;
             font-size:medium;
             border:none;
+            color: rgba(255, 255, 255, 0.897);
         }
 
         .login-button {
@@ -97,8 +106,8 @@
             width: 100%;
             height: 450px;
             background-color: #171717;
-            margin-top: 120px;
-            opacity: 0.97;
+            margin-top: 90px;
+            opacity: 0.9;
         }
 
         .question {
@@ -125,20 +134,28 @@
             background-repeat: no-repeat;
             background-size: 1366px 1376px;
         }
+
+        .login {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo"><img src="./KakaoTalk_20231027_111341350.png"></div>
+        <div class="logo">
+            <a href="">
+                <img src="./KakaoTalk_20231028_162057713_01.png" class="c-clip">
+            </a>
+        </div>
         <div class="main">
             <p class="login-text">로그인</p>
             <input type="email" class="email" placeholder="  이메일 주소 또는 전화번호">
             <input type="password" class="password" placeholder="  비밀번호">
-            <button type="button" class="login-button">로그인</button>
+            <a href="./profile.html" class="login"><button type="button" class="login-button">로그인</button></a>
             <input type="checkbox" class="checkbox" checked> <span class="login-info">로그인 정보 저장</span>
             <a><span class="help">도움이 필요하신가요?</span></a> <br>
-            <span class="user">C-Clip 회원이 아닌가요?</span> <a class="join" href="">지금 가입하세요.</a>
-            <p class="ment">C-Clip 회원이 되시면 각종 tv드라마, 영화를 무제한으로 감상하실 수 있습니다.</p>
+            <span class="user">C Clip 회원이 아니신가요?</span> <a class="join" href="">지금 가입하세요.</a>
+            <p class="ment">C Clip 회원이 되시면 각종 tv드라마, 영화를 무제한으로 감상하실 수 있습니다.</p>
         </div>
         <div class="footer">
             <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
