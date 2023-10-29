@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contents-container {
+            width: 70vw;
+            height: 1500px;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 30px;
+            /* background-color: #181818; */
+            display: flex;
+            flex-flow: column wrap;
+            background-color: #1f1f1f;
+        }
+
+
+        .contents-video-box {
+            position: relative;
+            padding-top: 56%;
+            height: 0;
+            border-radius: 10px 10px 0px 0px;
+            display: flex;
+            z-index: 1;
+        }
+
+        video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+            z-index: -1;
+        }
+
+        /* .contents-video-box-btn-close {
+            width: 45px;
+            height: 45px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            margin-left: 94%;
+            margin-top: 2%;
+        } */
+
+        /*
+        .contents-video-box-btn-play {
+            width: 130px;
+            height: 45px;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .contents-video-box-btn-wish {
+            width: 40px;
+            height: 40px;
+            border: 2px solid gray;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .contents-video-box-btn-like {
+            width: 40px;
+            height: 40px;
+            border: 2px solid gray;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        } */
+
+        .contents-txt-box {
+            width: 100%;
+            height: 66.5%;
+            border-radius: 0px 0px 10px 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .contents-txt-box-top {
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .contents-txt-box-header-script-left {
+            width: 70%;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: column nowrap;
+            font-size: 1.5vw;
+        }
+
+        .contents-txt-box-header-script-left-top {
+            border: 1px solid black;
+            flex: 0.3;
+        }
+
+        .contents-txt-box-header-script-left-mid {
+            border: 1px solid black;
+            flex: 0.3;
+        }
+
+        .contents-txt-box-header-script-left-bottom {
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        .contents-txt-box-header-script2-right {
+            width: 30%;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: column wrap;
+            font-size: 1.5vw;
+        }
+
+        .contents-txt-box-header-script-right-top {
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        .contents-txt-box-header-script-right-mid {
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        .contents-txt-box-header-script-right-bottom {
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        video::-webkit-media-controls-fullscreen-button {
+            display: none !important;
+        }
+
+        video::-webkit-media-controls-volume-slider {
+            display: none !important;
+        }
+
+        video::-webkit-media-controls-time-remaining-display {
+            display: none !important;
+        }
+
+        video::-webkit-media-controls-current-time-display {
+            display: none !important;
+        }
+
+        video::-webkit-media-controls-timeline {
+            display: none !important;
+        }
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        h3 {
+            padding-top: 30px;
+        }
+        div, h2, p {
+            color: white;
+        }
+
+        .contents-recommend-box {
+            width: 100%;
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        .contents-txt-box-bottom {
+            width: 100%;
+            height: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contents-container">
+        <div class="contents-video-box">
+
+            <video controls src="../1project/video/videoTrailer.mp4" autoplay></video>
+
+        </div>
+        <div class="contents-txt-box">
+            <div class="contents-txt-box-top">
+                <div class="contents-txt-box-header-script-left">
+                    <div class="contents-txt-box-header-script-left-top">NEW 2017 1시간 46분</div>
+                    <div class="contents-txt-box-header-script-left-mid">
+                        <img src="../1project/image/15rate.svg">
+                    </div>
+                    <div class="contents-txt-box-header-script-left-bottom">의문의 습격으로 살해 당한 ‘로라’ ‘아드리안’은 연인의 죽음에 절망하고,
+                        범인은
+                        흔적도 없이 사라졌다. 유력한 용의자로 누명을 쓴 ‘아드리안’은 승률 100%의 변호사 ‘버지니아’를 선임한다. 그리고 자신의 무죄를 입증하기 위해 고군분투하던 중 과거
+                        그와
+                        ‘로라’가 은폐한 교통사고와 숨겨진 연관성을 찾게 되는데… 남은 시간은 단 3시간, 사건을 재구성해 무죄를 입증해야 한다!</div>
+                </div>
+                <div class="contents-txt-box-header-script2-right">
+                    <div class="contents-txt-box-header-script-right-top">출연: 마리오 카사스, 바바라 레니, 안나 와게너, 호세 코로나도</div>
+                    <div class="contents-txt-box-header-script-right-mid">장르: 스릴러, 범죄, 미스터리</div>
+                    <div class="contents-txt-box-header-script-right-bottom">영화특징: 긴장감 넘치는</div>
+                </div> 
+            </div>
+            <h3>컨텐츠 추천</h3>
+            <div class="contents-recommend-box"></div>
+            <div class="contents-txt-box-bottom">
+            <h2>인비저블 게스트 상세 정보</h2>
+            <p>감독: 오리올 파울루</p>
+            <p>출연: 마리오 카사스, 바바라 레니, 안나 와게너, 호세 코로나도</p>
+            <p>각본: 오리올 파울로</p>
+            <p>장르: 스릴러, 범죄, 미스터리</p>
+            <p>영화 특징: 긴장감 넘치는</p>
+            <p>관람등급: <img src="../1project/image/15rate.svg">15세 이상 관람가</p>
+        </div>
+        </div>
+
+
+
+</body>
+
+</html>
+
+<!-- <button class="contents-video-box-btn-close close-x">asdasdasd</button> -->
+<!-- <div class="contents-video-box-btn-play">▶ 재생</div>
+            <div class="contents-video-box-btn-wish">+</div>
+            <div class="contents-video-box-btn-like">乃</div>
+            <div class="contents-video-box-btn-soundcontrol"></div> -->
