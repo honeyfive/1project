@@ -9,16 +9,83 @@
     }
 
     .header {
-        margin-top: 20px;
         height: 50px;
-        border: 1px solid white;
-        
+        background-color: #1f1f1f;
+
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
     }
 
-    .movie-main1 {
-        height: 700px;
+
+    .first-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .f-navigation-menu {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .s-navigation-menu {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .logo {
+        margin-left: 30px;
+    }
+
+    .home, .movie, .drama, .logo, .search, .logout{
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s;
+    }
+
+    .movie {
+        color: #ff4808;
+        border-bottom: 3px solid #ff4808;
+        padding-bottom: 12px;
+    }
+
+    .logout {
+        font-size: 20px;
+    }
+
+    .second-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 30px;
+        height: 30px;
         border: 1px solid white;
     }
+    
+
+    .home:hover, .movie:hover, .drama:hover {
+        color: rgb(93, 93, 93);
+    }
+
+
+    .movie-main1 {
+        height: 500px;
+        background-image: url('./1st프로젝트자료/영화/괴물.webp');
+    }
+
 
     .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6{
         height: 200px;
@@ -67,8 +134,11 @@
     }
     
     .slides .slide img {
-        height: 100%;
         width: 100%;
+        height: 100%;
+        image-rendering:-webkit-optimize-contrast;
+        transform:translateZ(0);
+        backface-visibility:hidden;
     }
     
 
@@ -88,11 +158,26 @@
         margin-right: 30px;
     }
 
+    .slide {
+        transition: all 0.5s;
+    }
+
+    .slide:hover {
+        cursor: pointer;
+        transform:scale(1.1, 1.1);
+    }
+    
+
     .footer {
         width: 100%;
-        height: 450px;
+        height: 100%;
         background-color: #171717;
         margin-top: 90px;
         opacity: 0.9;
         color: white;
+        font-size: 11px;
+    }
+
+    .sns {
+        cursor: pointer;
     }
