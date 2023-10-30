@@ -22,7 +22,7 @@
 
 }
 .top{
-    font-size: 24px;
+    font-size: 20px;
     width: 30%;
     height: 100px;
     text-align: center;
@@ -45,7 +45,7 @@
     float: left;
 }
 .mid1{
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     height: 220px;
 }
@@ -139,6 +139,9 @@ a{
     width: 100px;
     height: 30px;
     margin-top: 10px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
 }
 
 .human{
@@ -147,7 +150,7 @@ a{
     position: absolute;
     align-items: center;
     margin-top: 20px;
-    margin-left: 350PX;
+    padding-left: 80px;
     font-size: 11px;
 }
 .sdf{
@@ -155,7 +158,7 @@ a{
 }
 .prfi{
     color: gray;
-    margin-left: -130px;
+    margin-left: -110px;
 }
 .prfi1{
     margin-left: -22px;

@@ -5,6 +5,9 @@
     background-color: black;
     
 }
+
+
+
 .logo{
     background-color: black;
     
@@ -21,6 +24,7 @@ h2{
     color: white;
     margin-top: 50px;
     margin-left: 50px;
+    /*text-align: center;*/
     
 }
 .dull{
@@ -38,7 +42,7 @@ h2{
 .firstimg{
     float: left;
     margin: 0 auto;
-    margin-left: 20px;
+    margin-left: 23px;
     image-rendering:-webkit-optimize-contrast;
     transform:translateZ(0);
     backface-visibility:hidden;
@@ -48,7 +52,7 @@ h2{
     width: 230px;
     height: 130px;
     object-fit: fill;
-    margin: 0px 0px 0px 20px;  
+    margin: 0px 10px 25px 20px;  
     image-rendering:-webkit-optimize-contrast;
     transform:translateZ(0);
     backface-visibility:hidden;  
@@ -78,11 +82,14 @@ h2{
 .firstimg1{
     float: left;
     margin: 0 auto;
-    margin-left: 20px;
+    margin-left: 23px;
     margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 25px;
     image-rendering:-webkit-optimize-contrast;
-  transform:translateZ(0);
-  backface-visibility:hidden;
+    transform:translateZ(0);
+    backface-visibility:hidden;
+    
     
 }
 #img3{
@@ -100,10 +107,12 @@ h2{
 
 .firstimg:hover{
     transform: scale(1.4);
-
+    cursor: pointer;
+    
 }
 .firstimg1:hover{
     transform: scale(1.4);
+    cursor: pointer;
     
 }
 .logout {
@@ -111,8 +120,9 @@ h2{
     
 }
 .human{
-    margin-left: 15px;
+    margin-left: 100px;
     font-size: 11px;
+
 }
 .profile-image {
     width: 30px;
