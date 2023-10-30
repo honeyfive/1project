@@ -174,6 +174,19 @@ sections.forEach(section => {
 });
 
 
+// const caretContent = document.querySelector('.caret-content');
+// const caret = document.querySelector('.caret');
+
+// function openCloseProfile() {
+//     if (caretContent.style.display === 'block') {
+//         caretContent.style.display = 'none';
+//         caret.classList.add('caret-animate');
+//     } else {
+//         caretContent.style.display = 'block';
+//         caret.classList.add('caret-animate');
+//     }
+// }
+
 
 
 
