@@ -8,12 +8,13 @@
 .logo{
     background-color: black;
     
+    
 }
 #img1{
     width: 100px;
     height: 50px;
     margin-left: 30px;
-    margin-top: 10px;
+    
     
 }
 h2{
@@ -43,8 +44,6 @@ h2{
     backface-visibility:hidden;
     
 }
-
-
 #img2{
     width: 230px;
     height: 130px;
@@ -65,10 +64,22 @@ h2{
     
 
 }
+.second-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .firstimg1{
     float: left;
     margin: 0 auto;
     margin-left: 20px;
+    margin-top: 5px;
     image-rendering:-webkit-optimize-contrast;
   transform:translateZ(0);
   backface-visibility:hidden;
@@ -95,7 +106,53 @@ h2{
     transform: scale(1.4);
     
 }
+.logout {
+    font-size: 20px;
+    
+}
 .human{
     margin-left: 15px;
     font-size: 11px;
+}
+.profile-image {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+.header {
+    height: 50px;
+    background-color: #1f1f1f;
+
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+.home, .movie, .drama, .logo, .search, .logout{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.first-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-navigation-menu {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.s-navigation-menu {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    margin-left: 30px;
 }

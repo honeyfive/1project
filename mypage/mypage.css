@@ -15,8 +15,8 @@
     
 }
 #img1{
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
     margin-left: 30px;
     
 
@@ -140,6 +140,7 @@ a{
     height: 30px;
     margin-top: 10px;
 }
+
 .human{
     width: 700px;
     height: 100px;
@@ -163,38 +164,5 @@ a{
     margin-left: -100px;
     
 }
-#topMenu {     
-            margin-left: 220px;
-            margin-top: -70px;      
-                height: 50px;
-                width: 850px;
-        }
-        #topMenu ul li {                   
-                list-style: none;          
-                color: white;              
-                background-color: black; 
-                float: left;               
-                line-height: 50px;         
-                vertical-align: middle;    
-                text-align: center;        
-                margin: 0px 0px 0px 20px;
-            }
-        #topMenu .menuLink {                            
-                text-decoration:none;                   
-                color: white;                          
-                display: block;                         
-                width: 150px;                           
-                font-size: 20px;                        
-                font-weight: bold;                      
-                font-family: "Trebuchet MS", Dotum, Arial;
-        }
-        #topMenu .menuLink:hover {           
-                color: red;                 
-                background-color: black;  
-        }
-        #button{
-            background-color: transparent;
-            border: 0;
-            cursor: pointer;
-        }
+
 
