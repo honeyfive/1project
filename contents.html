@@ -48,8 +48,8 @@
         }
 
         .contents-video-box-btn-close {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: 50%;
             margin-left: 94%;
@@ -57,38 +57,97 @@
             border: 0;
         }
         .close-x {
-            color: white;
-            font-size: 2em;
-            text-align: center;
             position: absolute;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
             left: -10px;
             top: 0;
             cursor: pointer;
         }
-        /*
+        
         .contents-video-box-btn-play {
+            position: absolute;
             width: 130px;
             height: 45px;
             border-radius: 5px;
-            background-color: white;
-            border: 1px solid black;
+            background-color: rgba(255, 255, 255, 0.9);
+            font-size: 1.5em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 50px;
+            bottom: 50px;
+            cursor: pointer;
+            color: black;
         }
 
         .contents-video-box-btn-wish {
+            position: absolute;
             width: 40px;
             height: 40px;
             border: 2px solid gray;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.1);
             border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 190px;
+            bottom: 54px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: white;
+        }
+        .contents-recommend-box-btn-wish {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid gray;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: white; 
+        }
+        .contents-video-box-btn-like {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid gray;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 238px;
+            bottom: 54px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color:  white;
         }
 
-        .contents-video-box-btn-like {
+        .contents-video-box-btn-mute {
+            position: absolute;
             width: 40px;
             height: 40px;
             border: 2px solid gray;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.1);
             border-radius: 50%;
-        } */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 40px;
+            bottom: 54px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: gray;
+        }
 
         .contents-txt-box {
             width: 100%;
@@ -177,7 +236,14 @@
             display: none !important;
         }
 
-        .img-15 {
+        video::-webkit-media-controls-play-button {
+            display: none;
+        }
+
+        video::-webkit-media-controls {
+            display: none;
+        }
+        .img-12, .img-15  {
             width: 30px;
             height: 30px;
             margin-right: 10px;
@@ -260,6 +326,7 @@
         }
 
         .contents-recommend-box-items-txt {
+            position: relative;
             width: 100%;
             height: 250px;
             display: flex;
@@ -288,11 +355,25 @@
             width: 100%;
             height: 250px;
             padding: 8px;
+            text-align: justify;
+            line-height: 21.5px;
         }
 
         span {
             color: #999999;
             margin-right: 5px;
+        }
+
+        .gradient {
+            width: 100%;
+            height: 100%;
+            background: rgb(0,0,0);
+            background: linear-gradient(35deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+            border-radius: 5px 5px 0px 0px;
+            position:absolute;
+            left: 0px;
+            top: 0px;
+            padding: 8px;
         }
     </style>
 </head>
@@ -302,6 +383,10 @@
         <div class="contents-video-box">
             <video controls src="../1project/video/videoTrailer.mp4" autoplay></video>
             <button class="contents-video-box-btn-close close-x">X</button>
+            <div class="contents-video-box-btn-play">▶ 재생</div>
+            <div class="contents-video-box-btn-wish">+</div>
+            <div class="contents-video-box-btn-like">乃</div>
+            <div class="contents-video-box-btn-mute">M</div>
         </div>
         <div class="contents-txt-box">
             <div class="contents-txt-box-top">
@@ -329,8 +414,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/9명의번역가.webp">
-                        <div class="img-text">1시간 36분</div>
+                        <div class="img-text gradient">1시간 36분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">84% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2019
@@ -344,8 +430,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/이미테이션게임.webp">
-                        <div class="img-text">1시간 54분</div>
+                        <div class="img-text gradient">1시간 54분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">78% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2015
@@ -359,8 +446,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/도둑들.webp">
-                        <div class="img-text">2시간 15분</div>
+                        <div class="img-text gradient">2시간 15분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">65% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2012
@@ -374,8 +462,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/검사외전.webp">
-                        <div class="img-text">2시간 06분</div>
+                        <div class="img-text gradient">2시간 06분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">72% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2016
@@ -389,8 +478,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/아이덴티티.webp">
-                        <div class="img-text">1시간 31분</div>
+                        <div class="img-text gradient">1시간 31분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">90% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2003
@@ -404,8 +494,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/암살.webp">
-                        <div class="img-text">2시간 19분</div>
+                        <div class="img-text gradient">2시간 19분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">63% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2015
@@ -419,8 +510,9 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/베테랑.webp">
-                        <div class="img-text">2시간 03분</div>
+                        <div class="img-text gradient">2시간 03분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">81% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
                                 <img src="../1project/image/15rate.svg" class="img-15">2015
@@ -434,11 +526,12 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/탑건 매버릭.webp">
-                        <div class="img-text">2시간 10분</div>
+                        <div class="img-text gradient">2시간 10분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">87% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
-                                <img src="../1project/image/15rate.svg" class="img-15">2022
+                                <img src="../1project/image/12rate.svg" class="img-15">2022
                             </div>
                             <div class="contents-recommend-box-items-txt">해군 최고의 비행사 피트 미첼은 비행 훈련소에서 갓 졸업을 한 신입 비행사들 팀의
                                 훈련을 맡게 된다. 자신을 좇는 과거의 기억과 위험천만한 임무 속에서 고군분투하는 그의 비상이 펼쳐진다.</div>
@@ -449,11 +542,12 @@
                 <div class="contents-recommend-box-items">
                     <div class="contents-recommend-box-items-img">
                         <img class="recommend-items-img" src="./1st프로젝트자료/영화/트랜스포머.webp">
-                        <div class="img-text">2시간 24분</div>
+                        <div class="img-text gradient">2시간 24분</div>
                         <div class="contents-recommend-box-items-txt">
+                            <div class="contents-recommend-box-btn-wish">+</div>
                             <div class="contents-recommend-box-items-combine">45% 일치</div>
                             <div class="contents-recommend-box-items-ratenyear">
-                                <img src="../1project/image/15rate.svg" class="img-15">2007
+                                <img src="../1project/image/12rate.svg" class="img-12">2007
                             </div>
                             <div class="contents-recommend-box-items-txt">정의를 수호하는 오토봇 군단과 악의 군단 디셉티콘간의 전쟁에 지구의 미래가
                                 달려있다. 평범한 고등학생, 샘 윗위키는 아버지로부터 중고차를 선물받는다.</div>
@@ -476,7 +570,3 @@
 </html>
 
 
-<!-- <div class="contents-video-box-btn-play">▶ 재생</div>
-            <div class="contents-video-box-btn-wish">+</div>
-            <div class="contents-video-box-btn-like">乃</div>
-            <div class="contents-video-box-btn-soundcontrol"></div> -->
