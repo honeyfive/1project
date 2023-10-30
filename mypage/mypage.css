@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    
+}
+.logo{
+    background-color: black;
+    
+}
+#img1{
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    
+
+}
+.top{
+    font-size: 24px;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    
+}
+.top-mid{
+    font-size: 30px;
+    width: 30%;
+    height: 100px;
+    float: left;
+    
+}
+.top-right{
+    font-size: 30px;
+    width: 30%;
+    height: 100px;
+    
+    text-align: right;
+    float: left;
+}
+.mid1{
+    font-size: 20px;
+    text-align: left;
+    height: 220px;
+}
+.pay{
+    height: 220px;
+}
+.right1{
+    height: 220px;
+    font-size: 16px;
+    text-align: right;
+    font-size: 20px;
+}
+.font-bold{
+    font-weight: bold;
+}
+.font-gray{
+    color: gray;
+}
+.line{
+width: 85%;
+height: 1px;
+background-color: gray;
+margin-left: 80px;
+margin-top: 70px;
+}
+.line1{
+width: 85%;
+height: 1px;
+background-color: gray;
+margin-left: 80px;
+margin-top: 240px;
+}
+.line2{
+width: 85%;
+height: 1px;
+background-color: gray;
+margin-left: 80px;
+margin-top: 80px;
+}
+a{
+    text-decoration: none;
+}
+.setting{
+    margin-top: -15px;
+}
+#puppy1{
+    margin-top: -20px;
+}
+.picture{
+    margin-top: -20px;
+    
+}
+#pro-font{
+    font-size: 18px;
+    margin-left: 20px;
+    position: absolute;
+}
+#pro-font1{
+    font-size: 16px;
+    position:absolute;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.line-pro{
+    width: 800px;
+    height: 1px;
+    background-color: gray;
+}
+.toptop{
+    margin-top: -25px;
+}
+#under{
+    margin-top: 50px;
+}  
+#under1{
+    margin-top: 25px;
+    margin-left: 1140px;
+}   
+#under2{
+    margin-top: 110px;
+    margin-left: 1140px;
+}     
+.line4{
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 87%;
+    height: 1px;
+    background-color: gray;
+}
+#button{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.human{
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 350PX;
+    font-size: 11px;
+}
+.sdf{
+    margin-top: 25px;
+}
+.prfi{
+    color: gray;
+    margin-left: -130px;
+}
+.prfi1{
+    margin-left: -22px;
+}
+.prfi2{
+    margin-left: -100px;
+    
+}
+
+
