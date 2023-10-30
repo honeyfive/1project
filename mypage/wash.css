@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+.logo{
+    background-color: black;
+    
+}
+#img1{
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+h2{
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+.dull{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.midimg{
+    width: 90%;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.firstimg{
+    float: left;
+    margin: 0 auto;
+    margin-left: 20px;
+    image-rendering:-webkit-optimize-contrast;
+    transform:translateZ(0);
+    backface-visibility:hidden;
+    
+}
+
+
+#img2{
+    width: 230px;
+    height: 130px;
+    object-fit: fill;
+    margin: 0px 0px 0px 20px;  
+    image-rendering:-webkit-optimize-contrast;
+    transform:translateZ(0);
+    backface-visibility:hidden;  
+}
+/**/
+.midimg1{
+    width: 90%;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    
+    
+
+}
+.firstimg1{
+    float: left;
+    margin: 0 auto;
+    margin-left: 20px;
+    image-rendering:-webkit-optimize-contrast;
+  transform:translateZ(0);
+  backface-visibility:hidden;
+    
+}
+#img3{
+    width: 230px;
+    height: 130px;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    animation-duration: 5s;
+    
+    
+}
+.font-gray{
+    color: gray;
+}
+
+.firstimg:hover{
+    transform: scale(1.4);
+
+}
+.firstimg1:hover{
+    transform: scale(1.4);
+    
+}
+.human{
+    margin-left: 15px;
+    font-size: 11px;
+}
