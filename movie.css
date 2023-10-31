@@ -143,12 +143,13 @@
 
 
     .main1-background {
-        width: 100%;
+        width: 100vw;
+        height: 500px;
         position: absolute;
     }
 
     .main1-background > img {
-        max-width: 100%;
+        width: 100vw;
         height: auto;
         opacity: 0.5;
     }
@@ -270,7 +271,8 @@
         height: 150px;
         margin-left: 10px;
         margin-right: 10px; 
-        /* overflow: hidden; */ /* hover시 이미지 자체 확대 X */    }
+        /* overflow: hidden; */ /* hover시 이미지 자체 확대 X */    
+    }
 
 
     .slides .slide {
