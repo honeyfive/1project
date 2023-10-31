@@ -63,11 +63,11 @@
         align-items: center;
     }
 
-    .dropdown-profile {
+    /* .dropdown-profile {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .profile-image {
         width: 30px;
@@ -81,32 +81,99 @@
     }
 
 
-    .movie-main1 {
-        height: 500px;
-        background-image: url('./1st프로젝트자료/영화/괴물.webp');
-    }
-
-
     .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6{
         height: 200px;
     }
 
+    .movie-main1 {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        /* 
+        image-rendering:-webkit-optimize-contrast;
+        transform:translateZ(0);
+        backface-visibility:hidden; */
+    }
+
+
+    .main1-background {
+        width: 100%;
+        position: absolute;
+    }
+
+    .main1-background > img {
+        max-width: 100%;
+        height: auto;
+
+        opacity: 0.5;
+    }
+
+    .main1-container {
+        width: 600px;
+        height: 100%;
+    }
+
+    .main1-container > img {
+        object-fit: contain;
+    }
+
+    .main1-letter {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-play, .btn-detail-info {
+        width: 150px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 120px;
+        margin-right: 10px;
+        background-color: #999999;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-play {
+        background-color: #e5e5e5;
+        transition: all 0.5s;
+    }
+
+    .btn-detail-info {
+        color: white;
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+
+    .btn-play:hover, .btn-detail-info:hover {
+        opacity: 0.6;
+        cursor: pointer;;
+    }
+
+    
+
+    .movie-slider {
+        position: relative;
+    }
+
+
     .main-font {
         margin: 20px;
         color: white;
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: 800;
     }
 
     .box-container {
-        height: 130px;
+        height: 150px;
         display: flex;
-
     }
 
 
-
     .btn-next, .btn-prev {
-        line-height: 130px;   
+        line-height: 150px;   
         color: white;
         font-size: 30px;
         cursor: pointer;
@@ -121,28 +188,33 @@
     .slide-wrapper {
         position: relative;
         width: 1520px;
-        height: 130px;
+        height: 150px;
         overflow: hidden;
     }
 
 
     .slides .slide {
         width: 230px; /* 이미지 컨테이너 너비 조절 */
-        height: 130px; /* 이미지 컨테이너 높이 조절 */
+        height: 150px; /* 이미지 컨테이너 높이 조절 */
         overflow: hidden; /* 이미지 영역 너비 넘침 방지 */
         float: left;
+    }
+
+    .slides::after { /* float된 요소의 부모요소에 걸어준다 */
+        content: "";
+        display: block;
+        clear: both;
     }
     
     .slides .slide img {
         width: 100%;
         height: 100%;
+        
         image-rendering:-webkit-optimize-contrast;
         transform:translateZ(0);
         backface-visibility:hidden;
     }
     
-
-
     .slides {
         position: absolute;
         left: 0;
@@ -172,12 +244,31 @@
         width: 100%;
         height: 100%;
         background-color: #171717;
-        margin-top: 90px;
-        opacity: 0.9;
-        color: white;
+        margin-top: 50px;
+        opacity: 0.95;
         font-size: 11px;
     }
 
+    .question {
+        color: #737373;
+        padding-top: 20px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        color: #737373;
+        margin-left: 100px;
+        margin-bottom: 5px;
+    }
+
     .sns {
+        color: #737373;
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    .sns i {
+        padding-right: 10px;
         cursor: pointer;
     }

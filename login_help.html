@@ -17,11 +17,11 @@
         .main {
             width: 500px;
             height: 700px;
-            background-color: #171717;
+            background-color: rgb(236, 232, 232);
             margin: 0 auto;
             border-radius: 6px;
             margin-top: 15px;
-            opacity: 0.95;
+            opacity: 0.99;
         }
 
         .c-clip {
@@ -33,46 +33,19 @@
 
         .login-text {
             padding-left: 70px;
+            padding-right: 70px;
             padding-top: 70px;
             font-size:xx-large;
-            color: white;
+            color: black;
         }
 
-        .email, .password {
-            display: block;
-            margin: 0 auto;
-            margin-top: 25px;
-            padding-left: 5px;
-            width: 360px;
-            height: 50px;
-            background-color: rgba(51, 51, 51, 1);
-            border-radius: 6px;
-            font-size:medium;
-            border:none;
-            color: rgba(255, 255, 255, 0.897);
+        .password-re {
+            color: black;
+            padding-left: 75px;
+            padding-top: 50px;
+            font-size:17px;
         }
 
-        .login-button {
-            margin: 0 auto;
-            margin-top: 50px;
-            width: 360px;
-            height: 50px;
-            display: block;
-            background-color: #e41a24;
-            color: white;
-            cursor: pointer;
-            font-size: medium;
-            border-radius: 6px;
-            border:none;
-        }
-
-        .checkbox {
-            margin-left: 70px;
-            margin-top: 20px;
-            width: 16px;
-            height: 16px;
-            accent-color: #737373;
-        }
 
         .login-info {
             color: hsl(0, 5%, 66%);
@@ -81,7 +54,6 @@
         .help, .user {
             margin-left: 50px;
             color: hsl(0, 5%, 66%);
-            
         }
 
         .user {
@@ -132,7 +104,7 @@
         }
 
         .container {
-            background-image: url(./넷플릭스배경.jpg);
+            background-image: url(./로그인배경.jpg);
             max-width: 100%;
             height: 100vh;
             position: relative;
@@ -149,9 +121,63 @@
             color: red;
         }
 
-        a {
-            text-decoration: none;
+        .radio1, .radio2 {
+            margin-top: 30px;
+            margin-left: 80px;
+            color: black;
         }
+
+        .password-re-email, .password-re-sms {
+            color: black;
+            padding-left: 75px;
+            padding-top: 50px;
+            font-size:17px;
+        }
+
+        .password-re-input-email {
+            margin-left: 75px;
+            margin-top: 20px;
+            width: 70%;
+            height: 40px;
+            font-size: 17px;
+        }
+
+        .password-re-input-phonenumber {
+            margin-top: 20px;
+            width: 50%;
+            height: 40px;
+            font-size: 17px;
+        }
+
+        .password-re-text {
+            color: black;
+            display: block;
+        }
+
+        .input-country {
+            margin-left: 75px;
+            margin-top: 20px;
+            width: 20%;
+            height: 40px;
+            font-size: 17px;
+        }
+
+        .accept-email, .accept-sms {
+            margin-left: 75px;
+            margin-top: 40px;
+            width: 70%;
+            height: 50px;
+            background-color: rgb(37, 37, 212);
+            color: white;
+            font-size: larger;
+            border-radius: 6px;
+            border:none;
+        }
+
+        .sms {
+            display: none;
+        }
+        
     </style>
 </head>
 <body>
@@ -162,15 +188,35 @@
             </a>
         </div>
         <div class="main">
-            <p class="login-text">로그인</p>
-            <input type="email" class="email" placeholder="  이메일 주소 또는 전화번호">
-            <input type="password" class="password" placeholder="  비밀번호">
-            <a href="./profile.html" class="login"><button type="button" class="login-button">로그인</button></a>
-            <input type="checkbox" class="checkbox" checked> <span class="login-info">로그인 정보 저장</span>
-            <a href="./login_help.html"><span class="help">도움이 필요하신가요?</span></a> <br>
-            <span class="user">C Clip 회원이 아니신가요?</span> <a class="join" href="">지금 가입하세요.</a>
-            <p class="ment">C Clip 회원이 되시면 각종 tv드라마, 영화를 무제한으로 감상하실 수 있습니다.</p>
-        </div>
+            <p class="login-text">이메일/비밀번호를 잊으셨나요?</p>
+            <p class="password-re">비밀번호 재설정 안내를 받을 방법을 선택하세요</p>
+            <div class="password-re-text">
+                <input type="radio" name="re" checked class="radio1" value="1" onclick="OnOff('v')"> 이메일 주소
+                <input type="radio" name="re" class="radio1" value="2" onclick="OnOff('a')"> 문자 메시지(SMS)
+                
+            </div>
+            <div class="eamil">
+                <p class="password-re-email">비밀번호 재설정 안내 이메일을 보내드리겠습니다.</p>
+                <input type="email" class="password-re-input-email" placeholder="이메일을 입력하세요.">
+                <button type="submit" class="accept-email">이메일로 받기</button>
+            </div>
+            <div class="sms">
+                <p class="password-re-sms">비밀번호 재설정 인증 코드를 문자로 보내드리겠습니다. 문자 또는 데이터 요금이 부과될 수 있습니다.</p>
+                <label>
+                    <select class="input-country">
+                        <option value="ko">대한민국+82</option>
+                        <option value="en">미국+1</option>
+                        <option value="de">덴마크+45</option>
+                        <option value="ch">중국+86</option>
+                        <option value="ja">일본+81</option>
+                    </select>
+                </label>
+                <input type="text" class="password-re-input-phonenumber" placeholder="전화번호를 입력하세요.">
+                <div class="accept">
+                    <button type="submit" class="accept-sms">문자로 받기</button>
+                </div>
+            </div>
+            </div>
         <div class="footer">
             <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
             <div id="google_translate_element" class="hd_lang"></div>
@@ -195,6 +241,7 @@
     </div>
 
     <script>
+
         function googleTranslateElementInit() {
 		new google.translate.TranslateElement({
 			pageLanguage: 'ko',
@@ -202,7 +249,21 @@
 			layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
 			autoDisplay: false
 		}, 'google_translate_element');
-	}
+        }
+        function OnOff(type){
+            if(type=="v"){
+                document.getElementsByClassName('sms')[0].style.display = "none"; 
+                document.getElementsByClassName('eamil')[0].style.display = "block";
+            }else if(type == "a"){
+                document.getElementsByClassName('eamil')[0].style.display = "none";
+                document.getElementsByClassName('sms')[0].style.display = "block";
+            }
+        }
+        
+            
+        
+    
+        
     </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
