@@ -6,10 +6,11 @@
 
     body {
         background-color: rgb(16,16,16);
+        font-family: 'Pretendard-Regular';
     }
 
     .header {
-        height: 50px;
+        height: 70px;
         background-color: #1f1f1f;
 
         position: sticky;
@@ -18,7 +19,10 @@
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
+
+
 
 
     .first-navigation {
@@ -35,23 +39,54 @@
     .s-navigation-menu {
         margin-left: 20px;
         margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .logo {
         margin-left: 30px;
     }
 
-    .home, .movie, .drama, .logo, .search, .logout{
+    .home, .drama, .logo, .search, .logout{
         text-decoration: none;
         color: white;
-        transition: all 0.5s;
     }
+
+    /* .f-navigation-menu home, .f-navigation-menu movie, .f-navigation-menu drama {
+        color: #ff4808;
+        display: inline-block;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .home::after, .movie::after, .drama::after {
+        display: block;
+        content: "";
+        border-bottom: solid 3px #ff4808;
+        padding-bottom: 22px;
+        transform: scaleX(0);
+        transition: transform 0.4s;
+        transform-origin: 0% 50%;
+    }
+
+    .home:hover:after, .movie::after, .drama:hover:after {
+        transform: scaleX(1);
+    } */
+
 
     .movie {
         color: #ff4808;
+        text-decoration: none;
         border-bottom: 3px solid #ff4808;
-        padding-bottom: 12px;
+        padding-bottom: 22px;
     }
+
+    .home:hover, .drama:hover {
+        border-bottom: 3px solid #ff4808;
+        padding-bottom: 22px;
+    }
+
 
     .logout {
         font-size: 20px;
@@ -63,73 +98,117 @@
         align-items: center;
     }
 
-    /* .dropdown-profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-
     .profile-image {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border: 1px solid white;
     }
     
+    .dropdown-profile {
+        position: relative;
+        cursor: pointer;
+    }
 
-    .home:hover, .movie:hover, .drama:hover {
-        color: rgb(93, 93, 93);
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width : 200px;
+        margin-left: -100px;
+        background-color: #1f1f1f;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #737373;
+    }
+
+    .dropdown-profile:hover .dropdown-content {
+        display: block;
     }
 
 
-    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6{
-        height: 200px;
-    }
 
     .movie-main1 {
         width: 100%;
         height: 500px;
         position: relative;
-        /* 
-        image-rendering:-webkit-optimize-contrast;
-        transform:translateZ(0);
-        backface-visibility:hidden; */
     }
 
 
     .main1-background {
-        width: 100%;
+        width: 100vw;
+        height: 700px;
         position: absolute;
     }
 
     .main1-background > img {
-        max-width: 100%;
+        width: 100vw;
+        height: 700px;
         height: auto;
-
         opacity: 0.5;
     }
 
     .main1-container {
-        width: 600px;
         height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
-    .main1-container > img {
-        object-fit: contain;
+    .main1-age {
+        width: 100px;
+        height: 40px;
+        margin-bottom: 30px;
+        color: white;
+        font-size: 20px;
+        background-color: #737373;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .main1-letter {
-        position: absolute;
+        position: absolute; /* movie-main1기준! */
+        width: 40%;
         top: 100px;
         left: 30px;
         display: flex;
         flex-direction: column;
     }
 
+    .main1-letter-explanation {
+        color: white;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main1-button-box {
+        width: 30%;
+        display: flex;
+    }
+
+    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6{
+        
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .movie-main2 {
+        margin-top: 80px;
+    }
+
     .btn-play, .btn-detail-info {
         width: 150px;
         font-size: 20px;
         padding: 10px;
-        margin-top: 120px;
         margin-right: 10px;
         background-color: #999999;
         border: none;
@@ -152,9 +231,8 @@
         cursor: pointer;;
     }
 
-    
 
-    .movie-slider {
+    .movie-slider{
         position: relative;
     }
 
@@ -173,6 +251,7 @@
 
 
     .btn-next, .btn-prev {
+        width: 30px;
         line-height: 150px;   
         color: white;
         font-size: 30px;
@@ -181,14 +260,17 @@
     }
 
     .btn-prev:hover, .btn-next:hover {
-        transform:scale(1.5, 1.5);
+        transform:scale(1.5);
     }
 
 
     .slide-wrapper {
         position: relative;
-        width: 1520px;
+        /* width: 1520px; */
+        width: 100vw;
         height: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
         overflow: hidden;
     }
 
@@ -217,6 +299,7 @@
     
     .slides {
         position: absolute;
+        display: flex;
         left: 0;
         top: 0;
     }
@@ -231,12 +314,12 @@
     }
 
     .slide {
-        transition: all 0.5s;
+        border-radius: 5px;
+        transition: all 0.3s linear;
     }
 
     .slide:hover {
-        cursor: pointer;
-        transform:scale(1.1, 1.1);
+        transform:scale(1.1);
     }
     
 
@@ -271,4 +354,11 @@
     .sns i {
         padding-right: 10px;
         cursor: pointer;
+    }
+
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
     }
