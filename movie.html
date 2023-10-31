@@ -8,8 +8,10 @@
     <link href="./movie.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)">
 </head>
-<body>
+<body class="fade">
     
     <div class="header">
         
@@ -20,13 +22,22 @@
                 </a>
             </div>
             <div class="f-navigation-menu">
-                <a href="" class="home">홈</a>
+                <a href="" class="home">
+                    <i class="fa-solid fa-house"></i>
+                    &nbsp;홈
+                </a>
             </div>
             <div class="f-navigation-menu">
-                <a href="./movie.html" class="movie">영화</a>
+                <a href="./movie.html" class="movie">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    &nbsp;영화
+                </a>
             </div>
             <div class="f-navigation-menu">
-                <a href="" class="drama">드라마</a>
+                <a href="" class="drama">
+                    <i class="fa-solid fa-tv"></i>
+                    &nbsp;드라마
+                </a>
             </div>
         </div>
 
@@ -38,9 +49,14 @@
             </div>
             <div class="s-navigation-menu">
                 <div class="dropdown-profile">
-                    <a href="./mypage/mypage.html">
-                        <div class="profile-image"></div>
-                    </a>
+                    <div class="profile-image"></div>
+                    <div class="dropdown-content">
+                        <a href="./profile.html">프로필 전환</a>
+                        <a href="">마이페이지</a>
+                        <a href="">고객센터</a>
+                        <a href="">찜목록</a>
+                        <!-- <a href="">로그아웃</a> -->
+                    </div>
                 </div>
             </div>
             <div class="s-navigation-menu">
@@ -57,8 +73,12 @@
             <img src="./1st프로젝트자료/메인-영화.webp">
         </div>
         <div class="main1-container">
+            <span class="main1-age">15+</span>
             <div class="main1-letter">
-                <img src="./1st프로젝트자료/제목-영화.webp" width="500px" height="200px">
+                <img src="./1st프로젝트자료/제목-영화.webp">
+                <div class="main1-letter-explanation">
+                    얼굴 없는 마약왕을 끈질기게 쫓는 형사. 그리고 의문의 공장 폭발에서 살아남은 생존자. 이 둘의 만남으로 수사는 급물살을 탄다.
+                </div>
                 <div class="main1-button-box">
                     <a href="./contents.html">
                         <button class="btn-play">

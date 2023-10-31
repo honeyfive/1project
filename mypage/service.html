@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./service.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        button{
+            border: 0px;
+            box-shadow: 1px 1px 10px #ff4808;
+            
+        }
+        #logo{
+            width: 150px;
+            height: 50px;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        .logo{
+            background-color: black;
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        form{
+            
+        }
+        input{
+            width: 50%;
+            height: 40px;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 350px;
+            float: left;
+            border-radius: 10px;
+            
+        }
+        path{
+            color: blue;
+            
+            float: left;
+            cursor: pointer;
+            
+        }
+        svg{
+            margin-left: -40px;
+            margin-top: 43px;
+        }
+        .top{
+            margin: 30px 0px 0px 30px;
+            width: 70%;
+        }
+        .btn{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 30px 20px 0px 20px;
+            
+            
+            
+        }
+        .btn:hover{
+            color: #ff4808;
+        }
+        .btn1{
+            width: 130px;
+            height: 40px;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: -30px;
+            margin-left: 230px;
+            float: left;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            background-color: lightgray;
+            margin-top: 12px;
+        }
+        .body{
+            margin: 0px 0px 0px 120px;
+            
+            
+        }
+        .leftbody{
+            width: 25%;
+            height: 500px;
+            
+            float: left;
+            
+        }
+        .midbody{
+            width: 25%;
+            height: 500px;
+            
+            float: left;
+            
+        }
+        
+        .boldfont{
+            font-weight: bold;
+            font-size: 25px;
+            cursor: pointer;
+        }
+       
+        
+        
+        
+        @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        }
+        body {
+        font-family: 'Pretendard-Regular';
+        }
+        .footer{
+            float: left;
+            width: 100%;
+            height: 230px;
+            background-color: black;
+            float: left;
+        }
+        .footbtn{
+            float: left;
+        }
+        h3{
+            color: white;
+            font-size: 22px;
+            
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .countrybtn{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .fotfont{
+            color: white;
+            margin-left: 20px;
+        }
+        
+        
+        .fafont:hover{
+            
+            color: #ff4808;
+              
+        }
+        .fafont{
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .fafont:hover{
+            animation-play-state: running;
+        }
+
+        .boldfont:hover{
+            color: #ff4808;
+            
+
+
+
+        }
+        .rightbody{
+            width: 40%;
+            height: 500px;
+            float: left;
+            text-align:center;
+             
+
+
+        }
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- <img src="../../1project/mypage/jpg/검색.jpg" id="serch"> -->
+    <header>
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/1project/movie.html"><img src="../logo.png" id="logo"></a>
+            <h1>고객 센터</h1>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="&nbsp;&nbsp;어떤 도움이 필요하세요?" name="d">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="top">
+        <h2>누구누구님, 안녕하세요!</h2>
+        <br>
+        <h4>도움이 될 만한 문서</h4>
+    </div>
+    <div class="topclick">
+        <button class="btn">계정 보안을 유지하는 방법</button>
+        <button class="btn">씨클립 자녀 보호 기능</button>
+        <button class="btn">멤버십 변경 방법</button>
+    </div>
+    <div class="line"></div>
+    <div class="body">
+        <div class="leftbody">
+            <br>
+            <span class="boldfont">내 계정 관리</span><br><br>
+            <span class="fafont">멤버십 및 요금</span><br><br>
+            <span class="fafont">내 계정에 새로운 로그인이 <br>발생했다는 이메일을 수신</span><br><br>
+            <span class="fafont">멤버십 변경 방법</span><br><br><br><br><br><br>
+            <span class="boldfont">결제 문의</span><br><br>
+            <span class="fafont">씨클립 요금을 결제하는 방법</span><br><br>
+            <span class="fafont">청구 및 결제</span><br><br>
+            <span class="fafont">씨클립 기프트카드</span><br><br>
+        </div>
+        <div class="midbody">
+            <br>
+            <span class="boldfont">시청 불가</span><br><br>
+            <span class="fafont">비밀번호를 변경 또는 재설정하는 방법</span><br><br>
+            <span class="fafont">씨클립스에 로그인하려는데 <br>가입하라는 메시지가 표시됨</span><br><br>
+            <span class="fafont">'사용 중인 디바이스에서 씨클립 앱 버전이
+                <br>호환되지 않습니다.'라는 씨클립 메시지가 표시됨
+            </span><br><br><br><br>
+            <span class="boldfont">씨클립 시청</span><br><br>
+            <span class="fafont">프로필을 생성, 변경 또는 삭제하는 방법</span><br><br>
+            <span class="fafont">TV에서 씨클립 시청하는 방법</span><br><br>
+            <span class="fafont">콘텐츠를 저장하여 오프라인에서 시청하는 방법</span><br><br>
+        </div>
+        <div class="rightbody">
+            <br>
+            <span class="boldfont">빠른 링크</span><br><br><br>
+            <span class="fafont">TV 프로그램 및 영화 요청하기
+            </span><br><br><br>
+            <span class="fafont">이메일 업데이트</span><br><br><br>
+            <span class="fafont">비밀번호 업데이트</span><br><br><br>
+            <span class="fafont">결제 수단 업데이트</span><br><br><br>
+            <span class="fafont">멤버십 해지</span><br><br><br>
+            <span class="fafont">결제 내역 검토</span><br><br><br>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="footbtn">
+            <h3>도움이 필요하신가요?</h3>
+            <button class="btn1">문의하기</button>
+        </div>
+        <div class="line" style="margin-top: 70px;"></div><br>
+        <span class="fotfont">이용 약관</span><br><br>
+        <span class="fotfont">개인 정보</span><br><br>
+        <span class="fotfont">쿠키 설정</span><br><br>
+        <span class="fotfont">회사 정보</span><br><br>
+    </div>
+</body>
+<script>
+        
+</script>
+</html>
