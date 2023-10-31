@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .c-clip {
+            width: 170px;
+            height: 120px;
+            object-fit: contain;
+            margin-left: 10px;
+            float: left;
+            position: relative;
+        }
+
+        .now-join, .login {
+            float: right;
+            margin-top: 30px;
+            margin-right: 10px;
+            background-color: #ff153c;
+            color: white;
+            border-radius: 3px;
+            border: none;
+            padding:5px;
+            font-weight: bolder;
+            position: relative;
+        }
+        
+        .login {
+            background-color: black;
+        }
+
+        .ment {
+            text-align: center;
+            padding-top: 220px;
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+            position: relative;
+        }
+
+        .c-clip-login{
+            width: 360px;
+            height: 70px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+            border: none;
+            background-color: #ff153c;
+            color: white;
+            font-size: x-large;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .aa {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-color:black;
+        }
+
+        .container::before{
+            content: "";
+            background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.25) 25%,
+            rgba(0, 0, 0, 0.5) 40%,
+            rgba(0, 0, 0, 0.75) 65%,
+            rgba(0, 0, 0, 1) 100%
+            ), url(./영화배경1.jpg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-size: cover;
+        }
+
+        .original {
+            color: white;
+            text-align: center;
+            position: relative;
+            margin-top: 300px;
+        }
+
+        .original-text {
+            font-size: 40px;
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+
+        .original-text1, .original-text2{
+            font-size: 23px;
+        }
+
+        .original-series {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .img1 {
+            width: 300px;
+            height: 400px;
+            
+        }
+
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Pretendard-Regular';
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo">
+                <a href="">
+                    <img src="./KakaoTalk_20231028_162057713_01.png" class="c-clip">
+                </a>
+                <a href="">
+                    <button type="button" class="login">로그인</button>
+                </a>
+                <a href="">
+                    <button type="button" class="now-join">지금 가입</button>
+                </a>
+                <div class="ment">
+                    <p>C Clip 오리지널부터</p>
+                    <p>드라마·예능, 영화, 해외시리즈까지!</p>
+                    <p>무제한으로 감상해 보세요.</p>
+                </div>
+                <a href="" class="aa">
+                    <button type="button" class="c-clip-login">C Clip 로그인</button>
+                </a>
+                <div class="original">
+                    <p class="original-text">C Clip 오리지널 시리즈</p>
+                    <p class="original-text1">오직 C Clip에서만 만날 수 있는</p>
+                    <p class="original-text2">오리지널 콘텐츠를 감상해 보세요.</p>
+                </div>
+                <div class="original-series">
+                    <ul>
+                        <li><img src="../1project/1st프로젝트자료/tv 드라마/갯마을차차차.webp" class="img1"></li>
+                        <li><img src="../1project/1st프로젝트자료/tv 드라마/갯마을차차차.webp" class="img1"></li>
+                        <li><img src="../1project/1st프로젝트자료/tv 드라마/갯마을차차차.webp" class="img1"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
