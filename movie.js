@@ -73,19 +73,17 @@ sections.forEach(section => {
 });
 
 
-// const caretContent = document.querySelector('.caret-content');
-// const caret = document.querySelector('.caret');
 
-// function openCloseProfile() {
-//     if (caretContent.style.display === 'block') {
-//         caretContent.style.display = 'none';
-//         caret.classList.add('caret-animate');
-//     } else {
-//         caretContent.style.display = 'block';
-//         caret.classList.add('caret-animate');
-//     }
-// }
 
+// document.querySelector('.dropdown-btn').addEventListener('mouseover', () => {
+//     document.querySelector('.dropdown-btn').style.transform = 'rotate(180deg)';
+// });
+
+// document.querySelector('.dropdown-btn').addEventListener('mouseout', ()=>{
+//     setTimeout(()=>{
+//         document.querySelector('.dropdown-btn').style.transform = 'rotate(0deg)'; 
+//     }, 2000); //마우스 아웃하면 1초후에 btn이 원래상태로 돌아오게..
+// });
 
 
 
