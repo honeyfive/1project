@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link href="./movie.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)">
-    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)">
+    <link href="./movie.css" rel="stylesheet">
 </head>
-<body class="fade">
+<body>
     
     <div class="header">
         
@@ -51,18 +48,21 @@
                 <div class="dropdown-profile">
                     <div class="profile-image"></div>
                     <div class="dropdown-content">
-                        <a href="./profile.html">프로필 전환</a>
-                        <a href="">마이페이지</a>
+                        <div class="dropdown-profile-transform">
+                                <div class="dropdown-profile-box">
+                                    <div class="dropdown-profile-image"></div>
+                                    <div class="dropdown-profile-btn" onclick="location.href='profile.html';">
+                                        프로필 전환
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                        </div>
+                        <a href="./mypage/mypage.html">마이페이지</a>
                         <a href="">고객센터</a>
-                        <a href="">찜목록</a>
-                        <!-- <a href="">로그아웃</a> -->
+                        <a href="./mypage/wash.html">찜목록</a>
+                        <a href="./login.html">로그아웃</a>
                     </div>
                 </div>
-            </div>
-            <div class="s-navigation-menu">
-                <a href="./login.html" class="logout">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                </a>
             </div>
         </div>
         
@@ -147,10 +147,53 @@
         
     </div>
 
+    <div class="movie-main0">
+        <div class="main-font">시청 중인 콘텐츠</div>
+        <div class="box-container">
+            
+            <div class="slide-wrapper">
+                <ul class="slides">
+                    <li class="slide">
+                        <a href="">
+                            <img src="./1st프로젝트자료/영화/인비저블게스트.webp">
+                            <div class="watching-captions">
+                                <div class="watching-caption">
+                                    <div class="caption1">인비저블 게스트</div>
+                                    <i class="fa-solid fa-circle-play caption2"></i>
+                                    <i class="fa-solid fa-circle-info caption3"></i>                                
+                                    <span class="caption4">114분 남음</span>
+                                    <div class="progress">
+                                        <div class="progressbar1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a href="">
+                            <img src="./1st프로젝트자료/영화/늑대소년.webp">
+                            <div class="watching-captions">
+                                <div class="watching-caption">
+                                    <div class="caption1">늑대소년</div>
+                                    <i class="fa-solid fa-circle-play caption2"></i>                                
+                                    <i class="fa-solid fa-circle-info caption3"></i>
+                                    <span class="caption4">45분 남음</span>
+                                    <div class="progress">
+                                        <div class="progressbar2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+
     <div class="movie-main3">
         <div class="main-font">C Clip이 추천하는 영화</div>
         <div class="box-container">
-            
+
             <div class="btn-prev">
                 <i class="fa-solid fa-chevron-left"></i>
             </div>
@@ -158,7 +201,7 @@
             <div class="slide-wrapper">
                 <ul class="slides">
                     <li class="slide">
-                        <a href=""><img src="./1st프로젝트자료/영화/늑대소년.webp"></a>
+                        <a href=""><img src="./1st프로젝트자료/영화/신과함께 죄와벌.webp"></a>
                     </li>
                     <li class="slide">
                         <a href=""><img src="./1st프로젝트자료/영화/더 테러 라이브.webp"></a>
@@ -349,23 +392,29 @@
     </div>
 
     <div class="footer">
+        <div class="footer-logo"><img src="./logo.png" width="90px" height="40px"></div>
         <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
-        <p class="info">대표이사 : 정용진</p>
-        <p class="info">사업자정보확인</p>
-        <p class="info">사업자등록번호 : 111-11-00001</p>
-        <p class="info">통신판매신고번호 : 2023-충남천안-1234호</p>
-        <p class="info">사업장 : 충청남도 천안시 동남구 대흥로 215 7층</p>
-        <p class="info">호스팅사업자 : 휴먼교육센터</p>
-        <p class="info">고객센터 (평일 9시~17시/점심시간 13~14시)</p>
-        <p class="info">1:1 게시만 문의</p>
-        <p class="info">대표메일 : 1234@test.com</p>
-        <p class="info">전화번호(ARS) : 1588-1234</p>
-        <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
-        <div class="sns">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
+        <div class="info-container">
+            <div class="info">대표이사 : 정용진 |&nbsp;</div>
+            <div class="info">사업자정보확인 |&nbsp; </div>
+            <div class="info">사업자등록번호 : 111-11-00001 |&nbsp; </div>
+            <div class="info">통신판매신고번호 : 2023-충남천안-1234호</div>
+            <div class="info">사업장 : 충청남도 천안시 동남구 대흥로 215 7층</div>
         </div>
+        <div class="info-container">
+            <div class="info">호스팅사업자 : 휴먼교육센터 |&nbsp; </div>
+            <div class="info">고객센터 (평일 9시~17시/점심시간 13~14시)</div>
+            <div class="info">1:1 게시만 문의 |&nbsp; </div>
+            <div class="info">대표메일 : 1234@test.com |&nbsp; </div>
+            <div class="info">전화번호(ARS) : 1588-1234</div>
+        </div>
+        
+        <div class="sns">
+            <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+            <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+            <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+        </div>
+        <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
     </div>
 
 
