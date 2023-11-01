@@ -300,8 +300,8 @@
         width: 100vw;
         height: 150px;
         margin-left: 10px;
-        margin-right: 10px; 
-        /* overflow: hidden; hover시 이미지 자체 확대 X     */
+        margin-right: 10px;
+        /* overflow: hidden; */
     }
 
     .slides .slide {
@@ -350,6 +350,7 @@
     }
 
     .slide:hover {
+        cursor: pointer;
         transform:scale(1.1);
         border-radius: 10px;
         border: 3px solid white;

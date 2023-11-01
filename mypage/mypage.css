@@ -5,6 +5,9 @@
     
     
 }
+.martop{
+    font-size: 30px;
+}
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -43,7 +46,13 @@
     width: 30%;
     height: 100px;
     float: left;
+   
     
+    
+}
+#topjpg1{
+   margin-left: 10px;
+   
 }
 .top-right{
     font-size: 30px;
@@ -78,7 +87,7 @@ width: 85%;
 height: 1px;
 background-color: gray;
 margin-left: 80px;
-margin-top: 70px;
+margin-top: 60px;
 }
 .line1{
 width: 85%;
@@ -167,7 +176,7 @@ a{
 }
 .prfi{
     color: gray;
-    margin-left: -110px;
+    margin-left: -85px;
 }
 .prfi1{
     margin-left: -22px;
