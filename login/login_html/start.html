@@ -14,13 +14,18 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
+        }
+
+        .logo {
+            background-color: black;
         }
 
         .c-clip {
-            width: 170px;
-            height: 120px;
+            width: 150px;
+            height: 100px;
             object-fit: contain;
-            margin-left: 10px;
+            margin-left: 0px;
             float: left;
             position: relative;
         }
@@ -28,10 +33,10 @@
         .now-join, .login {
             float: right;
             margin-top: 30px;
-            margin-right: 10px;
+            margin-right: 8px;
             background-color: #ff4808;
-            color: white;
-            border-radius: 3px;
+            color: #ffffff;
+            border-radius: 5px;
             border: none;
             padding:5px;
             font-weight: bolder;
@@ -42,12 +47,13 @@
         
         .login {
             background-color: black;
-            
+            margin-right: 30px;
+            color: #dddcdc;
         }
 
         .ment {
             text-align: center;
-            padding-top: 220px;
+            padding-top: 450px;
             font-size: 40px;
             font-weight: bolder;
             color: white;
@@ -88,6 +94,7 @@
 
         .aa {
             text-decoration: none;
+            
         }
 
         .container {
@@ -108,7 +115,7 @@
             rgba(0, 0, 0, 0.5) 40%,
             rgba(0, 0, 0, 0.75) 65%,
             rgba(0, 0, 0, 1) 100%
-            ), url(./영화배경1.jpg);
+            ), url(../login_image/영화배경1.jpg);
             position: absolute;
             top: 0px;
             left: 0px;
@@ -252,28 +259,49 @@
 
         .footer {
             width: 100%;
-            height: 450px;
+            height: 230px;
             background-color: #171717;
-            color: #737373;
-        }
-
-        .question {
-            color: #737373;
-            padding-top: 30px;
-            margin-left: 100px;
-            margin-bottom: 60px;
+            margin-top: 100px;
+            opacity: 0.95;
+            font-size: 11px;
+            text-align: center;
         }
 
         .info {
             color: #737373;
-            margin-left: 100px;
-            margin-bottom: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
         }
 
         .sns {
             color: #737373;
-            margin-left: 100px;
-            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .instagram , .facebook, .youtube {
+            font-size: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question {
+            color: #737373;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            justify-content: center;
+            margin-bottom: 10px;
+            cursor: pointer;
         }
 
         @font-face {
@@ -285,6 +313,7 @@
 
         body {
             font-family: 'Pretendard-Regular';
+            background-color: black;
         }
     </style>
 </head>
@@ -292,13 +321,13 @@
     <div class="container">
         <div class="head">
             <div class="logo">
-                <a href="./start.html">
-                    <img src="./KakaoTalk_20231028_162057713_01.png" class="c-clip">
+                <a href="../login_html/start.html">
+                    <img src="../login_image/KakaoTalk_20231028_162057713_01.png" class="c-clip">
                 </a>
-                <a href="./login.html" style="cursor: pointer;">
+                <a href="../login_html/login.html" style="cursor: pointer;">
                     <button type="button" class="login">로그인</button>
                 </a>
-                <a href="./joinmembership.html">
+                <a href="../login_html/joinmembership.html">
                     <button type="button" class="now-join">지금 가입</button>
                 </a>
                 <div class="ment">
@@ -306,7 +335,7 @@
                     <p>드라마·예능, 영화, 해외시리즈까지!</p>
                     <p>무제한으로 감상해 보세요.</p>
                 </div>
-                <a href="./login.html" class="aa">
+                <a href="../login_html/login.html" class="aa">
                     <button type="button" class="c-clip-login1">C Clip 로그인</button>
                 </a>
                 <div class="original">
@@ -315,9 +344,9 @@
                     <p class="original-text2">오리지널 콘텐츠를 감상해 보세요.</p>
                 </div>
                 <div class="original-series">
-                    <img src="../1project/1st프로젝트자료/tv 드라마/갯마을차차차.webp" class="img1">
-                    <img src="../1project/1st프로젝트자료/tv 드라마/눈이부시게.webp" class="img2">
-                    <img src="../1project/1st프로젝트자료/tv 드라마/미스터션샤인.webp" class="img3">
+                    <img src="/1project/1st프로젝트자료/tv 드라마/갯마을차차차.webp" class="img1">
+                    <img src="/1project/1st프로젝트자료/tv 드라마/눈이부시게.webp" class="img2">
+                    <img src="/1project/1st프로젝트자료/tv 드라마/미스터션샤인.webp" class="img3">
                 </div>
                 <div class="contents">
                     <p class="contents-ment1">요즘 뜨는 모든 콘텐츠</p>
@@ -326,40 +355,40 @@
                 </div>
                 <div class="slider1">
                     <div class="image-slide1">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/유퀴즈.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/강철부대3.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/금쪽이.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/나의해방일지.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/내아이디는강남미인.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/놀라운토요일.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/또!오해영.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/반짝이는 워터멜론.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/김비서가왜그럴까.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/도시어부5.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/바티칸의 비밀수사관1.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/사랑의불시착.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/소년소녀 연애하다.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/스우파2.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/tv 드라마/콩심은데 콩나고 팥심은데 팥난다.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/유퀴즈.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/강철부대3.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/금쪽이.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/나의해방일지.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/내아이디는강남미인.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/놀라운토요일.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/또!오해영.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/반짝이는 워터멜론.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/김비서가왜그럴까.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/도시어부5.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/바티칸의 비밀수사관1.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/사랑의불시착.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/소년소녀 연애하다.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/스우파2.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/tv 드라마/콩심은데 콩나고 팥심은데 팥난다.webp" class="img4">
                     </div>
                 </div>
                 <div class="slider">
                     <div class="image-slide">
-                        <img src="../1project/1st프로젝트자료/영화/라라랜드.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/더넌.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/인비저블게스트.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/건축학개론.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/광해.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/아이덴티티.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/이미테이션게임.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/1987.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/9명의번역가.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/탑건 매버릭.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/국제시장.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/베테랑.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/그것만이 내세상.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/늑대소년.webp" class="img4">
-                        <img src="../1project/1st프로젝트자료/영화/수상한그녀.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/라라랜드.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/더넌.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/인비저블게스트.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/건축학개론.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/광해.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/아이덴티티.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/이미테이션게임.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/1987.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/9명의번역가.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/탑건 매버릭.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/국제시장.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/베테랑.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/그것만이 내세상.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/늑대소년.webp" class="img4">
+                        <img src="/1project/1st프로젝트자료/영화/수상한그녀.webp" class="img4">
                     </div>
                 </div>
                 <div class="free">
@@ -368,12 +397,12 @@
                     <p class="free-ment3">최대 4인 멀티 프로필로 가족, 친구, 연인과 함께 감상해 보세요.</p>
                 </div>
                 <div class="video-div">
-                    <video src="./기기비디오.mp4" muted autoplay loop class="video"></video>
+                    <video src="../login_image/기기비디오.mp4" muted autoplay loop class="video"></video>
                 </div>
                 <div class="c-clip-start">
                     <p class="start-ment1">C Clip</p>
                     <p class="start-ment2">지금 시작해보세요</p>
-                    <a href="./login.html" class="aa">
+                    <a href="../login_html/login.html" class="aa">
                         <button type="button" class="c-clip-login">C Clip 로그인</button>
                     </a>
                 </div>
@@ -381,24 +410,29 @@
             </div>
         </div>
         <div class="footer">
+            <div class="footer-logo"><img src="../login_image/logo.png" width="90px" height="40px"></div>
             <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
-            <div id="google_translate_element" class="hd_lang"></div>
-            <p class="info">■ 대표이사 : 정용진</p>
-            <p class="info">■ 사업자정보확인</p>
-            <p class="info">■ 사업자등록번호 : 111-11-00001</p>
-            <p class="info">■ 통신판매신고번호 : 2023-충남천안-1234호</p>
-            <p class="info">■ 사업장 : 충청남도 천안시 동남구 대흥로 215 7층</p>
-            <p class="info">■ 호스팅사업자 : 휴먼교육센터</p>
-            <p class="info">■ 고객센터 (평일 9시~17시/점심시간 13~14시)</p>
-            <p class="info">■ 1:1 게시만 문의</p>
-            <p class="info">■ 대표메일 : 1234@test.com</p>
-            <p class="info">■ 전화번호(ARS) : 1588-1234</p>
-            <p class="info">■ Copyright 주식회사 휴먼 All right reserved.</p>
-            <div class="sns">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-youtube"></i>
+            <div class="info-container">
+                <div class="info">대표이사 : 정용진 |&nbsp;</div>
+                <div class="info">사업자정보확인 |&nbsp; </div>
+                <div class="info">사업자등록번호 : 111-11-00001 |&nbsp; </div>
+                <div class="info">통신판매신고번호 : 2023-충남천안-1234호</div>
+                <div class="info">사업장 : 충청남도 천안시 동남구 대흥로 215 7층</div>
             </div>
+            <div class="info-container">
+                <div class="info">호스팅사업자 : 휴먼교육센터 |&nbsp; </div>
+                <div class="info">고객센터 (평일 9시~17시/점심시간 13~14시)</div>
+                <div class="info">1:1 게시만 문의 |&nbsp; </div>
+                <div class="info">대표메일 : 1234@test.com |&nbsp; </div>
+                <div class="info">전화번호(ARS) : 1588-1234</div>
+            </div>
+            
+            <div class="sns">
+                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+            <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
         </div>
     </div>
 </body>

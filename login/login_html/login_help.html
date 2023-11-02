@@ -17,16 +17,16 @@
         .main {
             width: 500px;
             height: 700px;
-            background-color: rgb(236, 232, 232);
+            background-color: #171717;
             margin: 0 auto;
             border-radius: 6px;
             margin-top: 15px;
-            opacity: 0.99;
+            opacity: 0.95;
         }
 
         .c-clip {
-            width: 170px;
-            height: 120px;
+            width: 150px;
+            height: 100px;
             object-fit: contain;
             margin-left: 20px;
         }
@@ -36,11 +36,11 @@
             padding-right: 70px;
             padding-top: 70px;
             font-size:xx-large;
-            color: black;
+            color: white;
         }
 
         .password-re {
-            color: black;
+            color: white;
             padding-left: 75px;
             padding-top: 50px;
             font-size:17px;
@@ -70,41 +70,65 @@
         }
 
         .ment {
-            color: #737373;
+            color: white;
             margin: 0 70px;
             margin-top: 15px;
         }
 
         .footer {
             width: 100%;
-            height: 500px;
+            height: 240px;
             background-color: #171717;
-            margin-top: 73px;
+            margin-top: 100px;
             opacity: 0.95;
-            
-        }
-
-        .question {
-            color: #737373;
-            padding-top: 30px;
-            margin-left: 100px;
-            margin-bottom: 60px;
+            font-size: 11px;
+            text-align: center;
         }
 
         .info {
             color: #737373;
-            margin-left: 100px;
-            margin-bottom: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
         }
 
         .sns {
             color: #737373;
-            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .instagram , .facebook, .youtube {
+            font-size: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question {
+            color: #737373;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            justify-content: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .sns {
+            color: #737373;
             padding: 10px;
         }
 
         .container {
-            background-image: url(./어두운\ 배경화면.jpg);
+            background-image: url(../login_image/어두운\ 배경화면.jpg);
             max-width: 100%;
             height: 100vh;
             position: relative;
@@ -128,9 +152,16 @@
         }
 
         .password-re-email, .password-re-sms {
-            color: black;
+            color: white;
             padding-left: 75px;
             padding-top: 50px;
+            font-size:17px;
+        }
+
+        .password-re-sms1 {
+            color: white;
+            padding-left: 75px;
+            
             font-size:17px;
         }
 
@@ -150,7 +181,7 @@
         }
 
         .password-re-text {
-            color: black;
+            color: white;
             display: block;
         }
 
@@ -188,14 +219,15 @@
 
         body {
             font-family: 'Pretendard-Regular';
+            background-color: #171717
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <a href="./start.html">
-                <img src="./KakaoTalk_20231028_162057713_01.png" class="c-clip">
+            <a href="../login_html/start.html">
+                <img src="../login_image/KakaoTalk_20231028_162057713_01.png" class="c-clip">
             </a>
         </div>
         <div class="main">
@@ -212,7 +244,8 @@
                 <button type="submit" class="accept-email">이메일로 받기</button>
             </div>
             <div class="sms">
-                <p class="password-re-sms">비밀번호 재설정 인증 코드를 문자로 보내드리겠습니다. 문자 또는 데이터 요금이 부과될 수 있습니다.</p>
+                <p class="password-re-sms">비밀번호 재설정 인증 코드를 문자로 보내드리겠습니다.</p>
+                <p class="password-re-sms1">문자 또는 데이터 요금이 부과될 수 있습니다.</p>
                 <label>
                     <select class="input-country">
                         <option value="ko">대한민국+82</option>
@@ -228,27 +261,31 @@
                 </div>
             </div>
             </div>
-        <div class="footer">
-            <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
-            <div id="google_translate_element" class="hd_lang"></div>
-            <p class="info">■ 대표이사 : 정용진</p>
-            <p class="info">■ 사업자정보확인</p>
-            <p class="info">■ 사업자등록번호 : 111-11-00001</p>
-            <p class="info">■ 통신판매신고번호 : 2023-충남천안-1234호</p>
-            <p class="info">■ 사업장 : 충청남도 천안시 동남구 대흥로 215 7층</p>
-            <p class="info">■ 호스팅사업자 : 휴먼교육센터</p>
-            <p class="info">■ 고객센터 (평일 9시~17시/점심시간 13~14시)</p>
-            <p class="info">■ 1:1 게시만 문의</p>
-            <p class="info">■ 대표메일 : 1234@test.com</p>
-            <p class="info">■ 전화번호(ARS) : 1588-1234</p>
-            <p class="info">■ Copyright 주식회사 휴먼 All right reserved.</p>
-            <div class="sns">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-youtube"></i>
+            <div class="footer">
+                <div class="footer-logo"><img src="../login_image/logo.png" width="90px" height="40px"></div>
+                <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
+                <div class="info-container">
+                    <div class="info">대표이사 : 정용진 |&nbsp;</div>
+                    <div class="info">사업자정보확인 |&nbsp; </div>
+                    <div class="info">사업자등록번호 : 111-11-00001 |&nbsp; </div>
+                    <div class="info">통신판매신고번호 : 2023-충남천안-1234호</div>
+                    <div class="info">사업장 : 충청남도 천안시 동남구 대흥로 215 7층</div>
+                </div>
+                <div class="info-container">
+                    <div class="info">호스팅사업자 : 휴먼교육센터 |&nbsp; </div>
+                    <div class="info">고객센터 (평일 9시~17시/점심시간 13~14시)</div>
+                    <div class="info">1:1 게시만 문의 |&nbsp; </div>
+                    <div class="info">대표메일 : 1234@test.com |&nbsp; </div>
+                    <div class="info">전화번호(ARS) : 1588-1234</div>
+                </div>
+                
+                <div class="sns">
+                    <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
             </div>
-
-        </div>
     </div>
 
     <script>
