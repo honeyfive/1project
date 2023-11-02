@@ -53,15 +53,18 @@
         width: 100%;
     }
 
-
-
     .home, .drama, .movie, .logo, .search, .logout{
         text-decoration: none;
         color: white;
+        transition: all 0.3s;
     }
 
     .logout {
         font-size: 20px;
+    }
+
+    .home:hover, .movie:hover, .drama:hover {
+        color:#ff4808;
     }
 
     .second-navigation {
@@ -147,44 +150,54 @@
 
     .movie-main1 {
         width: 100%;
-        height: 600px;
-        position: relative;
+        height: 500px;
     }
-
 
     .main1-background {
         width: 100vw;
-        height: 500px;
-        position: absolute;
-    }
-
-    .main1-background > img {
-        width: 100vw;
-        height: auto;
-        opacity: 0.5;
-    }
-
-    .main1-container {
-        height: 100%;
+        height: 700px;
+        position: relative;
         display: flex;
         justify-content: flex-end;
-        align-items: flex-end;
+        /* align-items:center; */
     }
+
+    .main1-background::before{
+        content: "";
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.25) 25%,
+        rgba(0, 0, 0, 0.5) 40%,
+        rgba(0, 0, 0, 0.75) 65%,
+        rgba(0, 0, 0, 1) 100%
+        ), url(./main-image/메인-영화.webp);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
 
     .main1-age {
         width: 100px;
         height: 40px;
+        margin-top: 450px;
         margin-bottom: 30px;
+        padding-top: 10px;
+        padding-left: 10px;
         color: white;
         font-size: 20px;
         background-color: #737373;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        opacity: 0.5;
+        position: absolute; /* main1-background 기준! */
     }
 
     .main1-letter {
-        position: absolute; /* movie-main1기준! */
+        position: absolute; /* main1-background 기준! */
         width: 40%;
         top: 120px;
         left: 30px;
@@ -204,8 +217,7 @@
         display: flex;
     }
 
-    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6, .movie-main0{
-        
+    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6, .movie-main0 {
         height: 250px;
         margin-top: 30px;
     }
@@ -340,11 +352,23 @@
     }
 
     .slide:hover {
-        cursor: pointer;
         transform:scale(1.1);
         border-radius: 10px;
         border: 3px solid white;
     }
+
+    /* .top-img {
+        position: relative;
+    } */
+
+    /* .top1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+    } */
+
 
     .movie-main0 .slides {
         margin-left: 20px;
