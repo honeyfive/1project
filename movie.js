@@ -75,15 +75,7 @@ sections.forEach(section => {
 
 
 
-// document.querySelector('.dropdown-btn').addEventListener('mouseover', () => {
-//     document.querySelector('.dropdown-btn').style.transform = 'rotate(180deg)';
-// });
 
-// document.querySelector('.dropdown-btn').addEventListener('mouseout', ()=>{
-//     setTimeout(()=>{
-//         document.querySelector('.dropdown-btn').style.transform = 'rotate(0deg)'; 
-//     }, 2000); //마우스 아웃하면 1초후에 btn이 원래상태로 돌아오게..
-// });
 
 
 
