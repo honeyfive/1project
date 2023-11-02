@@ -115,15 +115,16 @@ h2{
 }
 
 .firstimg:hover{
-    transform: scale(1.4);
+    transform: scale(1.1);
     cursor: pointer;
     
 }
 .firstimg1:hover{
-    transform: scale(1.4);
+    transform: scale(1.1);
     cursor: pointer;
-    
+    animation-duration: 2s;
 }
+
 .logout {
     font-size: 20px;
     
