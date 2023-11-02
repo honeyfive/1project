@@ -1,0 +1,500 @@
+    * {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(16,16,16);
+        font-family: 'Pretendard-Regular';
+        overflow-x: hidden ;
+    }
+
+    .header {
+        height: 70px;
+        background-color: #1f1f1f;
+
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .first-navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 540px;
+        list-style: none; /* li 점 없애는!*/
+    }
+
+    .first-navigation li a {
+        position: relative;
+        color: white;
+    }
+
+    .first-navigation li a::before {
+        content: ""; /* 가상요소 사용할때 꼭 같이 사용 */
+        height: 3px;
+        width: 0;
+        background-color: #ff4808;
+        border-radius: 5px;
+        transition: all 0.3s;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
+    
+    .first-navigation li a:hover::before {
+        width: 100%;
+    }
+
+    .home, .drama, .movie, .logo, .search, .logout{
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s;
+    }
+
+    .logout {
+        font-size: 20px;
+    }
+
+    .home:hover, .movie:hover, .drama:hover {
+        color:#ff4808;
+    }
+
+    .second-navigation {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .search {
+        font-size: 20px;
+    }
+
+
+    .profile-image {
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+    }
+
+    
+    .dropdown-profile {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width : 150px;
+        margin-left: -80px;
+        background-color: #1f1f1f;
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #737373;
+    }
+
+    .dropdown-profile:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-profile-transform {
+        width: 150px;
+        height: 100px;
+        border-bottom: 1px solid #737373;
+    }
+
+    .dropdown-profile-box {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .dropdown-profile-image {
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        margin-top: 30px;
+    }
+
+    .dropdown-profile-btn {
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .dropdown-profile-btn:hover {
+        color: #737373;
+    }
+
+    .movie-main1 {
+        width: 100%;
+        height: 500px;
+    }
+
+    .main1-background {
+        width: 100vw;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        /* align-items:center; */
+    }
+
+    .main1-background::before{
+        content: "";
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.25) 25%,
+        rgba(0, 0, 0, 0.5) 40%,
+        rgba(0, 0, 0, 0.75) 65%,
+        rgba(0, 0, 0, 1) 100%
+        ), url(./main-image/메인-영화.webp);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+
+    .main1-age {
+        width: 100px;
+        height: 40px;
+        margin-top: 450px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-left: 10px;
+        color: white;
+        font-size: 20px;
+        background-color: #737373;
+        opacity: 0.5;
+        position: absolute; /* main1-background 기준! */
+    }
+
+    .main1-letter {
+        position: absolute; /* main1-background 기준! */
+        width: 40%;
+        top: 120px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main1-letter-explanation {
+        color: white;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .main1-button-box {
+        width: 30%;
+        display: flex;
+    }
+
+    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6, .movie-main0 {
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .movie-main2 {
+        margin-top: 80px;
+    }
+
+    .btn-play, .btn-detail-info {
+        width: 150px;
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #999999;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-play {
+        background-color: #e5e5e5;
+        transition: all 0.5s;
+    }
+
+    .btn-detail-info {
+        color: white;
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+
+    .btn-play:hover, .btn-detail-info:hover {
+        opacity: 0.6;
+        cursor: pointer;;
+    }
+
+
+    .movie-slider{
+        position: relative;
+    }
+
+
+    .main-font {
+        margin-left: 30px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .box-container {
+        height: 150px;
+        display: flex;
+    }
+
+
+    .btn-next, .btn-prev {
+        width: 20px;
+        line-height: 150px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .btn-prev:hover, .btn-next:hover {
+        transform:scale(1.5);
+        opacity: 1;
+    }
+
+    .btn-prev {
+        padding-left: 15px;
+    }
+    
+    .btn-next {
+        padding-right: 40px;
+    }
+
+    .slide-wrapper {
+        position: relative;
+        /* width: 1520px; */
+        width: 100vw;
+        height: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* overflow: hidden; */
+    }
+
+    .slides .slide {
+        width: 230px; /* 이미지 컨테이너 너비 조절 */
+        height: 150px; /* 이미지 컨테이너 높이 조절 */
+        float: left;
+        box-shadow: 0 10px 10px -5px #1f1f1f;
+    }
+
+    .slides::after { /* float된 요소의 부모요소에 걸어준다 */
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .slides .slide img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        
+        image-rendering:-webkit-optimize-contrast;
+        transform:translateZ(0);
+        backface-visibility:hidden;
+    }
+    
+    .slides {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        left: 0;
+        top: 0;
+    }
+
+    .slides.animated {
+        transition: 0.5s ease-out;
+    }
+
+
+    .slides li:not(:last-child) {
+        margin-right:30px;
+    }
+
+    .slide, .wacthing-slide {
+        border-radius: 5px;
+        transition: all 0.1s linear;
+    }
+
+    .slide:hover {
+        transform:scale(1.1);
+        border-radius: 10px;
+        border: 3px solid white;
+    }
+
+    /* .top-img {
+        position: relative;
+    } */
+
+    /* .top1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+    } */
+
+
+    .movie-main0 .slides {
+        margin-left: 20px;
+    }
+
+    .movie-main0 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .movie-main0 .watching-caption {
+        width: 100%;
+        height: 100%;
+        background-color: #1f1f1f;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .movie-main0 a:hover .watching-caption {
+        opacity: 0.9;
+    }
+
+    .caption1 {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .caption2 {
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .caption3 {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    .caption4 {
+        font-size: 15px;
+        padding-left: 30%;
+    }
+
+    .progress {
+        width: 200px;
+        height: 5px;
+        background-color: #999999;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .progressbar1, .progressbar2 {
+        height: 5px;
+        background-color: #ff4808;
+        position: absolute;
+    }
+
+    .progressbar1 {
+        width: 40%;
+    }
+
+    .progressbar2 {
+        width: 70%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100%;
+        background-color: #171717;
+        margin-top: 50px;
+        opacity: 0.95;
+        font-size: 11px;
+        
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+
+    .question {
+        color: #737373;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info {
+        color: #737373;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .sns {
+        color: #737373;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .instagram , .facebook, .youtube {
+        font-size: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
