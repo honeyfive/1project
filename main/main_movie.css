@@ -13,7 +13,8 @@
     .header {
         height: 70px;
         background-color: #1f1f1f;
-
+        opacity: 0.8;
+        
         position: sticky;
         top: 0px;
         z-index: 1;
@@ -150,7 +151,7 @@
 
     .movie-main1 {
         width: 100%;
-        height: 500px;
+        height: 600px;
     }
 
     .main1-background {
@@ -167,10 +168,10 @@
         background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.25) 25%,
-        rgba(0, 0, 0, 0.5) 40%,
-        rgba(0, 0, 0, 0.75) 65%,
-        rgba(0, 0, 0, 1) 100%
+        rgba(0, 0, 0, 0.1) 25%,
+        rgba(0, 0, 0, 0.3) 40%,
+        rgba(0, 0, 0, 0.5) 65%,
+        rgba(0, 0, 0, 0.8) 100%
         ), url(./main-image/메인-영화.webp);
         position: absolute;
         top: 0px;
@@ -217,7 +218,7 @@
         display: flex;
     }
 
-    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6, .movie-main0 {
+    .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6 {
         height: 250px;
         margin-top: 30px;
     }
@@ -249,7 +250,7 @@
 
     .btn-play:hover, .btn-detail-info:hover {
         opacity: 0.6;
-        cursor: pointer;;
+        cursor: pointer;
     }
 
 
@@ -307,10 +308,10 @@
     }
 
     .slides .slide {
-        width: 230px; /* 이미지 컨테이너 너비 조절 */
-        height: 150px; /* 이미지 컨테이너 높이 조절 */
+        width: 250px;
+        height: 150px;
         float: left;
-        box-shadow: 0 10px 10px -5px #1f1f1f;
+        box-shadow: 0px 7px 7px -3px #737373;   
     }
 
     .slides::after { /* float된 요소의 부모요소에 걸어준다 */
@@ -328,9 +329,8 @@
         transform:translateZ(0);
         backface-visibility:hidden;
     }
-    
+
     .slides {
-        width: 100%;
         position: absolute;
         display: flex;
         left: 0;
@@ -343,7 +343,7 @@
 
 
     .slides li:not(:last-child) {
-        margin-right:30px;
+        margin-right: 30px;
     }
 
     .slide, .wacthing-slide {
@@ -357,18 +357,29 @@
         border: 3px solid white;
     }
 
-    /* .top-img {
-        position: relative;
-    } */
-
-    /* .top1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 50%;
+    
+    .image-container {
+        position: relative; /* overlay-image 시작점 */
+        width: 100%;
         height: 100%;
-    } */
+    }
+    
+    .overlay-image {
+        position: absolute;
+        top: 60px;
+        left: -60px;    
+        z-index: 1; /* 이미지를 이미지 위에 배치하기 위해 z-index를 설정합니다. */
+        opacity: 0.3;
+    }
+    
+    
 
+
+
+    .movie-main0 {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
 
     .movie-main0 .slides {
         margin-left: 20px;
