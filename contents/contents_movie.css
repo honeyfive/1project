@@ -47,22 +47,28 @@ video {
     margin-left: 94%;
     margin-top: 2%;
     border: 0;
-}
-.trailer-logo {
-    position: absolute;
-    width: 350px;
-    height: 65px;
     display: flex;
-    left: 48px;
-    bottom: 135px;
+    justify-content: center;
+    align-items: center;
 }
+
 .close-x {
     position: absolute;
     color: white;
     font-size: 1.5em;
-    text-align: center;
     left: -10px;
     top: 0;
+    cursor: pointer;
+    display: flex;
+}
+
+.trailer-logo {
+    position: absolute;
+    width: 380px;
+    height: 80px;
+    display: flex;
+    left: 48px;
+    bottom: 135px;
     cursor: pointer;
 }
 
@@ -81,6 +87,7 @@ video {
     bottom: 50px;
     cursor: pointer;
     color: black;
+    z-index: 3;
 }
 
 .contents-video-box-btn-wish {
@@ -98,6 +105,7 @@ video {
     cursor: pointer;
     font-size: 1.5em;
     color: white;
+    z-index: 3;
 }
 
 .contents-recommend-box-btn-wish {
@@ -388,4 +396,36 @@ video [poster] {
     font-size: 1.5em;
     color: white;
     z-index: -1;
+}
+
+.img-plus {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+}
+
+.img-like {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+}
+
+.img-volumeOn {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+}
+
+.img-volumeOff {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+}
+
+.img-close {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
 }

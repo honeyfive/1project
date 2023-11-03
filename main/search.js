@@ -1,9 +1,14 @@
-// const input_search = document.getElementById('search');
-// const btn_reset = document.getElementsByClassName('btn-reset')[0];
-// input_search.addEventListener('keydown', (e)=> {
-//     if () {
+const input_search = document.querySelector('.search-input');
+const btn_reset = document.querySelector('.btn-reset');
 
-//     }
-//     btn_reset.style.visibility = 'hidden';
-//     btn_reset.style.visibility = 'visible';
-// });
+btn_reset.style.visibility = 'hidden';
+
+input_search.addEventListener('keydown', (e)=> {
+    btn_reset.style.visibility = 'visible';
+});
+
+btn_reset.addEventListener('click', ()=> {
+    btn_reset.style.visibility = 'hidden';
+});
+
+

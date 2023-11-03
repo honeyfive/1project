@@ -21,21 +21,106 @@ function vidEnded() {
 }
 
 var playBtnOnSelect = document.getElementsByClassName("contents-recommend-box-items");
-playBtnOnSelect[0].addEventListener('mouseover', () => {
-    for(const i = 0; i<playBtnOnSelect.length; i++) {
+for (let i = 0; i < playBtnOnSelect.length; i++) {
+    playBtnOnSelect[i].addEventListener('mouseover', () => {
         document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[i].style.zIndex = 2;
-    }
-        
-});
-
-var playBtnOffSelect = document.getElementsByClassName("contents-recommend-box-items");
-for(const i = 0; i<playBtnOffSelect.length; i++) {
-playBtnOffSelect[i].addEventListener('mouseout', () => {
-    document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[0].style.zIndex = -1;
-})
+    });
 };
 
-var playBtnOffWish = document.getElementsByClassName("contents-recommend-box-btn-wish");
-playBtnOffWish[0].addEventListener('mouseout', () => {
-        document.getElementsByClassName('contents-recommend-box-btn-wish')[0].style.backgroundColor = rgba(0, 0, 0, 0.5);
+
+var playBtnOffSelect = document.getElementsByClassName("contents-recommend-box-items");
+for (let i = 0; i < playBtnOffSelect.length; i++) {
+    playBtnOnSelect[i].addEventListener('mouseout', () => {
+        document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[i].style.zIndex = -1;
+    });
+};
+
+
+// var playBtnOffWish = document.getElementsByClassName("contents-recommend-box-btn-wish");
+// for (let i = 0; i < playBtnOffWish.length; i++) {
+//     playBtnOffWish[i].addEventListener('', () => {
+//         document.getElementsByClassName('contents-recommend-box-btn-wish')[i].style.backgroundColor = rgba(0, 0, 0, 0.5);
+//     });
+// };
+
+const playLogo = document.getElementsByClassName('trailer-logo');
+playLogo[0].addEventListener('click', () => {
+    if (trailer.paused) {
+        trailer.play()
+    } else {
+        trailer.pause()
+    }
 });
+
+const playVidHover = document.getElementsByClassName('contents-video-box-btn-play');
+playVidHover[0].addEventListener('mousedown', () => {
+    playVidHover[0].style.color = "#4f4f4f";
+    playVidHover[0].style.border = "3px solid gray";
+});
+
+playVidHover[0].addEventListener('mouseup', () => {
+    playVidHover[0].style.color = "#121212";
+    playVidHover[0].style.border = "0px";
+});
+
+const wishHover = document.getElementsByClassName('contents-video-box-btn-wish');
+wishHover[0].addEventListener('mouseover', () => {
+    wishHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+});
+
+wishHover[0].addEventListener('mouseout', () => {
+    wishHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+});
+
+wishHover[0].addEventListener('mousedown', () => {
+    wishHover[0].style.border = "3px solid white";
+});
+
+wishHover[0].addEventListener('mouseup', () => {
+    wishHover[0].style.border = "0px";
+});
+
+const likeHover = document.getElementsByClassName('contents-video-box-btn-like');
+likeHover[0].addEventListener('mouseover', () => {
+    likeHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+});
+
+likeHover[0].addEventListener('mouseout', () => {
+    likeHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+});
+
+likeHover[0].addEventListener('mousedown', () => {
+    likeHover[0].style.border = "3px solid white";
+});
+
+likeHover[0].addEventListener('mouseup', () => {
+    likeHover[0].style.border = "0px";
+});
+
+const volumeHover = document.getElementsByClassName('contents-video-box-btn-mute');
+volumeHover[0].addEventListener('mouseover', () => {
+    volumeHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+});
+
+volumeHover[0].addEventListener('mouseout', () => {
+    volumeHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+});
+
+volumeHover[0].addEventListener('mousedown', () => {
+    volumeHover[0].style.border = "3px solid white";
+});
+
+volumeHover[0].addEventListener('mouseup', () => {
+    volumeHover[0].style.border = "0px";
+});
+
+const closeHover = document.getElementsByClassName('contents-video-box-btn-close');
+closeHover[0].addEventListener('mousedown', () => {
+    closeHover[0].style.border = "3px solid white";
+});
+
+closeHover[0].addEventListener('mouseup', () => {
+    closeHover[0].style.border = "0px";
+});
+
+
