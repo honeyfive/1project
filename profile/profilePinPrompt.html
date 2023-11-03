@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-gate-container">
+        <div class="centered-div profile-pin-prompt">
+            <div class="profile-pin-prompt-close">
+                <a href="./profile.html">
+                    <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="profile-pin-prompt-decript">프로필 잠금 기능이 켜져 있습니다.</div>
+            <div class="profile-pin-prompt-title">
+                <h1 class="profile-list-title">이 프로필의 비밀번호를 입력하세요.</h1>
+            </div>
+            <div class="profile-pin-prompt-contents-wrapper">
+                <div class="profile-pin-input-container">
+                    <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
+                    <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
+                    <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
+                    <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
+                    <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
+                    <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
+                </div>
+                <p class="profile-pin-input-error">프로필 비밀번호는 6자리입니다.</p>
+            </div>
+            <div class="profile-pin-prompt-forgot">
+                <a href="#" tabindex="0" class="pin-prompt-forgot-button">
+                    <span class="pin-prompt-forgot-button-text"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const pinArr = document.querySelectorAll('.profile-pin-input-number');
+        const pinInputError = document.getElementsByClassName('progfile-pin-input-error');
+
+        pinArr[0].addEventListener('keyup', (e)=>{
+            console.log(e.keyCode == 8);
+            pinArr[1].focus();
+        });
+
+        function checkPinNumber(pinArr) {
+            if(pinArr == undefined) {
+                pinInputError.textContent = "프로필 비밀번호를 입력하세요.";
+            } else if (pinArr == NaN) {
+                pinInputError.textContent = "프로필 비밀번호 숫자를 입력하세요.";
+            }
+        }
+
+    </script>
+</body>
+</html>

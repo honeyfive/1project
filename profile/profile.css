@@ -197,3 +197,85 @@ svg:not(:root) {
 .profile-image-wrapper {
     position: relative;
 }
+
+/* 프로필 비밀번호 prompt */
+.profile-pin-prompt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.profile-pin-prompt-close {
+    position: absolute;
+    right: 100px;
+    top: 80px;
+}
+
+.profile-pin-prompt-contents-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pin-input-container {
+    display: flex;
+    flex: 0 1 auto;
+    margin: 2em 0.5em;
+}
+
+.profile-pin-input-error {
+    color: #ff4808;
+    font-size: 1.3vw;
+    min-height: 30px;
+    text-align: center;
+}
+
+.profile-pin-input-number {
+ background-color: transparent;
+ border: 1px solid #e5e5e5;
+ box-sizing: border-box;
+ color: #e5e5e5;
+ font-size: 2.2em;
+ width: 2.2em;
+ height: 2.2em;
+ margin: 0.2em;
+ padding: 0.2em;
+ text-align: center;
+ transition: transform 0.1s ease-out;
+ 
+}
+
+.profile-pin-input-number:focus {
+    outline: none;
+    transform: scale(1.1);
+}
+
+.profile-pin-prompt-decript {
+    color: #999;
+    font-size: 1.5vw;
+    margin-bottom: 1.6em;
+}
+
+/* 프로필 비밀번호 forgot 버튼 */
+.profile-pin-prompt-forgot {
+    position: absolute;
+    bottom: 16vw;
+    font-size: 1.3vw;
+}
+
+.pin-prompt-forgot-button {
+    color:#e5e5e5;
+}
+
+.pin-prompt-forgot-button-text {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
