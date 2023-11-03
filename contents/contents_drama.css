@@ -47,6 +47,9 @@ video {
     margin-left: 94%;
     margin-top: 2%;
     border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trailer-logo {
@@ -56,6 +59,7 @@ video {
     display: flex;
     left: 48px;
     bottom: 135px;
+    cursor: pointer;
 }
 
 .close-x {
@@ -416,4 +420,36 @@ span {
     bottom: 0;
     z-index: 2;
     border-radius: 5px;
+}
+
+.img-plus {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+}
+
+.img-like {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+}
+
+.img-volumeOn {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+}
+
+.img-volumeOff {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+}
+
+.img-close {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
 }
