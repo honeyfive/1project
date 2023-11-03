@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 500px;
+            height: 700px;
+            background-color: #171717;
+            margin: 0 auto;
+            border-radius: 6px;
+            margin-top: 15px;
+            opacity: 0.95;
+        }
+
+        .c-clip {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+            margin-left: 20px;
+        }
+
+        .login-text {
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 70px;
+            font-size:xx-large;
+            color: white;
+        }
+
+        .password-re {
+            color: white;
+            padding-left: 75px;
+            padding-top: 50px;
+            font-size:17px;
+        }
+
+
+        .login-info {
+            color: hsl(0, 5%, 66%);
+        }
+
+        .help, .user {
+            margin-left: 50px;
+            color: hsl(0, 5%, 66%);
+        }
+
+        .user {
+            display: inline-block;
+            padding-top: 80px;
+            padding-left: 20px;
+            color: #737373;
+        }
+
+        .join {
+            color: white;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+
+        .ment {
+            color: white;
+            margin: 0 70px;
+            margin-top: 15px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 240px;
+            background-color: #171717;
+            margin-top: 100px;
+            opacity: 0.95;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .info {
+            color: #737373;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sns {
+            color: #737373;
+            display: flex;
+            justify-content: center;
+        }
+
+        .instagram , .facebook, .youtube {
+            font-size: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .question {
+            color: #737373;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            justify-content: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .sns {
+            color: #737373;
+            padding: 10px;
+        }
+
+        .container {
+            background-image: url(../login_image/어두운\ 배경화면.jpg);
+            max-width: 100%;
+            height: 100vh;
+            position: relative;
+            background-size:cover;
+            background-position: center;
+        }
+
+        .login {
+            text-decoration: none;
+        }
+
+        .hd_lang {
+            margin-left: 100px;
+            color: red;
+        }
+
+        .radio1, .radio2 {
+            margin-top: 30px;
+            margin-left: 80px;
+            color: black;
+        }
+
+        .password-re-email, .password-re-sms {
+            color: white;
+            padding-left: 75px;
+            padding-top: 50px;
+            font-size:17px;
+        }
+
+        .password-re-sms1 {
+            color: white;
+            padding-left: 75px;
+            
+            font-size:17px;
+        }
+
+        .password-re-input-email {
+            margin-left: 75px;
+            margin-top: 20px;
+            width: 70%;
+            height: 40px;
+            font-size: 17px;
+        }
+
+        .password-re-input-phonenumber {
+            margin-top: 20px;
+            width: 50%;
+            height: 40px;
+            font-size: 17px;
+        }
+
+        .password-re-text {
+            color: white;
+            display: block;
+        }
+
+        .input-country {
+            margin-left: 75px;
+            margin-top: 20px;
+            width: 20%;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        .accept-email, .accept-sms {
+            margin-left: 75px;
+            margin-top: 40px;
+            width: 70%;
+            height: 50px;
+            background-color: #ff4808;
+            color: white;
+            font-size: larger;
+            border-radius: 6px;
+            border:none;
+            cursor: pointer;
+        }
+
+        .sms {
+            display: none;
+        }
+        
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Pretendard-Regular';
+            background-color: #171717
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="../login_html/start.html">
+                <img src="../login_image/KakaoTalk_20231028_162057713_01.png" class="c-clip">
+            </a>
+        </div>
+        <div class="main">
+            <p class="login-text">이메일/비밀번호를 잊으셨나요?</p>
+            <p class="password-re">비밀번호 재설정 안내를 받을 방법을 선택하세요</p>
+            <div class="password-re-text">
+                <input type="radio" name="re" checked class="radio1" value="1" onclick="OnOff('v')"> 이메일 주소
+                <input type="radio" name="re" class="radio1" value="2" onclick="OnOff('a')"> 문자 메시지(SMS)
+                
+            </div>
+            <div class="eamil">
+                <p class="password-re-email">비밀번호 재설정 안내 이메일을 보내드리겠습니다.</p>
+                <input type="email" class="password-re-input-email" placeholder="이메일을 입력하세요.">
+                <button type="submit" class="accept-email">이메일로 받기</button>
+            </div>
+            <div class="sms">
+                <p class="password-re-sms">비밀번호 재설정 인증 코드를 문자로 보내드리겠습니다.</p>
+                <p class="password-re-sms1">문자 또는 데이터 요금이 부과될 수 있습니다.</p>
+                <label>
+                    <select class="input-country">
+                        <option value="ko">대한민국+82</option>
+                        <option value="en">미국+1</option>
+                        <option value="de">덴마크+45</option>
+                        <option value="ch">중국+86</option>
+                        <option value="ja">일본+81</option>
+                    </select>
+                </label>
+                <input type="text" class="password-re-input-phonenumber" placeholder="전화번호를 입력하세요.">
+                <div class="accept">
+                    <button type="submit" class="accept-sms">문자로 받기</button>
+                </div>
+            </div>
+            </div>
+            <div class="footer">
+                <div class="footer-logo"><img src="../login_image/logo.png" width="90px" height="40px"></div>
+                <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
+                <div class="info-container">
+                    <div class="info">대표이사 : 정용진 |&nbsp;</div>
+                    <div class="info">사업자정보확인 |&nbsp; </div>
+                    <div class="info">사업자등록번호 : 111-11-00001 |&nbsp; </div>
+                    <div class="info">통신판매신고번호 : 2023-충남천안-1234호</div>
+                    <div class="info">사업장 : 충청남도 천안시 동남구 대흥로 215 7층</div>
+                </div>
+                <div class="info-container">
+                    <div class="info">호스팅사업자 : 휴먼교육센터 |&nbsp; </div>
+                    <div class="info">고객센터 (평일 9시~17시/점심시간 13~14시)</div>
+                    <div class="info">1:1 게시만 문의 |&nbsp; </div>
+                    <div class="info">대표메일 : 1234@test.com |&nbsp; </div>
+                    <div class="info">전화번호(ARS) : 1588-1234</div>
+                </div>
+                
+                <div class="sns">
+                    <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
+            </div>
+    </div>
+
+    <script>
+
+        function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+			pageLanguage: 'ko',
+			includedLanguages: 'ko,zh-CN,zh-TW,ja,vi,th,tl,km,my,mn,ru,en,fr,ar',
+			layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+			autoDisplay: false
+		}, 'google_translate_element');
+        }
+        function OnOff(type){
+            if(type=="v"){
+                document.getElementsByClassName('sms')[0].style.display = "none"; 
+                document.getElementsByClassName('eamil')[0].style.display = "block";
+            }else if(type == "a"){
+                document.getElementsByClassName('eamil')[0].style.display = "none";
+                document.getElementsByClassName('sms')[0].style.display = "block";
+            }
+        }
+        
+            
+        
+    
+        
+    </script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
