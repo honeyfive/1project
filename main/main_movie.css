@@ -199,18 +199,16 @@
 
     .main1-letter {
         position: absolute; /* main1-background 기준! */
-        width: 40%;
+        width: 35%;
         top: 120px;
         left: 30px;
-        display: flex;
-        flex-direction: column;
     }
 
     .main1-letter-explanation {
         color: white;
         font-size: 20px;
-        margin-top: 40px;
-        margin-bottom: 60px;
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
 
     .main1-button-box {
@@ -223,9 +221,7 @@
         margin-top: 30px;
     }
 
-    .movie-main2 {
-        margin-top: 80px;
-    }
+    
 
     .btn-play, .btn-detail-info {
         width: 150px;

@@ -200,17 +200,15 @@ body {
 .main1-letter {
     position: absolute; /* main1-background 기준! */
     width: 40%;
-    top: 120px;
+    top: 80px;
     left: 30px;
-    display: flex;
-    flex-direction: column;
 }
 
 .main1-letter-explanation {
     color: white;
     font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .main1-button-box {
@@ -223,9 +221,6 @@ body {
     margin-top: 30px;
 }
 
-.movie-main2 {
-    margin-top: 80px;
-}
 
 .btn-play, .btn-detail-info {
     width: 150px;
@@ -409,19 +404,24 @@ body {
 
 .caption1 {
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
     font-size: 20px;
 }
 
+.caption0 {
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
 .caption2 {
-    padding-left: 20px;
-    padding-top: 40px;
+    padding-left: 25px;
+    padding-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
 }
 
 .caption3 {
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 20px;
 }
 
