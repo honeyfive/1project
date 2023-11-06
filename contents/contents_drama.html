@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./contents_drama.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+        transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+    }
+</style>
 
 <body>
     <div class="contents-container">
@@ -207,6 +215,13 @@
         </div>
 
     </div>
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').css('opacity', '1');
+        });
+    </script>
 </body>
 
 </html>
