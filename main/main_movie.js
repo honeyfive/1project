@@ -1,4 +1,8 @@
 
+$(document).ready(function() {
+    $('body').css('opacity', '1');
+});
+
 const sections = document.querySelectorAll('.movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6');
 
 sections.forEach(section => {
