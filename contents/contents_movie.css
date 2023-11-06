@@ -78,7 +78,7 @@ video {
     width: 130px;
     height: 45px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 72, 8, 0.9);
     font-size: 1.5em;
     text-align: center;
     display: flex;
@@ -87,7 +87,7 @@ video {
     left: 50px;
     bottom: 50px;
     cursor: pointer;
-    color: black;
+    color: #f2f2f2;
     z-index: 3;
 }
 
