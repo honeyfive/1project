@@ -5,7 +5,7 @@
     }
 
     body {
-        background-color: #171717;
+        background-color: #161616;
         font-family: 'Pretendard-Regular';
         overflow-x: hidden ;
         opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
@@ -88,7 +88,7 @@
     .profile-image {
         width: 40px;
         height: 40px;
-        background-image: url('../profile/img/avatar03.png');
+        background-image: url('../profile/img/avatar01.png');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -126,7 +126,7 @@
 
     .dropdown-profile-transform {
         width: 150px;
-        height: 100px;
+        height: 60px;
         border-bottom: 1px solid #737373;
     }
 
@@ -134,13 +134,14 @@
         display: flex;
         justify-content: center;
         align-items:center;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 
     .dropdown-profile-image {
         width: 40px;
         height: 40px;
-        margin-top: 30px;
-        background-image: url('../profile/img/avatar03.png');
+        background-image: url('../profile/img/avatar01.png');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -150,7 +151,6 @@
         color: white;
         font-size: 15px;
         margin-left: 10px;
-        margin-top: 30px;
         cursor: pointer;
         transition: all 0.2s;
     }
