@@ -301,6 +301,13 @@ svg:not(:root) {
     position: static;
 }
 
+.centered-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .profile-edit-contents {
     opacity: 1;
     transform: scale(1);
@@ -497,30 +504,6 @@ svg:not(:root) {
     width: 0;
 }
 
-.profile-dropdown .selectbox select {
-    -o-appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    width: inherit;
-    height: inherit;
-    background: transparent;
-    border: 0 none;
-    outline: 0 none;
-    padding: 0.2em 0.6em;
-    position: relative;
-    z-index: 3;
-}
-
-.selectbox select:focus {
-    outline: none;
-}
-
-.selectbox select::-ms-expand { 
-    display: none;
-}
-
 .selectbox .optionList {
     position: absolute; 
     top: 34px;
@@ -550,6 +533,7 @@ svg:not(:root) {
     border-bottom: 1px dashed #999;
     padding: 5px 15px 5px;
     transition: .1s;
+    display: block;
 }
 
 .selectbox .optionItem:hover {
@@ -560,23 +544,44 @@ svg:not(:root) {
     border-bottom: 0 none;
 }
 
+.profile-entry-restrictions {
+    border-top: 1px solid #2f2f2f;
+    margin: 1.8vw 0 0;
+    padding: 1.8vw 0 0;
+    font-size: 1vw;
+}
 
-
-.selectbox select option {
-    background-color: #161616;
+.profile-maturity-label {
+    background-color: #2f2f2f;
+    font-weight: 500;
+    margin: 1em 1em 1em 0;
+    padding: 8px 10px;
     color: #fff;
-    font-size: 1.2vw;
-    font-weight: 500;    
-    padding: 2em 0.6em;
 }
 
-.selectbox .icoArrow i {
-    transition: .3s;
+.profile-entry-restrictions p {
+    display: block;
+    margin: 0.6em 1em 0 0;
+    color: #fff;
 }
 
-.selectbox select:focus + .icoArrow i {
-    transform: rotate(180deg);
+.profile-maturity-edit {
+    display: inline-block;
+    margin: 1em 1em 0 0;
+    position: relative;
 }
+
+.profile-entry-autoplay {
+    border-top: 1px solid #2f2f2f;
+    margin: 1.8vw 0 0;
+    padding: 1.8vw 0 0;
+    font-size: 1vw;
+}
+
+.profile-entry-autoplay .profile-entry-header {
+    margin: 0 0 0.6em;
+}
+
 
 
 
@@ -595,9 +600,3 @@ svg:not(:root) {
     background-color: #ff4808;
 }
 
-.profile-entry-restrictions {
-    border-top: 1px solid #2f2f2f;
-    margin: 1.8vw 0 0;
-    padding: 1.8vw 0 0;
-    font-size: 1vw;
-}
