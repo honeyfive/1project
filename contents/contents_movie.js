@@ -73,11 +73,11 @@ wishHover[0].addEventListener('mouseout', () => {
 });
 
 wishHover[0].addEventListener('mousedown', () => {
-    wishHover[0].style.border = "3px solid white";
+    wishHover[0].style.boxShadow = "0 0 0 3px #ffffff inset, 0 0 0 3px #ffffff";
 });
 
 wishHover[0].addEventListener('mouseup', () => {
-    wishHover[0].style.border = "0px";
+    wishHover[0].style.boxShadow = "0 0 0 0px #ffffff inset";
 });
 
 const likeHover = document.getElementsByClassName('contents-video-box-btn-like');
@@ -94,7 +94,7 @@ likeHover[0].addEventListener('mousedown', () => {
 });
 
 likeHover[0].addEventListener('mouseup', () => {
-    likeHover[0].style.border = "0px";
+    likeHover[0].style.border = "2px solid gray";
 });
 
 const volumeHover = document.getElementsByClassName('contents-video-box-btn-mute');
@@ -111,7 +111,7 @@ volumeHover[0].addEventListener('mousedown', () => {
 });
 
 volumeHover[0].addEventListener('mouseup', () => {
-    volumeHover[0].style.border = "0px";
+    volumeHover[0].style.border = "2px solid gray";
 });
 
 const closeHover = document.getElementsByClassName('contents-video-box-btn-close');
@@ -122,5 +122,3 @@ closeHover[0].addEventListener('mousedown', () => {
 closeHover[0].addEventListener('mouseup', () => {
     closeHover[0].style.border = "0px";
 });
-
-

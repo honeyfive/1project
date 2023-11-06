@@ -6,6 +6,15 @@ function playOnOff() {
     }
 }
 
+const playLogo = document.getElementsByClassName('trailer-logo');
+playLogo[0].addEventListener('click', () => {
+    if (trailer.paused) {
+        trailer.play()
+    } else {
+        trailer.pause()
+    }
+});
+
 function muteOnOff() {
     const muteOn = document.getElementById("muteOn");
     if (muteOn.muted == true) {
@@ -32,11 +41,86 @@ playBtnOffSelect[0].addEventListener('mouseout', () => {
 
 
 var playBtnOnUpdate = document.getElementsByClassName("bgBoxColor-update");
-playBtnOnUpdate[0].addEventListener('mouseover', () => {
-        document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[1].style.zIndex = 2;
+for (let i = 0; i < playBtnOnUpdate.length; i++) {
+    playBtnOnUpdate[i].addEventListener('mouseover', () => {
+        document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[i+1].style.zIndex = 2;
+    });
+};
+
+var playBtnOnUpdate = document.getElementsByClassName("bgBoxColor-update");
+for (let i = 0; i < playBtnOnUpdate.length; i++) {
+    playBtnOnUpdate[i].addEventListener('mouseout', () => {
+        document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[i+1].style.zIndex = -1;
+    });
+};
+
+const playVidHover = document.getElementsByClassName('contents-video-box-btn-play');
+playVidHover[0].addEventListener('mousedown', () => {
+    playVidHover[0].style.color = "#4f4f4f";
+    playVidHover[0].style.border = "3px solid gray";
 });
 
-var playBtnOffUpdate = document.getElementsByClassName("bgBoxColor-update");
-playBtnOffUpdate[0].addEventListener('mouseout', () => {
-        document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[1].style.zIndex = -1;
+playVidHover[0].addEventListener('mouseup', () => {
+    playVidHover[0].style.color = "#121212";
+    playVidHover[0].style.border = "0px";
+});
+
+const wishHover = document.getElementsByClassName('contents-video-box-btn-wish');
+wishHover[0].addEventListener('mouseover', () => {
+    wishHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+});
+
+wishHover[0].addEventListener('mouseout', () => {
+    wishHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+});
+
+wishHover[0].addEventListener('mousedown', () => {
+    wishHover[0].style.border = "3px solid white";
+});
+
+wishHover[0].addEventListener('mouseup', () => {
+    wishHover[0].style.border = "0px";
+});
+
+const likeHover = document.getElementsByClassName('contents-video-box-btn-like');
+likeHover[0].addEventListener('mouseover', () => {
+    likeHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+});
+
+likeHover[0].addEventListener('mouseout', () => {
+    likeHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+});
+
+likeHover[0].addEventListener('mousedown', () => {
+    likeHover[0].style.border = "3px solid white";
+});
+
+likeHover[0].addEventListener('mouseup', () => {
+    likeHover[0].style.border = "0px";
+});
+
+const volumeHover = document.getElementsByClassName('contents-video-box-btn-mute');
+volumeHover[0].addEventListener('mouseover', () => {
+    volumeHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+});
+
+volumeHover[0].addEventListener('mouseout', () => {
+    volumeHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+});
+
+volumeHover[0].addEventListener('mousedown', () => {
+    volumeHover[0].style.border = "3px solid white";
+});
+
+volumeHover[0].addEventListener('mouseup', () => {
+    volumeHover[0].style.border = "0px";
+});
+
+const closeHover = document.getElementsByClassName('contents-video-box-btn-close');
+closeHover[0].addEventListener('mousedown', () => {
+    closeHover[0].style.border = "3px solid white";
+});
+
+closeHover[0].addEventListener('mouseup', () => {
+    closeHover[0].style.border = "0px";
 });

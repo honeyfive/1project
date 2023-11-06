@@ -10,13 +10,14 @@
 <body>
     <div class="contents-container">
         <div class="contents-video-box">
+            <div class="black-gradient"></div>
             <video id='trailer' onclick="playOnOff()" controls
                 src="./video/videoTrailer.mp4" autoplay muted></video>
             <img src="./image/인비저블 게스트 로고.webp" class="trailer-logo">
             <button class="contents-video-box-btn-close close-x"><img class="img-close" src="./image/free-icon-close-8487257.png"></button>
             <a href="./contents_video.html" target="_self"><div class="contents-video-box-btn-play">▶ 재생</div></a>
-            <div class="contents-video-box-btn-wish"><img class="img-plus" src="./image/free-icon-plus-3524388.png"></div>
-            <div class="contents-video-box-btn-like"><img class="img-like" src="./image/thumbs up outline.png"></div>
+            <div class="contents-video-box-btn-wish"><span class="hover-wish-text">내가 찜한 콘텐츠에 추가</span><img class="img-plus" src="./image/free-icon-plus-3524388.png"></div>
+            <div class="contents-video-box-btn-like"><span class="hover-like-text">좋아요</span><img class="img-like" src="./image/thumbs up outline.png"></div>
             <div id="muteOn" class="contents-video-box-btn-mute" onclick="muteOnOff()"><img class="img-volumeOn" src="./image/free-icon-volume-7640163.png"></div>
         </div>
         <div class="contents-txt-box">

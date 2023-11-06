@@ -27,6 +27,7 @@
     height: 0;
     border-radius: 10px 10px 0px 0px;
     display: flex;
+    overflow: hidden;
 
 }
 
@@ -282,10 +283,10 @@ body {
 }
 
 @font-face {
-font-family: 'Pretendard-Regular';
-src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-font-weight: 400;
-font-style: normal;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
 .contents-recommend-box-items {
@@ -428,4 +429,68 @@ video [poster] {
     width: 30px;
     height: 30px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+}
+
+.black-gradient {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(31, 31, 31, 100) 90%);
+    z-index: 4;
+}
+
+.hover-wish-text {
+    visibility: hidden;
+    /* 이벤트가 없으면 툴팁 영역을 숨김 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 25px;
+    /* 툴팁 영역의 넓이를 설정 */
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 0.65em;
+    position: absolute;
+    /* 절대 위치를 사용 */
+    bottom: 50px;
+    z-index: 1;
+}
+
+.contents-video-box-btn-wish:hover .hover-wish-text {
+    visibility: visible;
+    /* hover 이벤트 발생시 영역을 보여줌 */
+}
+
+.hover-like-text {
+    visibility: hidden;
+    /* 이벤트가 없으면 툴팁 영역을 숨김 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 25px;
+    /* 툴팁 영역의 넓이를 설정 */
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 0.65em;
+    position: absolute;
+    /* 절대 위치를 사용 */
+    left: -8px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.contents-video-box-btn-like:hover .hover-like-text {
+    visibility: visible;
+    /* hover 이벤트 발생시 영역을 보여줌 */
 }
