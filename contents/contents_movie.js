@@ -54,8 +54,7 @@ playLogo[0].addEventListener('click', () => {
 
 const playVidHover = document.getElementsByClassName('contents-video-box-btn-play');
 playVidHover[0].addEventListener('mousedown', () => {
-    playVidHover[0].style.color = "#4f4f4f";
-    playVidHover[0].style.border = "3px solid gray";
+    playVidHover[0].style.border = "3px solid #f2f2f2";
 });
 
 playVidHover[0].addEventListener('mouseup', () => {
@@ -73,11 +72,11 @@ wishHover[0].addEventListener('mouseout', () => {
 });
 
 wishHover[0].addEventListener('mousedown', () => {
-    wishHover[0].style.border = "3px solid white";
+    wishHover[0].style.border = "2px solid white"
 });
 
 wishHover[0].addEventListener('mouseup', () => {
-    wishHover[0].style.border = "0px";
+    wishHover[0].style.border = "2px solid gray"
 });
 
 const likeHover = document.getElementsByClassName('contents-video-box-btn-like');
@@ -90,11 +89,11 @@ likeHover[0].addEventListener('mouseout', () => {
 });
 
 likeHover[0].addEventListener('mousedown', () => {
-    likeHover[0].style.border = "3px solid white";
+    likeHover[0].style.border = "2px solid white";
 });
 
 likeHover[0].addEventListener('mouseup', () => {
-    likeHover[0].style.border = "0px";
+    likeHover[0].style.border = "2px solid gray";
 });
 
 const volumeHover = document.getElementsByClassName('contents-video-box-btn-mute');
@@ -111,7 +110,7 @@ volumeHover[0].addEventListener('mousedown', () => {
 });
 
 volumeHover[0].addEventListener('mouseup', () => {
-    volumeHover[0].style.border = "0px";
+    volumeHover[0].style.border = "2px solid gray";
 });
 
 const closeHover = document.getElementsByClassName('contents-video-box-btn-close');
@@ -122,5 +121,3 @@ closeHover[0].addEventListener('mousedown', () => {
 closeHover[0].addEventListener('mouseup', () => {
     closeHover[0].style.border = "0px";
 });
-
-

@@ -54,8 +54,6 @@ svg:not(:root) {
     z-index: 0;
 }
 
-
-
 .profile-list-container {
     align-items: center;
     left: 0;
@@ -102,6 +100,7 @@ svg:not(:root) {
 }
 
 .profile-gate-container li {
+    display: inline-block;
     position: relative;
     vertical-align: top;
 }
@@ -594,4 +593,11 @@ svg:not(:root) {
 
 .profile-save-action:hover {
     background-color: #ff4808;
+}
+
+.profile-entry-restrictions {
+    border-top: 1px solid #2f2f2f;
+    margin: 1.8vw 0 0;
+    padding: 1.8vw 0 0;
+    font-size: 1vw;
 }
