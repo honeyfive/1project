@@ -16,12 +16,14 @@ font-style: normal;
 
 body {
 font-family: 'Pretendard-Regular';
+background-color: #171717;
+overflow-x: hidden ;
+
 }
 .header {
 height: 70px;
-background-color: #1f1f1f;
 opacity: 0.8;
-
+background-color: #1f1f1f;
 position: sticky;
 top: 0px;
 z-index: 1;
@@ -33,16 +35,19 @@ align-items: center;
 
 
 .first-navigation {
+    background-color: #1f1f1f;
 display: flex;
 justify-content: space-around;
 align-items: center;
 width: 540px;
+
 list-style: none; /* li 점 없애는!*/
 }
 
 .first-navigation li a {
 position: relative;
 color: white;
+
 }
 
 .first-navigation li a::before {
@@ -53,6 +58,7 @@ background-color: #ff4808;
 border-radius: 5px;
 transition: all 0.3s;
 position: absolute;
+
 bottom: -10px;
 left: 0;
 }
@@ -64,6 +70,7 @@ width: 100%;
 .home, .drama, .movie, .logo, .search, .logout{
 text-decoration: none;
 color: white;
+background-color: #1f1f1f;
 transition: all 0.3s;
 }
 
@@ -117,7 +124,7 @@ padding: 10px 20px;
 }
 
 .dropdown-content a:hover {
-background-color: #737373;
+    background-color: #737373;
 }
 
 .dropdown-profile:hover .dropdown-content {
@@ -153,7 +160,8 @@ transition: all 0.2s;
 }
 
 .dropdown-profile-btn:hover {
-color: #737373;
+    color: #737373;
+    
 }
 
 .movie-main1 {
@@ -161,50 +169,50 @@ width: 100%;
 height: 600px;
 }
 .footer {
-width: 100%;
-height: 100%;
-background-color: rgb(16,16,16);
-margin-top: 50px;
-opacity: 0.95;
-font-size: 11px;
-
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+    /* margin-top: 50px; */
+    opacity: 0.95;
+    font-size: 11px;   
 }
 
 .footer-logo {
-display: flex;
-justify-content: center;
-margin-bottom: 10px;
-cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
+
 .question {
-color: #737373;
-margin-bottom: 20px;
-text-align: center;
+    color: #737373;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .info-container {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .info {
-color: #737373;
-margin-bottom: 20px;
-text-align: center;
+    color: #737373;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.info-end {
+    padding-bottom: 20px;
 }
 
 .sns {
-color: #737373;
-display: flex;
-justify-content: center;
-
+    color: #737373;
+    text-align: center;
 }
 
 .instagram , .facebook, .youtube {
-font-size: 20px;
-margin-right: 20px;
-margin-bottom: 20px;
-cursor: pointer;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 10px;
 }
 .container{
 width: 95%;
@@ -217,9 +225,11 @@ font-size: 40px;
 margin-top: px;
 padding-top: 30px;
 padding-bottom: 30px;
+margin-left: 35px;
 }
 h3{
 font-size: 20px;
+margin-left: 35px;
 }
 .slide{
 display: flex;
@@ -238,7 +248,7 @@ width: 250px;
 height: 150px;
 border: 3px solid #161616;
 border-radius: 5px;
-box-shadow: 0px 3px 5px -2px #999999; 
+
 display: flex;
 margin-top: 10px;
 
