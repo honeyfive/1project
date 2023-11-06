@@ -4,257 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./wish.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: #121212;
-            height: 1600px;
-        }
-        .header{
-            
-        }
-        .container{
-            height: 600px;
-            text-align: center;
-            align-items: center;
-        }
-        #mon{
-            color: white;
-        }
-        h1{
-            margin-top: 100px;
-            font-size: 40px;
-            color: white;
-        }
-        #logo{
-            width: 150px;
-            height: 50px;
-
-        }
-        .mid{
-            
-            height: 300px;
-        }
-        span{
-            color: white;
-        }
-        a{
-            color: white;
-        }
-        .top{
-            color: white;
-            height: 100px;
-        }
-        #arrow{
-            color: white;
-            position:absolute;
-            transition: all 3s 0s ease-in;
-        }
        
-        .title{
-            color: white;
-            font-size: bold;
-            animation-name: arrowdownani;
-            animation-duration: 1s;
-            animation-fill-mode: backwards;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            cursor: pointer;
-        }
-        @keyframes arrowdownani{
-            0%{
-                height: 20px;
-            }
-            100%{
-                height: 35px;
-            }
-        }
-        .boxtitle{
-            text-align: left;
-            font-size: bold;
-        }
-        .box{
-            width: 50%;
-            
-            height: auto;
-            margin: 0 auto;
-            text-align: left;
-            background-color: white;
-            border-radius: 4px;
-        }
-        .box1{
-            
-            margin-bottom: 10px;
-            padding: px;
-            
-        }
-        .box2{
-            
-        }
-        span{
-            color: black;
-            
-            font-size: 18px;
-
-        }
-        #boximg{
-            margin-right: 10px;
-        }
-        .line{
-            width: 100%;
-            height: 1px;
-            border: 1px solid gray;
-            margin: 0 auto;
-        }
-        .tras{
-            color: white;
-            margin-top: 8px;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-        h4{
-            color: white;
-            text-align: left;
-            
-        }
-        .link{
-            width: 50%;
-            margin-top: 25px;
-            margin: 0 auto;
-        }
-        .help{
-            width: 50%;
-            
-            
-            margin-top: 20px;
-            margin: 0 auto;
-        }
-        p{
-            text-align: left;
-            font-size: bold;
-        }
-        @font-face {
-        font-family: 'Pretendard-Regular';
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
-        }
-        body {
-        font-family: 'Pretendard-Regular';
-        }
-        #btn{
-            width: 220px;
-            height: 50px;
-            background-color: white;
-            border: 0px;
-            border-radius: 8px;
-            margin-left: -60px;
-            font-size: 22px;
-        }
-        .footer{
-            width: 50%;
-           margin: 0 auto;
-           display: flex;
-           justify-content: space-between;
-        }
-        .footers{
-            color: white;
-            margin-top: 60px;
-           
-           align-items: center;
-            
-            justify-content: space-between;
-
-        }
-        a:hover{
-            color: #ff4808;
-        }
-        #seq{
-            width: 500px;
-            height: 30px;
-            margin-top: -15px;
-            margin-left: -550px;
-            border: 0px;    
-            font-size: 22px;
-            
-            
-           
-        }
-        #whiteimg{
-          filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(143deg) brightness(100%) contrast(100%);
-          margin-right: 15px;
-        }
-        .title:hover{
-            color: #ff4808;
-        }
-        input:focus{
-            outline: none;
-        }
-        #imgsearch2{
-            margin: 0 auto;
-            z-index: -1;
-            margin-left: -30px;
-            border-radius: 4px;
-           
-        }
-
-
-
-        /* -------------------------------------------------------------------------  */
-      
-        .collapsible {
-            background-color: #2f2f2f;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 50%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            margin-top: 10px;  /* 공간 */
-        }
-        .active,
-        .collapsible:hover {
-            background-color: #555;
-        }
-        .content {
-            padding: 0 18px;
-            width: 50%;
-            max-height: 0;
-            margin: 0 auto;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            background-color: #2f2f2f;
-            color: white;
-        }
-        .collapsible:after {
-            content: '\002B';
-            color: white;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
-        .active:after {
-            content: "\2212";
-        }
-        a{
-            text-decoration: none;
-        }
-        code{
-            color: #ff4808;
-        }
 </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="../logo.png" id="logo">
+        
+        <div class="first-navigation">      
+            <a href="http://127.0.0.1:5500/1project/main/main_movie.html" class="logo">
+                <img src="../main/main-image/logo.png" width="100px" height="50px">
+            </a>      
+            <li><a href="http://127.0.0.1:5500/1project/main/main_movie.html" class="home">
+                <i class="fa-solid fa-house"></i>
+                &nbsp;홈
+            </a></li>
+            <li><a href="./main_movie.html" class="movie">
+                <i class="fa-solid fa-clapperboard"></i>
+                &nbsp;영화
+            </a></li>
+            <li><a href="" class="drama">
+                <i class="fa-solid fa-tv"></i>
+                &nbsp;드라마
+            </a></li>
+
+            <div class="nav-underline"></div>
+        </div>
+
+        <div class="second-navigation">
+            <a href="./search.html" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <div class="dropdown-profile">
+                <div class="profile-image"></div>
+                <div class="dropdown-content">
+                    <div class="dropdown-profile-transform">
+                        <div class="dropdown-profile-box">
+                            <div class="dropdown-profile-image"></div>
+                            <div class="dropdown-profile-btn" onclick="location.href='profile.html';">
+                                프로필 전환
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./mypage/mypage.html">마이페이지</a>
+                    <a href="../1project/mypage/servicehelp.html">고객센터</a>
+                    <a href="./mypage/wash.html">찜목록</a>
+                    <a href="./login.html">로그아웃</a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 위에 헤더부분-->
@@ -273,41 +75,41 @@
         
     <button type="button" class="collapsible" onclick="collapse(this);">씨클립에서 어떤 콘텐츠를 시청할 수 있나요?</button>
     <div class="content">
-        <p><br>씨클립스는 장편 <code>영화, 드라마 각종 상을 수상한</code> 수많은 콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하실 수 있습니다.</p>
+        <p><br>씨클립스는 장편 <span class="redfont">영화, 드라마 각종 상을 수상한</span> 수많은 콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하실 수 있습니다.</p>
     </div>
     <button type="button" class="collapsible" onclick="collapse(this);">씨클립스란 무엇인가요?</button>
     <div class="content">
-        <p><br>씨클립스는 각종 수상 경력에 빛나는 시리즈, 영화 , 드라마등 다양한 콘텐츠를 인터넷 연결이 가능한 <code>수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스</code> 입니다.</p>
+        <p><br>씨클립스는 각종 수상 경력에 빛나는 시리즈, 영화 , 드라마등 다양한 콘텐츠를 인터넷 연결이 가능한 <span class="redfont">수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스</span> 입니다.</p>
     </div>
     <button type="button" class="collapsible" onclick="collapse(this);">씨클립스 요금은 얼마인가요?</button>
     <div class="content">
         <p><br>스마트폰, 태블릿, 스마트 tv, 등 다양한 디바이스에서 월정액 요금 하나로 씨클립스를 시청하세요.
-            <code>멤버십 요금은 월 5500원 부터 17000원 까지 다양합니다.</code></p>
+            <span class="redfont">멤버십 요금은 월 5500원 부터 17000원 까지 다양합니다.</span></p>
     </div>
     <button type="button" class="collapsible" onclick="collapse(this);">어디에서 시청할 수 있나요?</button>
     <div class="content">
-        <p><br>언제 어디서나 시청할 수 있습니다. <code>씨클립스 계정으로 로그인하며 </code>PC에서 바로 시청할 수 있습니다.</p>
+        <p><br>언제 어디서나 시청할 수 있습니다. <span class="redfont">씨클립스 계정으로 로그인하며 </span>PC에서 바로 시청할 수 있습니다.</p>
     </div>
     <button type="button" class="collapsible" onclick="collapse(this);">아이들이 씨클립스를 봐도 좋을까요?</button>
     <div class="content">
-        <p><br><code>멤버십에 씨클립스 키즈 환경이 포함</code>되어 있어 자녀가 자기만의 공간에서 가족용 시리즈와 영화를 즐기는 동안 부모가 이를 관리 할수있습니다.</p>
+        <p><br><span class="redfont">멤버십에 씨클립스 키즈 환경이 포함</span>되어 있어 자녀가 자기만의 공간에서 가족용 시리즈와 영화를 즐기는 동안 부모가 이를 관리 할수있습니다.</p>
     </div>
     <button type="button" class="collapsible" onclick="collapse(this);">멤버십을 해지하려면 어떻게 하나요?</button>
     <div class="content">
-        <p><br>씨클립스는 부담 없이 간편합니다. <code>성가신 계약도, 약정도 없으니까요. </code>멤버십 해지도 온라인에서 클릭 두번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 종료하세요.</p>
+        <p><br>씨클립스는 부담 없이 간편합니다. <span class="redfont">성가신 계약도, 약정도 없으니까요. </span>멤버십 해지도 온라인에서 클릭 두번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 종료하세요.</p>
     </div>
         <p></p>
         <br><br><br><br>
         <div class="link">
             <h4>빠른 링크</h4>
             <div class="line"></div><a href="#" target="_blank"></a>
-            <P class="tras"><img src="../mypage/jpg/audio-waves.png" id="whiteimg"> <a href="#" target="_blank">TV 프로그램 및 영화 요청하기</a></P>
+            <P class="tras"><img src="../mypage/jpg/volume.png" id="whiteimg"> <a href="#" target="_blank">TV 프로그램 및 영화 요청하기</a></P>
             <div class="line"></div>
-            <P class="tras"><img src="../mypage/jpg/email.png" id="whiteimg"><a href="#" target="_blank"> 이메일 업데이트</a></P>
+            <P class="tras"><img src="../mypage/jpg/mail.png" id="whiteimg"><a href="#" target="_blank"> 이메일 업데이트</a></P>
             <div class="line"></div>
             <P class="tras"><img src="../mypage/jpg/padlock.png" id="whiteimg"> <a href="#" target="_blank">비밀번호 업데이트</a></P>
             <div class="line"></div>
-            <P class="tras"><img src="../mypage/jpg/credit-card.png" id="whiteimg"><a href="#" target="_blank">결제 수단 업데이트</a></P>
+            <P class="tras"><img src="../mypage/jpg/credit-card.png" id="whiteimg"><a href="#" target="_blank">&nbsp;결제 수단 업데이트</a></P>
             <div class="line"></div>
             <P class="tras"><img src="../mypage/jpg/forbidden.png" id="whiteimg"><a href="#" target="_blank"> 멤버십 해지</a></P>
             <div class="line"></div>

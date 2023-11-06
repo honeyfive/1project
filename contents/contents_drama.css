@@ -27,6 +27,7 @@
     height: 0;
     border-radius: 10px 10px 0px 0px;
     display: flex;
+    overflow: hidden;
 
 }
 
@@ -326,6 +327,7 @@ body {
     cursor: pointer;
     font-size: 1.5em;
     color: white;
+    z-index: 0;
 }
 
 /* 이미지 */
@@ -452,4 +454,15 @@ span {
     width: 30px;
     height: 30px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+}
+
+.black-gradient {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(31, 31, 31, 100) 100%);
+    z-index: 4;    
 }
