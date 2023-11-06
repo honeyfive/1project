@@ -217,7 +217,7 @@
             <p class="login-text">로그인</p>
             <input type="email" class="email" placeholder="  이메일 주소 또는 전화번호">
             <input type="password" class="password" placeholder="  비밀번호">
-            <a href="/1project/profile.html" class="login"><button type="button" class="login-button" disabled>로그인</button></a>
+            <a href="/1project/profile/profile.html" class="login"><button type="button" class="login-button" disabled>로그인</button></a>
             <input type="checkbox" class="checkbox" checked> <span class="login-info">로그인 정보 저장</span>
             <a href="../login_html/login_help.html" class="help" target="_self"><span>도움이 필요하신가요?</span></a>
             <span class="user">C Clip 회원이 아니신가요?</span> <a class="join" href="../login_html/joinmembership.html">지금 가입하세요.</a>
@@ -265,7 +265,7 @@
         const btn = document.querySelector('.login-button');
 
         function color(){
-        if((email.value.length>3 && email.value.indexOf("@")!==-1) && pw.value.length>=5){
+        if((email.value.length>=6 && email.value.length<=12) && pw.value.length>=5){
             btn.style.backgroundColor = "#ff4808";
             btn.disabled = false;
         } else {

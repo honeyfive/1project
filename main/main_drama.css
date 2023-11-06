@@ -5,9 +5,11 @@
 }
 
 body {
-    background-color: rgb(16,16,16);
+    background-color: #171717;
     font-family: 'Pretendard-Regular';
-    overflow-x: hidden ;
+    overflow-x: hidden;
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
 }
 
 .header {
@@ -84,7 +86,10 @@ body {
 .profile-image {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    background-image: url('../profile/img/avatar03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 
@@ -132,8 +137,11 @@ body {
 .dropdown-profile-image {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
     margin-top: 30px;
+    background-image: url('../profile/img/avatar03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 .dropdown-profile-btn {
@@ -186,7 +194,7 @@ body {
 .main1-age {
     width: 100px;
     height: 40px;
-    margin-top: 450px;
+    margin-top: 30%;
     margin-bottom: 30px;
     padding-top: 10px;
     padding-left: 10px;

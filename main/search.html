@@ -13,10 +13,10 @@
     <div class="header">
         
         <div class="first-navigation">      
-            <a href="" class="logo">
+            <a href="./main_home.html" class="logo">
                 <img src="./main-image/logo.png" width="100px" height="50px">
             </a>      
-            <li><a href="" class="home">
+            <li><a href="./main_home.html" class="home">
                 <i class="fa-solid fa-house"></i>
                 &nbsp;홈
             </a></li>
@@ -24,7 +24,7 @@
                 <i class="fa-solid fa-clapperboard"></i>
                 &nbsp;영화
             </a></li>
-            <li><a href="" class="drama">
+            <li><a href="./main_drama.html" class="drama">
                 <i class="fa-solid fa-tv"></i>
                 &nbsp;드라마
             </a></li>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="second-navigation">
-            <a href="" class="search">
+            <a href="./search.html" class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </a>
 
@@ -43,16 +43,16 @@
                     <div class="dropdown-profile-transform">
                         <div class="dropdown-profile-box">
                             <div class="dropdown-profile-image"></div>
-                            <div class="dropdown-profile-btn" onclick="location.href='profile.html';">
+                            <div class="dropdown-profile-btn" onclick="location.href='http://127.0.0.1:5500/1project/profile/profile.html'">
                                 프로필 전환
                                 <i class="fa-solid fa-chevron-right"></i>
                             </div>
                         </div>
                     </div>
-                    <a href="./mypage/mypage.html">마이페이지</a>
-                    <a href="">고객센터</a>
-                    <a href="./mypage/wash.html">찜목록</a>
-                    <a href="./login.html">로그아웃</a>
+                    <a href="../mypage/mypage1.html">마이페이지</a>
+                    <a href="../mypage/servicehelp1.html">고객센터</a>
+                    <a href="../mypage/wash.html">찜목록</a>
+                    <a href="../login/login_html/login.html">로그아웃</a>
                 </div>
             </div>
         </div>
@@ -63,11 +63,14 @@
     <div class="search-main">
         <div class="search-form">
             <form>
-                <input type="search" class="search-input" placeholder="제목, 캐릭터 또는 장르로 검색하세요">
+                <input type="search" class="search-input" placeholder="제목, 캐릭터 또는 장르로 검색하세요" onkeypress="if( event.keyCode == 13 ){enterKey();}">
                 <button type="reset" class="btn-reset">
                     <i class="fa-solid fa-x"></i>
                 </button>
             </form>
+            <div class="recent-searches">
+                
+            </div>
         </div>
 
         <div class="search-container">            
@@ -175,7 +178,7 @@
     </div>
 
 
-
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="./search.js"></script>
 </body>
 </html>

@@ -5,10 +5,32 @@
 }
 
 body {
-    background-color: rgb(16,16,16);
+    background-color: #171717;
     font-family: 'Pretendard-Regular';
     overflow-x: hidden ;
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
 }
+
+/* .loader {
+    border: 10px solid #f2f2f2;
+    border-top: 10px solid #ff4808;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
 
 .header {
     height: 70px;
@@ -84,7 +106,10 @@ body {
 .profile-image {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    background-image: url('../profile/img/avatar03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 
@@ -132,8 +157,11 @@ body {
 .dropdown-profile-image {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
     margin-top: 30px;
+    background-image: url('../profile/img/avatar03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 .dropdown-profile-btn {
@@ -151,15 +179,17 @@ body {
 
 .movie-main1 {
     width: 100%;
-    height: 600px;
+    height: 630px;
 }
 
-.background {
-    width: 100%;
-    height: 90%;
+
+.video {
+    top: 0px;
+    left: 0;
     position: relative;
     display: flex;
-    opacity: 0;
+    opacity: 0.8;
+    margin-left: -250px;
 
     image-rendering:-webkit-optimize-contrast;
     transform:translateZ(0);
@@ -168,41 +198,25 @@ body {
 
 .background-btn {
     position: absolute;
-    top: 400px;
-    right: 50px;
-}
-
-.main1-background::before{
-    content: "";
-    background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.1) 25%,
-    rgba(0, 0, 0, 0.3) 40%,
-    rgba(0, 0, 0, 0.5) 65%,
-    rgba(0, 0, 0, 0.8) 100%
-    ), url(./main-image/메인-홈.webp);
-    position: absolute;
-    top: 100px;
-    left: 0px;
+    top: 500px;
     right: 0px;
-    bottom: 0px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.opacity {
-    opacity: 1;
 }
 
 
-.play, .pause, .muted, .not-muted {
+.toggle-button, .toggle-button2 {
     width: 50px;
     height: 35px;
     background-color: transparent;
     border: none;
     color: white;
     font-size: 30px;
+    padding-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.toggle-button:hover, .toggle-button2:hover {
+    color: #999999;
 }
 
 
@@ -211,15 +225,18 @@ body {
     color: white;
     font-size: 20px;
     width: 100px;
-    height: 35px;
+    height: 40px;
     background-color: #737373;
     opacity: 0.5;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
 }
 
 .main1-letter {
     width: 40%;
     position: absolute;
-    top: 50px;
+    top: 200px;
     left: 30px;
 }
 
