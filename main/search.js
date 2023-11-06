@@ -1,3 +1,8 @@
+
+$(document).ready(function() {
+    $('body').css('opacity', '1');
+});
+
 const input_search = document.querySelector('.search-input');
 const btn_reset = document.querySelector('.btn-reset');
 
