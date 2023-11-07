@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/login_css/login.css">
+    <style>
+        body {
+            opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+            transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <video class="login-video" src="/1project/login/login_image/videoplayback.mp4" autoplay loop muted></video>
+        </div>
+        <div class="logo">
+            <a href="./start.html">
+                <img src="/1project/login/login_image/KakaoTalk_20231028_162057713_01.png" class="c-clip">
+            </a>
+        </div>
+        <div class="main">
+            <p class="login-text">로그인</p>
+            <input type="email" class="email" placeholder="  아이디">
+            <input type="password" class="password" placeholder="  비밀번호">
+            <a href="/1project/profile/profile.html" class="login"><button type="button" class="login-button" disabled>로그인</button></a>
+            <input type="checkbox" class="checkbox" checked> <span class="login-info">로그인 정보 저장</span>
+            <a href="../login_html/login_help.html" class="help" target="_self"><span>도움이 필요하신가요?</span></a>
+            <span class="user">C Clip 회원이 아니신가요?</span> <a class="join" href="../login_html/joinmembership.html">지금 가입하세요.</a>
+            <p class="ment">C Clip 회원이 되시면 각종 tv드라마, 영화를 무제한으로 감상하실 수 있습니다.</p>
+        </div>
+        <div class="footer">
+            <div class="footer-logo"><img src="/1project/login/login_image/logo.png" width="90px" height="40px"></div>
+            <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
+            <div class="info-container">
+                <div class="info">대표이사 : 정용진 |&nbsp;</div>
+                <div class="info">사업자정보확인 |&nbsp; </div>
+                <div class="info">사업자등록번호 : 111-11-00001 |&nbsp; </div>
+                <div class="info">통신판매신고번호 : 2023-충남천안-1234호</div>
+                <div class="info">사업장 : 충청남도 천안시 동남구 대흥로 215 7층</div>
+            </div>
+            <div class="info-container">
+                <div class="info">호스팅사업자 : 휴먼교육센터 |&nbsp; </div>
+                <div class="info">고객센터 (평일 9시~17시/점심시간 13~14시)</div>
+                <div class="info">1:1 게시만 문의 |&nbsp; </div>
+                <div class="info">대표메일 : 1234@test.com |&nbsp; </div>
+                <div class="info">전화번호(ARS) : 1588-1234</div>
+            </div>
+            
+            <div class="sns">
+                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+            <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
+        </div>
+    </div>
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../login_js/login.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('body').css('opacity', '1');
+        });
+    </script>
+</body>
+
+</html>
