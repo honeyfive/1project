@@ -27,7 +27,7 @@ pinArr.forEach((input, index) => {
         } else {
             pinInputError.textContent = '';
             if (pinValues.length === 6) {
-                window.location.href = "/html/main_html/main_home.html";
+                window.location.href = "../../html/main_html/main_home.html";
             }
         }
     });
