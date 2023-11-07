@@ -274,14 +274,6 @@ p {
     display: flex;
     align-items: center;
 }
-
-body {
-    /* background-image: url(./image/BGTest.png);
-    background-repeat: repeat; */
-    background-color: #161616;
-    font-family: 'Pretendard-Regular';
-}
-
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -289,12 +281,29 @@ body {
     font-style: normal;
 }
 
+body {
+    font-family: 'Pretendard-Regular';
+}
+
+.body-img {
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    left: 0px;
+    top: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/image/content_img/image/영화메인뒷배경.png);
+    background-size:cover;
+    z-index: -5;
+}
+
+
 .contents-recommend-box-items {
     width: 260px;
     height: 400px;
     border-radius: 5px;
     background-color: #2f2f2f;
     display: flex;
+    z-index: 2;
 }
 
 .contents-recommend-box-items-img {
@@ -429,6 +438,7 @@ video [poster] {
     width: 30px;
     height: 30px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+
 }
 
 .black-gradient {
@@ -448,10 +458,10 @@ video [poster] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
+    width: 170px;
     height: 25px;
     /* 툴팁 영역의 넓이를 설정 */
-    background-color: #fff;
+    background-color: #f2f2f2;
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -459,7 +469,7 @@ video [poster] {
     font-size: 0.65em;
     position: absolute;
     /* 절대 위치를 사용 */
-    bottom: 50px;
+    bottom: 45px;
     z-index: 1;
 }
 
@@ -474,10 +484,10 @@ video [poster] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55px;
+    width: 80px;
     height: 25px;
     /* 툴팁 영역의 넓이를 설정 */
-    background-color: #fff;
+    background-color: #f2f2f2;
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -485,8 +495,8 @@ video [poster] {
     font-size: 0.65em;
     position: absolute;
     /* 절대 위치를 사용 */
-    left: -8px;
-    bottom: 50px;
+    left: -22px;
+    bottom: 45px;
     z-index: 1;
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./contents_drama.css" rel="stylesheet">
+    <link href="/1project/css/contents_css/contents_drama.css" rel="stylesheet">
 </head>
 
 <style>
@@ -20,13 +20,13 @@
         <div class="contents-video-box">
             <div class="black-gradient"></div>
             <video id='trailer' onclick="playOnOff()" controls
-                src="./video/무인도의 디바 트레일러.mp4" autoplay ></video>
-            <img src="./image/무인도의 디바 로고.webp" class="trailer-logo">
-            <button class="contents-video-box-btn-close close-x"><img class="img-close" src="./image/free-icon-close-8487257.png"></button>
-            <div class="contents-video-box-btn-play">▶ 재생</div>
-            <div class="contents-video-box-btn-wish"><img class="img-plus" src="./image/free-icon-plus-3524388.png"></div>
-            <div class="contents-video-box-btn-like"><img class="img-like" src="./image/thumbs up outline.png"></div>
-            <div id="muteOn" class="contents-video-box-btn-mute" onclick="muteOnOff()"><img class="img-volumeOn" src="./image/free-icon-volume-7640163.png"></div>
+                src="/1project/image/content_img/video/무인도의 디바 트레일러.mp4" autoplay muted></video>
+            <img src="/1project/image/content_img/image/무인도의 디바 로고.webp" class="trailer-logo">
+            <button onclick = "location.href = '/1project/html/main_html/main_drama.html'" class="contents-video-box-btn-close close-x"><img class="img-close" src="/1project/image/content_img/image/free-icon-close-8487257.png"></button>
+            <a href="/1project/html/contents_html/contents_video.html" target="_self"><div class="contents-video-box-btn-play">▶ 재생</div></a>
+            <div class="contents-video-box-btn-wish"><span class="hover-wish-text">내가 찜한 콘텐츠에 추가</span><img id="wish" class="img-plus" src="/1project/image/content_img/image/free-icon-plus-3524388.png"></div>
+            <div class="contents-video-box-btn-like"><span class="hover-like-text">좋아요</span><img id="like" class="img-like" src="/1project/image/content_img/image/thumbs up outline.png"></div>
+            <div id="muteOn" class="contents-video-box-btn-mute" onclick="muteOnOff()"><img id="volume" class="img-volumeOn" src="/1project/image/content_img/image/free-icon-volume-down-6996057.png"></div>
         </div>
         <div class="contents-txt-box">
             <div class="contents-txt-box-top">
@@ -34,7 +34,7 @@
                     <div class="contents-txt-box-header-script-left-top"><span class="color-main">NEW</span>&nbsp;2023
                         에피소드 12개</div>
                     <div class="contents-txt-box-header-script-left-mid">
-                        <img src="./image/15rate.svg" class="img-15"> 15세 이상 관람가
+                        <img src="/1project/image/content_img/image/15rate.svg" class="img-15"> 15세 이상 관람가
                     </div>
                     <div class="contents-txt-box-header-script-left-bottom">디바를 꿈꾸며 오디션을 보기 위해 상경하다 무인도에 표류하게 된 서목하가 15년 만에 구조되어 다시 디바에 도전한다는 감성 휴먼 드라마. 호텔 델루나, 스타트업, 빅마우스 등을 연출했던 오충환 감독과 당신이 잠든 사이에, 스타트업을 집필한 박혜련 작가가 세 번째 의기 투합한 작품이다.</div>
                 </div>
@@ -49,11 +49,11 @@
                 <div>회차</div><div>무인도의 디바</div>
             </h2>
             <div class="contents-recommend-box">
-                <div class="contents-recommend-box-items bgBoxColor-select">
+                <div class="contents-recommend-box-items bgBoxColor-select" onclick="location.href='/1project/html/contents_html/contents_video.html'">
                     <div class="index-text">1</div>
                     <div class="contents-recommend-box-items-img">
                         <div class="contents-recommend-box-btn-hoverPlay">▶</div>
-                        <img class="recommend-items-img" src="./image/무인도의 디바 1화.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 1화.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="img-text">86분</div>
@@ -63,11 +63,11 @@
                     </div>
                 </div>
                 <div class="gray-line"></div>
-                <div class="contents-recommend-box-items bgBoxColor-update">
+                <div class="contents-recommend-box-items bgBoxColor-update" onclick="location.href='/1project/html/contents_html/contents_video.html'">
                     <div class="index-text">2</div>
                     <div class="contents-recommend-box-items-img">
                         <div class="contents-recommend-box-btn-hoverPlay">▶</div>
-                        <img class="recommend-items-img" src="./image/무인도의 디바 2화.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 2화.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="img-text">67분</div>
@@ -76,11 +76,11 @@
                     </div>
                 </div>
                 <div class="gray-line"></div>
-                <div class="contents-recommend-box-items bgBoxColor-update">
+                <div class="contents-recommend-box-items bgBoxColor-update" onclick="location.href='/1project/html/contents_html/contents_video.html'">
                     <div class="index-text">3</div>
                     <div class="contents-recommend-box-items-img">
                         <div class="contents-recommend-box-btn-hoverPlay">▶</div>
-                        <img class="recommend-items-img" src="./image/무인도의 디바 3화.webp">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 3화.webp">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="img-text">75분</div>
@@ -89,11 +89,11 @@
                     </div>
                 </div>
                 <div class="gray-line"></div>
-                <div class="contents-recommend-box-items bgBoxColor-update">
+                <div class="contents-recommend-box-items bgBoxColor-update" onclick="location.href='/1project/html/contents_html/contents_video.html'">
                     <div class="index-text">4</div>
                     <div class="contents-recommend-box-items-img">
                         <div class="contents-recommend-box-btn-hoverPlay">▶</div>
-                        <img class="recommend-items-img" src="./image/무인도의 디바 4화.webp">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 4화.webp">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="img-text">66분</div>
@@ -106,7 +106,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">5</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">5화</div>
@@ -118,7 +118,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">6</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">6화</div>
@@ -130,7 +130,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">7</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">7화</div>
@@ -142,7 +142,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">8</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">8화</div>
@@ -154,7 +154,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">9</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">9화</div>
@@ -166,7 +166,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">10</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">10화</div>
@@ -178,7 +178,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">11</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">11화</div>
@@ -190,7 +190,7 @@
                     <div class="img-opacity"></div>
                     <div class="index-text">12</div>
                     <div class="contents-recommend-box-items-img">
-                        <img class="recommend-items-img" src="./image/무인도의 디바 예정이미지.jpg">
+                        <img class="recommend-items-img" src="/1project/image/content_img/image/무인도의 디바 예정이미지.jpg">
                     </div>
                     <div class="contents-recommend-box-right-items-txt">
                         <div class="contents-recommend-box-items-txt-name">12화</div>
@@ -198,10 +198,6 @@
                     </div>
                 </div>
             </div>
-            <!--
-2. 우연 VS 필연
-67분
- -->
             <div class="contents-txt-box-bottom">
                 <h2>무인도의 디바 상세 정보</h2>
                 <p><span>감독:</span> 오충환</p>
@@ -209,8 +205,8 @@
                 <p><span>각본:</span> 박혜련, 은열</p>
                 <p><span>장르:</span> 드라마, 한국 드라마</p>
                 <p><span>영화 특징:</span>힐링, 감명을 주는, 진심 어린</p>
-                <p><span>관람등급:</span><img src="./image/15rate.svg" class="img-15">15세 이상 관람가</p>
-                <script src="./contents_drama.js"></script>
+                <p><span>관람등급:</span><img src="/1project/image/content_img/image/15rate.svg" class="img-15">15세 이상 관람가</p>
+                <script src="/1project/js/contents_js/contents_drama.js"></script>
             </div>
         </div>
 

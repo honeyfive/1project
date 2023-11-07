@@ -165,3 +165,19 @@ body {
     font-size: 0.75em;
     padding-left: 1vw;
 }
+
+.close-x {
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    left: -10px;
+    top: -530px;
+    cursor: pointer;
+}
+
+.img-close {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+}

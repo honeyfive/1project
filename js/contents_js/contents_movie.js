@@ -6,12 +6,18 @@ function playOnOff() {
     }
 }
 
+let flagMute = 0;
 function muteOnOff() {
-    const muteOn = document.getElementById("muteOn");
-    if (muteOn.muted == true) {
-        muteOn.muted == false;
+    const trailerMuteToggle = document.getElementById("trailer");
+    const volumeToggle = document.getElementById("volume").src = "/1project/image/content_img/image/free-icon-volume-down-6996057.png";
+    if (flagMute == 0) {
+        trailerMuteToggle.muted = false;
+        document.getElementById("volume").src = "/1project/image/content_img/image/free-icon-volume-7640163.png";
+        flagMute = 1;
     } else {
-        muteOn.muted == true;
+        trailerMuteToggle.muted = true;
+        volumeToggle;
+        flagMute = 0;
     }
 }
 
@@ -58,30 +64,110 @@ playVidHover[0].addEventListener('mousedown', () => {
 });
 
 playVidHover[0].addEventListener('mouseup', () => {
-    playVidHover[0].style.color = "#121212";
+    playVidHover[0].style.color = "#f2f2f2";
     playVidHover[0].style.border = "0px";
 });
 
 const wishHover = document.getElementsByClassName('contents-video-box-btn-wish');
+const wishText = document.getElementsByClassName('hover-wish-text');
+let flagWish = 0;
+wishHover[0].addEventListener('click', () => {
+    const wishToggle = document.getElementById("wish").src = "/1project/image/content_img/image/free-icon-plus-3524388.png";
+    if (flagWish == 0) {
+        document.getElementById("wish").src = "/1project/image/content_img/image/check.png";
+        wishText[0].innerHTML = "내가 찜한 콘텐츠에 추가";
+        flagWish = 1;
+    } else {
+        wishToggle;
+        wishText[0].innerHTML = "내가 찜한 콘텐츠에서 제거";
+        flagWish = 0;
+    };
+});
+
+
+
+
+
 wishHover[0].addEventListener('mouseover', () => {
     wishHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+    if (flagWish == 0) {
+        wishText[0].innerHTML = "내가 찜한 콘텐츠에 추가";
+    } else {
+        wishText[0].innerHTML = "내가 찜한 콘텐츠에서 제거";
+    };
 });
+
+const wishRecommend = document.getElementsByClassName('contents-recommend-box-btn-wish');
+for (let i = 0; i < wishRecommend.length; i++) {
+    wishRecommend[i].addEventListener('mouseover', () => {
+        wishRecommend[i].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+    });
+}
+let flagWishRecommend = 0;
+for (let i = 0; i < wishRecommend.length; i++) {
+    wishRecommend[i].addEventListener('click', () => {
+        const wishRecommendToggle = document.getElementsByName("plus-recommend")[i].src = "/1project/image/content_img/image/free-icon-plus-3524388.png";
+        if (flagWishRecommend == 0) {
+            document.getElementsByName("plus-recommend")[i].src = "/1project/image/content_img/image/check.png";
+            flagWishRecommend = 1;
+        } else {
+            wishRecommendToggle;
+            flagWishRecommend = 0;
+        };
+    });
+}
 
 wishHover[0].addEventListener('mouseout', () => {
     wishHover[0].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
 });
 
+for (let i = 0; i < wishRecommend.length; i++) {
+    wishRecommend[i].addEventListener('mouseout', () => {
+        wishRecommend[i].style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+    });
+}
+
 wishHover[0].addEventListener('mousedown', () => {
     wishHover[0].style.border = "2px solid white"
 });
+
+for (let i = 0; i < wishRecommend.length; i++) {
+    wishRecommend[i].addEventListener('mousedown', () => {
+        wishRecommend[i].style.border = "3px solid white";
+    });
+}
 
 wishHover[0].addEventListener('mouseup', () => {
     wishHover[0].style.border = "2px solid gray"
 });
 
+for (let i = 0; i < wishRecommend.length; i++) {
+    wishRecommend[i].addEventListener('mouseup', () => {
+        wishRecommend[i].style.border = "2px solid gray";
+    });
+}
+
 const likeHover = document.getElementsByClassName('contents-video-box-btn-like');
+const likeText = document.getElementsByClassName('hover-like-text');
+let flagLike = 0;
+likeHover[0].addEventListener('click', () => {
+    const likeToggle = document.getElementById("like").src = "/1project/image/content_img/image/thumbs up outline.png";
+    if (flagLike == 0) {
+        document.getElementById("like").src = "/1project/image/content_img/image/thumb-up.png";
+        flagLike = 1;
+    } else {
+        likeToggle;
+        flagLike = 0;
+    };
+});
+
 likeHover[0].addEventListener('mouseover', () => {
     likeHover[0].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+    if (flagLike == 0) {
+        likeText[0].innerHTML = "좋아요";
+    } else {
+        likeText[0].innerHTML = "좋아요 취소";
+    };
 });
 
 likeHover[0].addEventListener('mouseout', () => {
@@ -114,10 +200,15 @@ volumeHover[0].addEventListener('mouseup', () => {
 });
 
 const closeHover = document.getElementsByClassName('contents-video-box-btn-close');
+
+closeHover[0].addEventListener('mouseout', () => {
+    closeHover[0].style.border = "0";
+});
+
 closeHover[0].addEventListener('mousedown', () => {
     closeHover[0].style.border = "3px solid white";
 });
 
 closeHover[0].addEventListener('mouseup', () => {
-    closeHover[0].style.border = "0px";
+    closeHover[0].style.border = "0";
 });
