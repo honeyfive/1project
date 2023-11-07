@@ -6,6 +6,9 @@ html{
 
 body {
     margin: 0;
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    background-color: #161616;
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
 }
 
 a {
