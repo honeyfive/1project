@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./id.css" rel="stylesheet">
+    <link href="/1project/css/mypage_css/id.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
             transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
         }
+        
+        
     </style>
+    
+        </script>
+    
 </head>
 <body>
     <div class="header">
         
         <div class="first-navigation">      
-            <a href="http://127.0.0.1:5500/1project/main/main_movie.html" class="logo">
-                <img src="../main/main-image/logo.png" width="100px" height="50px">
+            <a href="/1project/html/main_html/main_home.html" class="logo">
+                <img src="/1project/image/main_img/logo.png" width="100px" height="50px">
             </a>      
-            <li><a href="http://127.0.0.1:5500/1project/main/main_movie.html" class="home">
+            <li><a href="/1project/html/main_html/main_home.html" class="home">
                 <i class="fa-solid fa-house"></i>
                 &nbsp;홈
             </a></li>
-            <li><a href="./main_movie.html" class="movie">
+            <li><a href="/1project/html/main_html/main_movie.html" class="movie">
                 <i class="fa-solid fa-clapperboard"></i>
                 &nbsp;영화
             </a></li>
@@ -37,7 +42,7 @@
         </div>
 
         <div class="second-navigation">
-            <a href="./search.html" class="search">
+            <a href="/1project/html/main_html/search.html" class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </a>
 
@@ -68,7 +73,7 @@
             <div class="graybox"><span class="grayfont">계정 정보</span></div>
             <div class="blackbox"><span class="blackfont">admin11 @ clip.com</span></div>
             <div class="blackbox"><span class="blackfont">비밀번호 : *********</span></div>
-            <div class="blackbox1"><a href="http://127.0.0.1:5500/1project/login/login_html/start.html" class="logoutbtn"><span id="bigfont">모든 기기에서 로그아웃</span></a></div>
+            <div class="blackbox1"><a href="/1project/html/login_html/start.html" class="logoutbtn"><span id="bigfont">모든 기기에서 로그아웃</span></a></div>
         </div>
     </div>
         <div class="container1">
@@ -85,11 +90,11 @@
             
             <div class="blackbox6"><span class="blackfont">프로필 생성 제한</span>
                 <div class="wrap">
-                    <input type="checkbox" class="sr-only" id="check">
+                    <input type="checkbox" class="sr-only"  id="check">
                     <label for="check">
-                        <div class="button">
+                        <div class="button" >
                             <h3></h3>
-                            <div class="inside"></div>
+                            <div class="inside" onclick="btninside()"></div>
                         </div>
                     </label>
                 </div>
@@ -103,8 +108,12 @@
             </span>
         </div>
         <div class="footer">
-            <div class="footer-logo"><img src="../main/main-image/logo.png" width="90px" height="40px"></div>
-            <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
+            <div class="footer-logo">
+                <a href="/1project/html/main_html/main_home.html">
+                <img src="/1project/image/main_img/logo.png" width="90px" height="40px">
+                </a>
+            </div>
+            <div class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</div>
             <div class="info-container">
                 <div class="info">대표이사 : 정용진 |&nbsp;</div>
                 <div class="info">사업자정보확인 |&nbsp; </div>
@@ -121,12 +130,11 @@
             </div>
             
             <div class="sns">
-                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
-                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
-                <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+                <i class="fa-brands fa-instagram instagram"></i>
+                <i class="fa-brands fa-facebook facebook"></i>
+                <i class="fa-brands fa-youtube youtube"></i>
             </div>
-            <p class="info">Copyright 주식회사 휴먼 All right reserved.</p>
-        </div>
+            <div class="info info-end">Copyright 주식회사 휴먼 All right reserved.</div>
 </body>
 
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -134,5 +142,22 @@
     $(document).ready(function() {
         $('body').css('opacity', '1');
     });
+    
+    let flag = 0;
+    const button = document.getElementsByClassName('button');
+    button[0].addEventListener('click',()=>{
+
+    
+    if(flag == 0 ){
+        flag =1;
+        alert('프로필 생성이 제한되었습니다.');
+       
+    }   else {
+        alert('프로필 생성제한이 풀렸습니다.');
+    };
+});
+   
+    
+        
 </script>
 </html>
