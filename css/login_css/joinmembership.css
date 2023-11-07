@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+}
+
+.c-clip {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+.main {
+    width: 500px;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+.join-ment {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.show {
+    margin-top: 20px;
+    color: #929191;
+    text-align: center;
+    font-size: 21px;
+}
+
+.input-id, .input-password, .input-email {
+    margin-top: 40px;
+    padding-left: 10px;
+    width:500px;
+    height: 50px;
+    font-size: large;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(41, 39, 39);
+    color: white;
+}
+
+.input-password-check {
+    margin-top: 10px;
+    padding-left: 10px;
+    width:500px;
+    height: 50px;
+    font-size: large;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(41, 39, 39);
+    color: #929191;
+}
+
+.email-condition, .password-condition {
+    margin-top: 5px;
+    color: #929191;
+}
+
+.check-agree {
+    display: block;
+    margin-top: 20px;
+    color: #d1cfcf;
+}
+
+#agree {
+    margin-bottom: 5px;
+}
+
+.agree-text {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input[type="checkbox"]{
+display: none;
+}
+
+ul{
+list-style:none;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background: url(../checkbox/checkbox-inactive.svg) no-repeat;
+    cursor: pointer;
+    background-size: cover;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked + label:before{
+    content:"";
+    background-image: url(../checkbox/checkbox-active.svg);
+    }
+
+.join-button {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    display: block;
+    background-color: #737373;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.footer {
+    width: 100%;
+    height: 230px;
+    background-color: #171717;
+    margin-top: 100px;
+    opacity: 0.95;
+    font-size: 11px;
+    text-align: center;
+}
+
+.info {
+    color: #737373;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sns {
+    color: #737373;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram , .facebook, .youtube {
+    font-size: 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.question {
+    color: #737373;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: inline-block;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.no-input {
+    display: none;
+    margin-top: 5px;
+    color: red;
+}
+
+.no-input-condition {
+    display: none;
+    margin-top: 5px;
+    color: red;
+}
+
+.no-password-condition, .not-password {
+    display: none;
+    margin-top: 5px;
+    color: red;
+}
+
+.join-login {
+    text-decoration: none;
+}
