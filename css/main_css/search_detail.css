@@ -86,7 +86,7 @@ body {
 .profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/image/profile_img/avatar01.png');
+    background-image: url('/1project/resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -139,7 +139,7 @@ body {
 .dropdown-profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/image/profile_img/avatar01.png');
+    background-image: url('/1project/resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -155,6 +155,33 @@ body {
 
 .dropdown-profile-btn:hover {
     color: #737373;
+}
+
+.scroll {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btnScrollTo {
+    width: 50px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.3s;
+}
+
+#btnScrollTo:hover {
+    background-color: #ff4808;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 .movie-main1 {
@@ -180,7 +207,7 @@ body {
     rgba(0, 0, 0, 0.3) 40%,
     rgba(0, 0, 0, 0.5) 65%,
     rgba(0, 0, 0, 0.8) 100%
-    ), url(/1project/image/main_img/검색\ 배경.jfif);
+    ), url(/1project/resource/image/main_img/검색\ 배경.jfif);
     position: absolute;
     top: 0px;
     left: 0px;

@@ -88,7 +88,7 @@
     .profile-image {
         width: 40px;
         height: 40px;
-        background-image: url('/1project/image/profile_img/avatar01.png');
+        background-image: url('/1project/resource/image/profile_img/avatar01.png');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -141,7 +141,7 @@
     .dropdown-profile-image {
         width: 40px;
         height: 40px;
-        background-image: url('/1project/image/profile_img/avatar01.png');
+        background-image: url('/1project/resource/image/profile_img/avatar01.png');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -159,7 +159,32 @@
         color: #737373;
     }
 
+    .scroll {
+        display: flex;
+        justify-content: flex-end;
+    }
     
+    #btnScrollTo {
+        width: 50px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        position: fixed;
+        bottom: 50px;
+        cursor: pointer;
+        z-index: 3;
+        transition: all 0.3s;
+    }
+    
+    #btnScrollTo:hover {
+        background-color: #ff4808;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
 
     .search-input {
         width: 100%;

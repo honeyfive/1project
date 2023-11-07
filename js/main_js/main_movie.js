@@ -77,6 +77,14 @@ sections.forEach(section => {
 });
 
 
+document.getElementById('btnScrollTo').addEventListener('click', () => {
+    // 페이지 맨 위로 스크롤
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
 
 
 
