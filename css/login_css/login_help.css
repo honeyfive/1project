@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+}
+
+.main {
+    width: 500px;
+    height: 700px;
+    background-color: #171717;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-top: 15px;
+    opacity: 0.95;
+}
+
+.c-clip {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+.login-text {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+    font-size:29px;
+    color: white;
+}
+
+.password-re {
+    color: white;
+    padding-left: 75px;
+    padding-top: 100px;
+    font-size:17px;
+}
+
+
+.login-info {
+    color: hsl(0, 5%, 66%);
+}
+
+.help, .user {
+    margin-left: 50px;
+    color: hsl(0, 5%, 66%);
+}
+
+.user {
+    display: inline-block;
+    padding-top: 80px;
+    padding-left: 20px;
+    color: #737373;
+}
+
+.join {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.ment {
+    color: white;
+    margin: 0 70px;
+    margin-top: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 240px;
+    background-color: #171717;
+    margin-top: 100px;
+    opacity: 0.95;
+    font-size: 11px;
+    text-align: center;
+}
+
+.info {
+    color: #737373;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sns {
+    color: #737373;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram , .facebook, .youtube {
+    font-size: 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.question {
+    color: #737373;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.sns {
+    color: #737373;
+    padding: 10px;
+}
+
+.container {
+    background-color: black;
+    max-width: 100%;
+    height: 104vh;
+    position: relative;
+    background-size:cover;
+    background-position: center;
+}
+
+.login {
+    text-decoration: none;
+}
+
+.hd_lang {
+    margin-left: 100px;
+    color: red;
+}
+
+.radio1, .radio2 {
+    margin-top: 30px;
+    margin-left: 80px;
+    color: black;
+}
+
+.password-re-email, .password-re-sms {
+    color: white;
+    padding-left: 75px;
+    padding-top: 70px;
+    font-size:17px;
+}
+
+.password-re-sms1 {
+    color: white;
+    padding-left: 75px;
+    
+    font-size:17px;
+}
+
+.password-re-input-email {
+    margin-left: 75px;
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    font-size: 17px;
+}
+
+.password-re-input-phonenumber {
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    font-size: 17px;
+}
+
+.password-re-text {
+    color: white;
+    display: block;
+}
+
+.input-country {
+    margin-left: 75px;
+    margin-top: 20px;
+    width: 20%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.accept-email, .accept-sms {
+    margin-left: 75px;
+    margin-top: 60px;
+    width: 70%;
+    height: 50px;
+    background-color: #ff4808;
+    color: white;
+    font-size: larger;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+}
+
+.sms {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    background-color: #171717;
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+}

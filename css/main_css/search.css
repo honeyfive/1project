@@ -15,7 +15,7 @@
     .header {
         height: 70px;
         background-color: #1f1f1f;
-        opacity: 0.8;
+        opacity: 0.9;
 
         position: sticky;
         top: 0px;
@@ -215,16 +215,11 @@
         margin: 0 auto;
         padding: 50px 70px;
     }
-    
-    .section-index {
-        padding-left: 70px;
-        padding-right: 70px;
-    }
 
     .search-title {
         color: #e5e5e5;
         font-size: 20px;
-        margin-left: 10px;
+        margin-left: 1%;
     }
     
     .search-content-boxes {
