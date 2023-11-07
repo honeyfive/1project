@@ -35,7 +35,7 @@ body {
 .header {
     height: 70px;
     background-color: #1f1f1f;
-    opacity: 0.8;
+    opacity: 0.9;
     
     position: sticky;
     top: 0;
@@ -177,19 +177,13 @@ body {
     color: #737373;
 }
 
-.movie-main1 {
-    width: 100%;
-    height: 630px;
-}
 
 
-.video {
+video {
+    width: 100vw;
     top: 0px;
     left: 0;
-    position: relative;
-    display: flex;
     opacity: 0.8;
-    margin-left: -250px;
 
     image-rendering:-webkit-optimize-contrast;
     transform:translateZ(0);
@@ -198,7 +192,7 @@ body {
 
 .background-btn {
     position: absolute;
-    top: 500px;
+    top: 350px;
     right: 0px;
 }
 
@@ -236,7 +230,7 @@ body {
 .main1-letter {
     width: 40%;
     position: absolute;
-    top: 200px;
+    top: 80px;
     left: 30px;
 }
 
@@ -250,7 +244,7 @@ body {
 
 .movie-main2, .movie-main3, .movie-main4, .movie-main5, .movie-main6 {
     height: 250px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .movie-main2 {
@@ -387,7 +381,7 @@ body {
 
 .slide:hover {
     transform:scale(1.1);
-    border-radius: 10px;
+    border-radius: 3px;
     border: 3px solid white;
 }
 
