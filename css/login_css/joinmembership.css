@@ -97,7 +97,7 @@ input[type="checkbox"] + label:before {
     width: 18px;
     height: 18px;
     vertical-align: middle;
-    background: url(../checkbox/checkbox-inactive.svg) no-repeat;
+    background: url(/1project/image/login_img/checkbox/checkbox-inactive.svg) no-repeat;
     cursor: pointer;
     background-size: cover;
     margin-right: 10px;
@@ -106,7 +106,7 @@ input[type="checkbox"] + label:before {
 
 input[type="checkbox"]:checked + label:before{
     content:"";
-    background-image: url(../checkbox/checkbox-active.svg);
+    background-image: url(/1project/image/login_img/checkbox/checkbox-active.svg);
     }
 
 .join-button {
