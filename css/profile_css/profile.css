@@ -170,12 +170,12 @@ svg:not(:root) {
     padding: 0.5em 1.5em;
 }
 
-.profile-button:focus,  .profile-button:hover {
+.profile-button:focus,  .profile-button:hover, .profile-button:active {
     border: 1px solid #fff;
     color: #fff;
 }
 
-.profile-action:hover {
+.profile-action:hover, .profile-action:active {
     background-color: #ff4808;
 }
 
@@ -265,12 +265,21 @@ svg:not(:root) {
 /* 프로필 비밀번호 forgot 버튼 */
 .profile-pin-prompt-forgot {
     position: absolute;
-    bottom: 16vw;
+    bottom: 10vw;
     font-size: 1.3vw;
 }
 
 .pin-prompt-forgot-button {
     color:#e5e5e5;
+    padding: 0.8em 1.4em;
+}
+
+.pin-prompt-forgot-button:hover {
+    background-color: #333;
+    opacity: 1;
+    transform: scale(1.6);
+    position: initial;
+    transition-duration: 450ms;
 }
 
 .pin-prompt-forgot-button-text {
@@ -319,6 +328,7 @@ svg:not(:root) {
 .profile-actions-cotainer {
     position: relative;
     text-align: left;
+    max-width: 40%;
 }
 
 .profile-data {
@@ -333,10 +343,10 @@ svg:not(:root) {
 
 .main-profile-avatar {
     margin-right: 1.4vw;
-    width: 10vw;
+    width: 18vw;
     max-width: 200px;
     min-width: 80px;
-    height: 10vw;
+    height: 18vw;
     max-height: 200px;
     min-height: 80px;
     white-space: nowrap;
@@ -578,15 +588,82 @@ svg:not(:root) {
     font-size: 1vw;
 }
 
-.profile-entry-autoplay .profile-entry-header {
-    margin: 0 0 0.6em;
+.checkbox[type=checkbox] {
+    display: none;
 }
 
+label.input-label {
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1vw;
+    margin-top: 0.6em;
+}
 
+label.input-label::before {
+    display: inline-block;
+    margin: 0 0.6em 0 0;
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #999;
+    -webkit-transition: transform 0.2s ease-out, color 0.2s ease;
+    -moz-transition: transform 0.2s ease-out, color 0.2s ease;
+    -ms-transition: transform 0.2s ease-out, color 0.2s ease;
+    -o-transition: transform 0.2s ease-out, color 0.2s ease;
+    transition: transform 0.2s ease-out, color 0.2s ease;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    -moz-transform: scale3d(0.8,0.8,1);
+    -ms-transform: scale3d(0.8,0.8,1);
+    -o-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+}
+label.input-label.checkbox::before {
+    content: "\f0c8";
+}
+label.input-label.radio::before {
+    content: "\f111";
+}
+input.checkbox + label.input-label:hover::before {
+    -webkit-transform: scale3d(1,1,1);
+    -moz-transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
 
+input.checkbox + label.input-label:active::before {
+    -webkit-transform: scale3d(1.5,1.5,1);
+    -moz-transform: scale3d(1.5,1.5,1);
+    -ms-transform: scale3d(1.5,1.5,1);
+    -o-transform: scale3d(1.5,1.5,1);
+    transform: scale3d(1.5,1.5,1);
+}
+
+input.checkbox:checked + label.input-label::before {
+    display: inline-block;
+    font-family: FontAwesome;
+    color: #e5e5e5;
+    -webkit-transform: scale3d(1,1,1);
+    -moz-transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+input.checkbox:checked + label.input-label.checkbox::before {
+    content: "\f14a";
+}
+input.checkbox:checked + label.input-label.radio::before {
+    content: "\f058";
+}
+
+.profile-edit-contents-action-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
 .profile-cancel-button {
-    display: inline-block;
     margin-right: 2em;
 }
 
@@ -596,7 +673,8 @@ svg:not(:root) {
     color: #161616;
 }
 
-.profile-save-action:hover {
+.profile-save-action:hover, .profile-save-action:active {
     background-color: #ff4808;
+    color: #fff;
 }
 

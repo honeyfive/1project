@@ -7,227 +7,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
-            transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
-        }
-
-        .c-clip {
-            width: 100px;
-            height: 50px;
-            object-fit: contain;
-            margin-left: 28px;
-            margin-top: 8px;
-        }
-
-        .main {
-            width: 500px;
-            height: 700px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .join-ment {
-            display: block;
-            text-align: center;
-            font-size: 35px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .show {
-            margin-top: 20px;
-            color: #929191;
-            text-align: center;
-            font-size: 21px;
-        }
-
-        .input-id, .input-password, .input-email {
-            margin-top: 40px;
-            padding-left: 10px;
-            width:500px;
-            height: 50px;
-            font-size: large;
-            border-radius: 4px;
-            border: none;
-            background-color: rgb(41, 39, 39);
-            color: white;
-        }
-
-        .input-password-check {
-            margin-top: 10px;
-            padding-left: 10px;
-            width:500px;
-            height: 50px;
-            font-size: large;
-            border-radius: 4px;
-            border: none;
-            background-color: rgb(41, 39, 39);
-            color: #929191;
-        }
-
-        .email-condition, .password-condition {
-            margin-top: 5px;
-            color: #929191;
-        }
-
-        .check-agree {
-            display: block;
-            margin-top: 20px;
-            color: #d1cfcf;
-        }
-
-        #agree {
-            margin-bottom: 5px;
-        }
-
-        .agree-text {
-            font-size: 20px;
-            font-weight: bolder;
-        }
-
-        input[type="checkbox"]{
-        display: none;
-        }
-
-        ul{
-        list-style:none;
-        }
-
-        input[type="checkbox"] + label:before {
-            content: "";
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            vertical-align: middle;
-            background: url(../checkbox/checkbox-inactive.svg) no-repeat;
-            cursor: pointer;
-            background-size: cover;
-            margin-right: 10px;
-            margin-top: 5px;
-        }
-
-        input[type="checkbox"]:checked + label:before{
-            content:"";
-            background-image: url(../checkbox/checkbox-active.svg);
-            }
-
-        .join-button {
-            margin: 0 auto;
-            margin-top: 50px;
-            width: 500px;
-            height: 50px;
-            display: block;
-            background-color: #737373;
-            color: white;
-            cursor: pointer;
-            font-size: medium;
-            border-radius: 6px;
-            border: none;
-            font-weight: bold;
-        }
-
-        @font-face {
-            font-family: 'Pretendard-Regular';
-            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        body {
-            font-family: 'Pretendard-Regular';
-        }
-
-        body {
-            width: 100%;
-            height: 100%;
-            background-color: black;
-        }
-
-        .footer {
-            width: 100%;
-            height: 230px;
-            background-color: #171717;
-            margin-top: 100px;
-            opacity: 0.95;
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .info {
-            color: #737373;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .info-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .sns {
-            color: #737373;
-            display: flex;
-            justify-content: center;
-        }
-
-        .instagram , .facebook, .youtube {
-            font-size: 20px;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
-
-        .question {
-            color: #737373;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .footer-logo {
-            display: inline-block;
-            justify-content: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            cursor: pointer;
-        }
-
-        .no-input {
-            display: none;
-            margin-top: 5px;
-            color: red;
-        }
-        
-        .no-input-condition {
-            display: none;
-            margin-top: 5px;
-            color: red;
-        }
-
-        .no-password-condition, .not-password {
-            display: none;
-            margin-top: 5px;
-            color: red;
-        }
-
-        .join-login {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="/1project/css/login_css/joinmembership.css">
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <a href="../login_html/start.html">
-                <img src="../login_image/KakaoTalk_20231028_162057713_01.png" class="c-clip">
+            <a href="/1project/html/login_html/start.html">
+                <img src="/1project/image/login_img/back/KakaoTalk_20231028_162057713_01.png" class="c-clip">
             </a>
             <div class="main">
                 <div class="join-ment">C Clip 회원가입</div>
@@ -262,13 +48,13 @@
                         <label for="agree5"><span>[선택] 마케팅 정보 수신 동의</span></label>
                     </li>
                 </ul>
-                <a href="./login.html" class="join-login"><button class="join-button" disabled>가입하기</button></a>
+                <a href="/1project/html/login_html/login.html" class="join-login"><button class="join-button" disabled>가입하기</button></a>
                 
             </div>
             
         </div>
         <div class="footer">
-            <div class="footer-logo"><img src="../login_image/logo.png" width="90px" height="40px"></div>
+            <div class="footer-logo"><img src="/1project/image/login_img/back/logo.png" width="90px" height="40px"></div>
             <p class="question">질문이 있으신가요? 문의 전화: 041-562-1122(수신자 부담)</p>
             <div class="info-container">
                 <div class="info">대표이사 : 정용진 |&nbsp;</div>
@@ -296,73 +82,6 @@
     
     
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-
-        $(document).ready(function() {
-            $('body').css('opacity', '1');
-        });
-
-        function selectall() {
-            if(document.getElementById("agree").checked==true){
-                for(let i=0;i<6;i++) document.getElementsByName("agree")[i].checked=true;
-            } else if(document.getElementById("agree").checked==false){
-                for(let i=0;i<6;i++) document.getElementsByName("agree")[i].checked=false;  
-            }
-        }
-
-        const input_id = document.querySelector('.input-id')
-        const email = document.querySelector('.email-condition');
-        const id = document.querySelector('.no-input');
-        const input_password = document.querySelector('.input-password');
-        const input_password_check = document.querySelector('.input-password-check')
-        const psw = document.querySelector('.password-condition')
-        const password = document.querySelector('.no-input-condition');
-        const password_check = document.querySelector('.no-password-condition');
-        const not_password = document.querySelector('.not-password');
-        const agree = document.querySelector('#agree');
-        const agree1 = document.querySelector('#agree1');
-        const agree2 = document.querySelector('#agree2');
-        const agree3 = document.querySelector('#agree3');
-        const join_btn = document.querySelector('.join-button');
-
-        function display(){
-            if(input_id.value.length == 0){
-                email.style.display = "none";
-                id.style.display = "block";
-                password.style.display = "none"
-            }else if (input_id.value.length >= 6 && input_id.value.length <= 12){
-                id.style.display = "none";
-                password.style.display = "none";
-                email.style.display = "block";
-            }else {
-                email.style.display = "none";
-                id.style.display = "none";
-                password.style.display = "block"
-            }
-            if(input_password.value != input_password_check.value){
-                psw.style.display = "none";
-                not_password.style.display = "block";
-            } else {
-                psw.style.display = "block";
-                not_password.style.display = "none";
-            }
-            const is_checked = agree.checked;
-            const is_checked1 = agree1.checked;
-            const is_checked2 = agree2.checked;
-            const is_checked3 = agree3.checked;
-
-            if((input_id.value.length >= 6 && input_id.value.length <= 12) && (input_password.value == input_password_check.value) && (input_password.value.length > 0) && ((is_checked1==true)&&(is_checked2==true)&&(is_checked3==true))){
-                join_btn.disabled = false;
-                join_btn.style.backgroundColor = "#ff4808";
-            } else {
-                join_btn.disabled = true;
-                join_btn.style.backgroundColor = "#737373";
-            }
-        }
-
-        input_id.addEventListener('keyup', display);
-        input_password.addEventListener('keyup', display);
-        input_password_check.addEventListener('keyup', display);
-    </script>
+    <script src="/1project/js/login_js/joinmembership.js"></script>
 </body>
 </html>

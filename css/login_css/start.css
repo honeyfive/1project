@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+}
+
+.logo {
+    background-color: black;
+}
+
+.c-clip {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 28px;
+    margin-top: 8px;
+    float: left;
+    position: relative;
+}
+
+.now-join, .login {
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+    background-color: #ff4808;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding:5px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.login {
+    background-color: black;
+    margin-right: 50px;
+    color: #dddcdc;
+}
+
+.ment {
+    text-align: center;
+    padding-top: 350px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+}
+
+.c-clip-login{
+    width: 360px;
+    height: 70px;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: none;
+    background-color: #ff4808;
+    color: white;
+    font-size: x-large;
+    margin-top: 70px;
+    position: relative;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.c-clip-login1{
+    width: 360px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: none;
+    background-color: #ff4808;
+    color: white;
+    font-size: x-large;
+    margin-top: 70px;
+    position: relative;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.aa {
+    text-decoration: none;
+    
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color:black;
+}
+
+.container::before{
+    content: "";
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.65) 65%,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 1) 100%
+    ), url(/1project/image/login_img/back/말레피센트1440.jpg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.original {
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 300px;
+}
+
+.contents, .free{
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 300px;
+    background-color: black;
+}
+
+.c-clip-start {
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    background-color: black;
+    height: 600px;
+}
+
+.original-text, .free-ment1, .start-ment1, .start-ment2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.original-text1, .original-text2, .contents-ment2, .contents-ment3, .free-ment2, .free-ment3{
+    font-size: 23px;
+}
+
+.contents-ment1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.original-series {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img1 {
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 5px;
+    opacity: 0.6;
+}
+
+.img2 {
+    height: 500px;
+    
+}
+
+.img3 {
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 5px;
+    opacity: 0.6;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.slider1 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+    background-color: black;
+}
+
+.img4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.image-slide {
+    width: 3050px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 30s linear infinite;
+}
+
+.image-slide1 {
+    width: 3050px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 25s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.video-div {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 80%;
+}
+
+.footer {
+    width: 100%;
+    height: 230px;
+    background-color: #171717;
+    margin-top: 100px;
+    opacity: 0.95;
+    font-size: 11px;
+    text-align: center;
+}
+
+.info {
+    color: #737373;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sns {
+    color: #737373;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram , .facebook, .youtube {
+    font-size: 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.question {
+    color: #737373;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    background-color: black;
+    opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
+    transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+}
+
+section {
+    padding-top: 4rem;
+    width: 50%;
+    margin: auto;
+    color: #c8c8c8;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+    details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    list-style: none;
+}
+
+details summary:after {
+    content: "+";
+    color: white;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+
+details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 2rem;
+}
+
+details summary {
+    outline: 0;
+}
+
+details p {
+    font-size: 18px;
+    margin: 0 0 1rem;
+    padding-top: 1rem;
+}
+
+.accordion {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    border: 1px solid #c8c8c8;
+    display: block;
+    margin: 0 auto;
+}
+
+.accordion-line {
+    width: 100%;
+    height: 2px;
+    border: 1px solid #c8c8c8;
+    display: block;
+    margin: 0 auto;
+}

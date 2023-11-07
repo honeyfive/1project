@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $('body').css('opacity', '1');
+});
+
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'ko',
