@@ -77,30 +77,24 @@
                                 <div class="profile-entry-autoplay">
                                     <h2 class="profile-entry-header">자동 재생 설정</h2>
                                     <div class="autoplay-option">
-                                        <input type="checkbox" id="nextEpisode-profile">
-                                        <span role="checkbox" aria-checked="true" aria-labelledby="nextEpisode-marker">
-                                            <i class="fa-solid fa-check" style="color: #ffffff;"></i>
-                                        </span>
-                                        <span class="nextEpisode-marker" id="nextEpisode-marker">모든 디바이스에서 시리즈의 다음 화 자동 재생</span>
-                                    </div>
-                                    <div class="autoplay-option">
-                                        <input type="checkbox" id="videomerch-profile">
-                                        <span role="checkbox" aria-checked="true" aria-labelledby="videomerch-marker">
-                                            <i class="fa-solid fa-check" style="color: #ffffff;"></i>
-                                        </span>
-                                        <span class="videomerch-marker" id="videomerch-marker">모든 디바이스에서 탐색 중 미리보기 자동 재생</span>
+                                        <input type="checkbox" id="select0" class="checkbox">
+                                        <label for="select0" class="input-label checkbox">모든 디바이스에서 시리즈의 다음 화 자동 재생</label>
+                                        <input type="checkbox" id="select1" class="checkbox">
+                                        <label for="select1" class="input-label checkbox">모든 디바이스에서 탐색 중 미리보기 자동 재생</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="profile-button profile-cancel-button">취소</button>
-                        <button class="profile-button profile-save-action">저장</button>
                     </div>
+                </div>
+                <div class="profile-edit-contents-action-button">
+                    <button class="profile-button profile-cancel-button">취소</button>
+                    <button class="profile-button profile-save-action">저장</button>
                 </div>
             </div>
         </div>
     </div>
-
+</body>
     <script>
         const label = document.querySelector('.label');
         const options = document.querySelectorAll('.optionItem');
