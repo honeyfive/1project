@@ -163,7 +163,7 @@ video {
 
 .contents-txt-box {
     width: 100%;
-    height: 1995px;
+    height: 100%;
     border-radius: 0px 0px 10px 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -274,28 +274,20 @@ p {
     display: flex;
     align-items: center;
 }
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/image/content_img/image/영화메인뒷배경.png);
+    background-size: cover;
+    font-family: 'Pretendard-Regular';
+}
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
-
-body {
-    font-family: 'Pretendard-Regular';
-}
-
-.body-img {
-    position: absolute;
-    width: 300%;
-    height: 300%;
-    left: 0px;
-    top: 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/image/content_img/image/영화메인뒷배경.png);
-    background-size:cover;
-    z-index: -5;
-}
-
 
 .contents-recommend-box-items {
     width: 260px;

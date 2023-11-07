@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/profile_css/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/profile_css/profile.css">
 </head>
 <body>
     <div class="profile-gate-container">
@@ -28,54 +28,16 @@
                     <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
                     <input type="password" maxlength="1" class="profile-pin-input-number" tabindex="0">
                 </div>
-                <p class="profile-pin-input-error">프로필 비밀번호는 6자리입니다.</p>
+                <p class="profile-pin-input-error"></p>
             </div>
             <div class="profile-pin-prompt-forgot">
                 <a href="#" tabindex="0" class="pin-prompt-forgot-button">
-                    <span class="pin-prompt-forgot-button-text"></span>
+                    <span class="pin-prompt-forgot-button-text">프로필 비밀번호 찾기</span>
                 </a>
             </div>
         </div>
     </div>
 
-
-    <script> 
-        const pinArr = document.querySelectorAll('.profile-pin-input-number');
-        const pinInputError = document.getElementsByClassName('progfile-pin-input-error');
-
-        pinArr[0].addEventListener('keyup', (e)=>{
-            console.log(e.keyCode == 8);
-            pinArr[1].focus();
-        });
-        pinArr[1].addEventListener('keyup', (e)=>{
-            console.log(e.keyCode == 8);
-            pinArr[2].focus();
-        });
-        pinArr[2].addEventListener('keyup', (e)=>{
-            console.log(e.keyCode == 8);
-            pinArr[3].focus();
-        });
-        pinArr[3].addEventListener('keyup', (e)=>{
-            console.log(e.keyCode == 8);
-            pinArr[4].focus();
-        });
-        pinArr[4].addEventListener('keyup', (e)=>{
-            console.log(e.keyCode == 8);
-            pinArr[5].focus();
-        });
-        pinArr[5].addEventListener('keyup', (e)=>{
-            console.log(e.keyCode == 8);
-            pinArr[6].focus();
-        });
-
-        function checkPinNumber(pinArr) {
-            if(pinArr == undefined) {
-                pinInputError.textContent = "프로필 비밀번호를 입력하세요.";
-            } else if (pinArr == NaN) {
-                pinInputError.textContent = "프로필 비밀번호 숫자를 입력하세요.";
-            }
-        }
-
-    </script>
+    <script src="/js/profile_js/profile.js"></script>
 </body>
 </html>

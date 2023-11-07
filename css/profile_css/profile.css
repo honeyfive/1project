@@ -265,12 +265,21 @@ svg:not(:root) {
 /* 프로필 비밀번호 forgot 버튼 */
 .profile-pin-prompt-forgot {
     position: absolute;
-    bottom: 16vw;
+    bottom: 10vw;
     font-size: 1.3vw;
 }
 
 .pin-prompt-forgot-button {
     color:#e5e5e5;
+    padding: 0.8em 1.4em;
+}
+
+.pin-prompt-forgot-button:hover {
+    background-color: #333;
+    opacity: 1;
+    transform: scale(1.6);
+    position: initial;
+    transition-duration: 450ms;
 }
 
 .pin-prompt-forgot-button-text {
@@ -596,7 +605,7 @@ svg:not(:root) {
     color: #161616;
 }
 
-.profile-save-action:hover {
+.profile-save-action:hover, .profile-save-action:active {
     background-color: #ff4808;
 }
 

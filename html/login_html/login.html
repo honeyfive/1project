@@ -10,7 +10,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../login_css/login.css">
+    <link rel="stylesheet" href="/css/login_css/login.css">
     <style>
         body {
             opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
@@ -21,6 +21,9 @@
 
 <body>
     <div class="container">
+        <div>
+            <video class="login-video" src="/1project/login/login_image/videoplayback.mp4" autoplay loop muted></video>
+        </div>
         <div class="logo">
             <a href="./start.html">
                 <img src="/1project/login/login_image/KakaoTalk_20231028_162057713_01.png" class="c-clip">
@@ -28,7 +31,7 @@
         </div>
         <div class="main">
             <p class="login-text">로그인</p>
-            <input type="email" class="email" placeholder="  이메일 주소 또는 전화번호">
+            <input type="email" class="email" placeholder="  아이디">
             <input type="password" class="password" placeholder="  비밀번호">
             <a href="/1project/profile/profile.html" class="login"><button type="button" class="login-button" disabled>로그인</button></a>
             <input type="checkbox" class="checkbox" checked> <span class="login-info">로그인 정보 저장</span>
