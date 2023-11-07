@@ -277,7 +277,7 @@ p {
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/image/content_img/image/영화메인뒷배경.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/resource/image/contents_img/영화메인뒷배경.png);
     background-size: cover;
     font-family: 'Pretendard-Regular';
 }
@@ -296,6 +296,7 @@ body {
     background-color: #2f2f2f;
     display: flex;
     z-index: 2;
+    cursor: pointer;
 }
 
 .contents-recommend-box-items-img {
@@ -305,7 +306,7 @@ body {
     text-align: end;
     position: relative;
     z-index: 1;
-    cursor: pointer;
+    
 }
 
 .recommend-items-img {
