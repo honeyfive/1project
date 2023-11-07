@@ -163,7 +163,7 @@ video {
 
 .contents-txt-box {
     width: 100%;
-    height: 1995px;
+    height: 100%;
     border-radius: 0px 0px 10px 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -275,10 +275,10 @@ p {
     align-items: center;
 }
 
+
 body {
-    /* background-image: url(./image/BGTest.png);
-    background-repeat: repeat; */
-    background-color: #161616;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/image/content_img/image/영화메인뒷배경.png);
+    background-size: cover;
     font-family: 'Pretendard-Regular';
 }
 
@@ -295,6 +295,7 @@ body {
     border-radius: 5px;
     background-color: #2f2f2f;
     display: flex;
+    z-index: 2;
 }
 
 .contents-recommend-box-items-img {
@@ -429,6 +430,7 @@ video [poster] {
     width: 30px;
     height: 30px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(50%);
+
 }
 
 .black-gradient {
@@ -448,10 +450,10 @@ video [poster] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
+    width: 170px;
     height: 25px;
     /* 툴팁 영역의 넓이를 설정 */
-    background-color: #fff;
+    background-color: #f2f2f2;
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -459,7 +461,7 @@ video [poster] {
     font-size: 0.65em;
     position: absolute;
     /* 절대 위치를 사용 */
-    bottom: 50px;
+    bottom: 45px;
     z-index: 1;
 }
 
@@ -474,10 +476,10 @@ video [poster] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55px;
+    width: 80px;
     height: 25px;
     /* 툴팁 영역의 넓이를 설정 */
-    background-color: #fff;
+    background-color: #f2f2f2;
     color: black;
     text-align: center;
     border-radius: 6px;
@@ -485,8 +487,8 @@ video [poster] {
     font-size: 0.65em;
     position: absolute;
     /* 절대 위치를 사용 */
-    left: -8px;
-    bottom: 50px;
+    left: -22px;
+    bottom: 45px;
     z-index: 1;
 }
 

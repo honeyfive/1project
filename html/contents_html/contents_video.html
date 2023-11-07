@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C Clip Video</title>
-    <link rel="stylesheet" href="/css/contents_css/contents_video.css">
+    <link href="/1project/css/contents_css/contents_video.css" rel="stylesheet">
 </head>
 
 <style>
@@ -16,7 +16,7 @@
 </style>
 <body>
     <div class="video-container">
-        <video src="./video/videoTrailer.mp4" poster="./image/인비저블 게스트 비디오 포스터.jpg"></video>
+        <video src="/1project/image/content_img/video/videoTrailer.mp4" poster="/1project/image/content_img/image/인비저블 게스트 비디오 포스터.jpg"></video>
         <div class="controls-container">
             <div class="progress-controls">
                 <div class="progress-bar">
@@ -60,6 +60,9 @@
                         <line x1="17" y1="9" x2="23" y2="15"></line>
                     </svg>
                 </button>
+
+                <button onclick = "location.href = '/1project/html/contents_html/contents_movie.html'" class="contents-video-box-btn-close close-x"><img class="img-close" src="/1project/image/content_img/image/free-icon-left-arrow-271218.png"></button>
+            <a href="/1project/html/contents_html/contents_video.html" target="_self"><div class="contents-video-box-btn-play"></div></a>
                 <p class="title">
                 </p>
 
@@ -99,7 +102,7 @@
     </div>
 
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="./contents_video.js"></script>
+    <script src="/1project/js/contents_js/contents_video.js"></script>
 
     <script>
         $(document).ready(function() {
