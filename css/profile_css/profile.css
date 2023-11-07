@@ -605,7 +605,7 @@ svg:not(:root) {
     color: #161616;
 }
 
-.profile-save-action:hover {
+.profile-save-action:hover, .profile-save-action:active {
     background-color: #ff4808;
 }
 
