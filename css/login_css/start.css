@@ -26,17 +26,18 @@ body {
 
 .now-join, .login {
     float: right;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 10px;
     background-color: #ff4808;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
-    padding:5px;
+    padding: 8px 15px; 
     font-weight: bolder;
     position: relative;
     z-index: 1;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .login {
@@ -47,11 +48,15 @@ body {
 
 .ment {
     text-align: center;
-    padding-top: 350px;
+    padding-top: 380px;
     font-size: 40px;
     font-weight: bolder;
     color: white;
     position: relative;
+}
+
+.start-ments:not(:last-child) {
+    margin: 0 0 6px 0;
 }
 
 .c-clip-login{
@@ -68,6 +73,12 @@ body {
     position: relative;
     font-weight:bold;
     cursor: pointer;
+    transition: all .3s;
+}
+
+/* 제은 상은 추가 */
+.c-clip-login:hover {
+    background-color: #ff6228;
 }
 
 .c-clip-login1{
@@ -80,10 +91,17 @@ body {
     background-color: #ff4808;
     color: white;
     font-size: x-large;
-    margin-top: 70px;
+    /* 마진값 수정 */
+    margin-top: 50px;
     position: relative;
     font-weight:bold;
     cursor: pointer;
+    transition: all .3s;
+}
+
+/* 제은 상은 추가 */
+.c-clip-login1:hover{
+    background-color: #ff6228;
 }
 
 .aa {
@@ -152,6 +170,8 @@ body {
 
 .original-text1, .original-text2, .contents-ment2, .contents-ment3, .free-ment2, .free-ment3{
     font-size: 23px;
+    /* 행간 조정을 위해 margin 추가 */
+    margin: 0 0 6px 0;
 }
 
 .contents-ment1 {
@@ -348,13 +368,14 @@ details summary::-webkit-details-marker {
 
 details summary {
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     border-top: 1px solid black;
     position: relative;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     list-style: none;
+    letter-spacing: 0.6;
 }
 
 details summary:after {
@@ -380,7 +401,7 @@ details summary {
 }
 
 details p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 0 1rem;
     padding-top: 1rem;
 }
