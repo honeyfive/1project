@@ -59,6 +59,16 @@ playLogo[0].addEventListener('click', () => {
 });
 
 const playVidHover = document.getElementsByClassName('contents-video-box-btn-play');
+
+playVidHover[0].addEventListener('mouseover', () => {
+    playVidHover[0].style.opacity = "0.6";
+    playVidHover[0].style.transition = "0.5s";
+});
+
+playVidHover[0].addEventListener('mouseout', () => {
+    playVidHover[0].style.opacity = "0.9";
+});
+
 playVidHover[0].addEventListener('mousedown', () => {
     playVidHover[0].style.border = "3px solid #f2f2f2";
 });
@@ -75,6 +85,7 @@ wishHover[0].addEventListener('click', () => {
     const wishToggle = document.getElementById("wish").src = "/1project/image/content_img/image/free-icon-plus-3524388.png";
     if (flagWish == 0) {
         document.getElementById("wish").src = "/1project/image/content_img/image/check.png";
+        document.getElementById("wish").filter.brightness = '20%';
         wishText[0].innerHTML = "내가 찜한 콘텐츠에 추가";
         flagWish = 1;
     } else {

@@ -124,7 +124,7 @@ video {
     cursor: pointer;
     font-size: 1.5em;
     color: white;
-    z-index: 3;
+    z-index: 4;
 }
 
 .contents-video-box-btn-like {
