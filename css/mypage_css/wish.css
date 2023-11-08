@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
-    color: white;
+ 
     
 }
 
@@ -14,14 +14,58 @@ font-weight: 400;
 font-style: normal;
 }
 
-body {
-font-family: 'Pretendard-Regular';
-background-color: #161616;
-overflow-x: hidden ;
-
-}
-body {
+.container{
+    width: 95%;
+    height: 600px;
     
+    margin: 0 auto;
+    }
+    h1{
+    font-size: 40px;
+    margin-top: px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    }
+    h3{
+    font-size: 20px;
+    margin-left: 10px;
+    }
+    .slide{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .slides{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    }
+    #slideimg{
+    width: 250px;
+    height: 150px;
+    border: 3px solid #161616;
+    border-radius: 5px;
+    
+    display: flex;
+    margin-top: 10px;
+    
+    
+    
+    }
+    #slideimg:hover{
+    border: 4px solid white;
+    border-radius: 5px;
+    scale: 1.1;
+    
+    transition: all .2s;
+    cursor: pointer;
+    }
+
+body {
+    background-color: #161616;
     font-family: 'Pretendard-Regular';
     overflow-x: hidden ;
     opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
@@ -47,6 +91,7 @@ body {
         transform: rotate(360deg);
     }
 } */
+
 
 .header {
     height: 70px;
@@ -122,7 +167,7 @@ body {
 .profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/resource/image/profile_img/avatar01.png');
+    background-image: url('../../resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -161,6 +206,7 @@ body {
 .dropdown-profile-transform {
     width: 150px;
     height: 60px;
+
     border-bottom: 1px solid #737373;
 }
 
@@ -175,7 +221,7 @@ body {
 .dropdown-profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/resource/image/profile_img/avatar01.png');
+    background-image: url('../../resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -244,52 +290,4 @@ height: 600px;
     cursor: pointer;
     margin: 20px 10px;
 }
-.container{
-width: 95%;
-height: 600px;
 
-margin: 0 auto;
-}
-h1{
-font-size: 40px;
-margin-top: px;
-padding-top: 30px;
-padding-bottom: 30px;
-margin-left: 10px;
-}
-h3{
-font-size: 20px;
-margin-left: 10px;
-}
-.slide{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-}
-.slides{
-margin-top: 20px;
-display: flex;
-justify-content: space-around;
-
-
-}
-#slideimg{
-width: 250px;
-height: 150px;
-border: 3px solid #161616;
-border-radius: 5px;
-
-display: flex;
-margin-top: 10px;
-
-
-
-}
-#slideimg:hover{
-border: 4px solid white;
-border-radius: 5px;
-scale: 1.1;
-
-transition: all .2s;
-cursor: pointer;
-}
