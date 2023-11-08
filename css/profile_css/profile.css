@@ -95,11 +95,13 @@ svg:not(:root) {
 }
 
 .choose-profile {
-    margin: 2em 0;
+    margin: 3em 0;
+    display: flex;
+    justify-items: center;
 }
 
 .profile, .profile-add:not(:last-child) {
-    margin: 0 2vw 0 0;
+    margin: 0 1vw;
 }
 
 .profile-gate-container li {
@@ -112,7 +114,6 @@ svg:not(:root) {
     max-width: 200px;
     min-width: 80;
     width: 10vw;
-    
 }
 
 .profile-logo {
@@ -695,9 +696,9 @@ input.checkbox:checked + label.input-label.radio::before {
     color: #161616;
 }
 
+
 /* .profile-save-action:hover, .profile-save-action:active { */
 .profile-save-action:hover {
     background-color: #ff4808;
     color: #fff;
 }
-
