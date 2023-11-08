@@ -427,7 +427,7 @@ span {
 .img-plus {
     width: 22px;
     height: 22px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(80%);
 }
 
 .img-like {
@@ -435,25 +435,25 @@ span {
     height: 20px;
     margin-left: 2px;
     margin-bottom: 2px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(80%);
 }
 
 .img-volumeOn {
     width: 25px;
     height: 25px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(80%);
 }
 
 .img-volumeOff {
     width: 25px;
     height: 25px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(80%);
 }
 
 .img-close {
     width: 30px;
     height: 30px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(100%) contrast(80%);
 }
 
 .black-gradient {

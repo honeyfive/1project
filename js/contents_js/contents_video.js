@@ -50,6 +50,17 @@ const playPause = () => {
     }
 };
 
+const playPause2 = () => {
+    if (video.paused) {
+        playButton.style.display = '';
+        pauseButton.style.display = 'none';
+    } else {
+        playButton.style.display = 'none';
+        pauseButton.style.display = '';
+    }
+};
+
+
 const toggleMute = () => {
     video.muted = !video.muted;
     if (video.muted) {
@@ -122,8 +133,10 @@ progressBar.addEventListener('click', (event) => {
     const pos = (event.pageX - (progressBar.offsetLeft + progressBar.offsetParent.offsetLeft)) / progressBar.offsetWidth;
     video.currentTime = pos * video.duration;
 });
-
+playPauseButton.addEventListener('load', playPause2);
 playPauseButton.addEventListener('click', playPause);
+
+
 
 rewindButton.addEventListener('click', () => {
     video.currentTime -= 10;
@@ -136,3 +149,16 @@ fastForwardButton.addEventListener('click', () => {
 volumeButton.addEventListener('click', toggleMute);
 
 fullScreenButton.addEventListener('click', toggleFullScreen);
+
+const playVid2 = document.getElementsByClassName('video-box')
+playVid2[0].addEventListener('click', () => {
+    if (trailer.paused) {
+        trailer.play()
+        playButton.style.display = 'none';
+        pauseButton.style.display = '';
+    } else {
+        trailer.pause()
+        playButton.style.display = '';
+        pauseButton.style.display = 'none';
+    }
+});

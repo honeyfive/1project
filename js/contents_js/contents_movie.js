@@ -26,7 +26,7 @@ function vidEnded() {
     //영상 끝난 뒤 작업할 내용
 }
 
-var playBtnOnSelect = document.getElementsByClassName("contents-recommend-box-items");
+var playBtnOnSelect = document.getElementsByClassName("playHover");
 for (let i = 0; i < playBtnOnSelect.length; i++) {
     playBtnOnSelect[i].addEventListener('mouseover', () => {
         document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[i].style.zIndex = 2;
@@ -34,7 +34,7 @@ for (let i = 0; i < playBtnOnSelect.length; i++) {
 };
 
 
-var playBtnOffSelect = document.getElementsByClassName("contents-recommend-box-items");
+var playBtnOffSelect = document.getElementsByClassName("playHover");
 for (let i = 0; i < playBtnOffSelect.length; i++) {
     playBtnOnSelect[i].addEventListener('mouseout', () => {
         document.getElementsByClassName('contents-recommend-box-btn-hoverPlay')[i].style.zIndex = -1;
@@ -86,10 +86,12 @@ wishHover[0].addEventListener('click', () => {
     if (flagWish == 0) {
         document.getElementById("wish").src = "/1project/resource/image/contents_img/check.png";
         wishText[0].innerHTML = "내가 찜한 콘텐츠에 추가";
+        wishHover[0].style.border = "2px solid white"
         flagWish = 1;
     } else {
         wishToggle;
         wishText[0].innerHTML = "내가 찜한 콘텐츠에서 제거";
+        wishHover[0].style.border = "2px solid gray"
         flagWish = 0;
     };
 });
@@ -164,9 +166,11 @@ likeHover[0].addEventListener('click', () => {
     const likeToggle = document.getElementById("like").src = "/1project/resource/image/contents_img/thumbs up outline.png";
     if (flagLike == 0) {
         document.getElementById("like").src = "/1project/resource/image/contents_img/thumb-up.png";
+        likeHover[0].style.border = "2px solid white";
         flagLike = 1;
     } else {
         likeToggle;
+        likeHover[0].style.border = "2px solid gray";
         flagLike = 0;
     };
 });
