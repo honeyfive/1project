@@ -78,10 +78,12 @@ wishHover[0].addEventListener('click', () => {
     if (flagWish == 0) {
         document.getElementById("wish").src = "/1project/resource/image/contents_img/check.png";
         wishText[0].innerHTML = "내가 찜한 콘텐츠에 추가";
+        wishHover[0].style.border = "2px solid white"
         flagWish = 1;
     } else {
         wishToggle;
         wishText[0].innerHTML = "내가 찜한 콘텐츠에서 제거";
+        wishHover[0].style.border = "2px solid gray"
         flagWish = 0;
     };
 });
@@ -117,9 +119,11 @@ likeHover[0].addEventListener('click', () => {
     const likeToggle = document.getElementById("like").src = "/1project/resource/image/contents_img/thumbs up outline.png";
     if (flagLike == 0) {
         document.getElementById("like").src = "/1project/resource/image/contents_img/thumb-up.png";
+        likeHover[0].style.border = "2px solid white";
         flagLike = 1;
     } else {
         likeToggle;
+        likeHover[0].style.border = "2px solid gray";
         flagLike = 0;
     };
 });

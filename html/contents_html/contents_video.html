@@ -16,7 +16,8 @@
 </style>
 <body>
     <div class="video-container">
-        <video src="/1project/resource/video/contents_video/videoTrailer.mp4" autoplay muted></video>
+        <video onload="playPause2()" id="trailer" src="/1project/resource/video/contents_video/videoTrailer.mp4" autoplay muted></video>
+        <div class="video-box"></div>
         <div class="controls-container">
             <div class="progress-controls">
                 <div class="progress-bar">
