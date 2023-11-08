@@ -276,7 +276,7 @@ p {
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(/1project/resource/image/contents_img/드라마메인뒷배경.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.810), rgba(0, 0, 0, 0.8)) ,url(../../resource/image/contents_img/드라마메인뒷배경.png);
     background-size: cover;
     font-family: 'Pretendard-Regular';
 }
