@@ -269,17 +269,18 @@
 
     .btn-play {
         background-color: #e5e5e5;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
-
+    
     .btn-detail-info {
         color: white;
         background-color: #737373;
-        transition: all 0.3s;
+        opacity: 0.8;
+        transition: all 0.2s;
     }
-
+    
     .btn-play:hover, .btn-detail-info:hover {
-        opacity: 0.7;
+        opacity: 0.5;
         cursor: pointer;
     }
 
