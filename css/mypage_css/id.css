@@ -20,13 +20,12 @@ background-color: #161616;
 }
 .bigcontainer{
     width: 100%;
-    border: 0px solid pink;            
 }
 .container{
     width: 40%;
-    height: 197px;
-    border-left: 1px solid #565656;
-    border-right: 1px solid #565656;
+    height: 210px;
+    border: 1px solid #565656;
+    /* border-right: 1px solid #565656; */
     margin: 0 auto;
     border-radius: 6px;
     margin-bottom: 40px;
@@ -42,7 +41,7 @@ background-color: #161616;
 }
 .container2{
     width: 40%;
-    height: 140px;
+    height: 170px;
     border: 0.2px solid #565656;
     margin: 0 auto;
     border-radius: 4px;
@@ -54,12 +53,13 @@ background-color: #161616;
     background-color: #565656;
     height: 40px;
 }
-.blackbox{
+.blackbox {
     height: 56px;
     border-bottom: 1px solid #565656;
     padding: 0px 10px;
     
 }
+
 .blackbox6{
     height: 56px;
     border-bottom: 1px solid #565656;
@@ -73,8 +73,7 @@ background-color: #161616;
 }
 
 .blackbox1{
-    height: 56px;
-    border-bottom: 1px solid #565656;
+    height: 60px;
     text-align: center;
     line-height: 56px;
     font-size: 17px;
@@ -86,10 +85,11 @@ background-color: #161616;
     padding: 0px 10px;
 }
 .grayfont2 {
+    display: inline-block;
     font-size: 14px;
     background-color: transparent;
     color: lightgray;
-    padding: 0px 10px;
+    padding-top: 20px;
 }
 
 .blackfont{
@@ -123,12 +123,15 @@ p{
 }
 .container4{
     width: 40%;
-    height: 197px;
-   
+    height: 150px;
     margin: 0 auto;
     border-radius: 4px;
     margin-bottom: 40px;
     margin-top: 10px;
+}
+
+.container4-line {
+    line-height: 25px;
 }
 .header {
     height: 70px;
@@ -338,13 +341,16 @@ background-color: #bbb;
 transition: all 0.2s;
 cursor: pointer;
 }
+
 .wrap{
 margin-left: 400px;
 margin-top: -40px;
-float: left;
+margin-right: 10px;
+float: right;
 }
+
 .wrap .button h3 {
-margin-left: 5px;
+margin-right: 20px;
 line-height: 25px;
 color: #fff;
 opacity: 0;
@@ -378,7 +384,7 @@ left: 20px;
 color: #ff4808;
 }
 #fontinfo2{
-padding: 10px;
+padding-bottom: 20px;
 font-size: 32px;
 margin-left: 380px;
 margin-top: -60px;
