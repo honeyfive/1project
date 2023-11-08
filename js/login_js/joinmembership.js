@@ -2,14 +2,6 @@ $(document).ready(function() {
     $('body').css('opacity', '1');
 });
 
-function selectall() {
-    if(document.getElementById("agree").checked==true){
-        for(let i=0;i<6;i++) document.getElementsByName("agree")[i].checked=true;
-    } else if(document.getElementById("agree").checked==false){
-        for(let i=0;i<6;i++) document.getElementsByName("agree")[i].checked=false;  
-    }
-}
-
 const input_id = document.querySelector('.input-id')
 const email = document.querySelector('.email-condition');
 const id = document.querySelector('.no-input');
@@ -24,6 +16,14 @@ const agree1 = document.querySelector('#agree1');
 const agree2 = document.querySelector('#agree2');
 const agree3 = document.querySelector('#agree3');
 const join_btn = document.querySelector('.join-button');
+
+function selectall() {
+    if(document.getElementById("agree").checked==true){
+        for(let i=0;i<6;i++) document.getElementsByName("agree")[i].checked=true;
+    } else if(document.getElementById("agree").checked==false){
+        for(let i=0;i<6;i++) document.getElementsByName("agree")[i].checked=false;  
+    }
+}
 
 function display(){
     if(input_id.value.length == 0){
@@ -46,12 +46,16 @@ function display(){
         psw.style.display = "block";
         not_password.style.display = "none";
     }
+    
     const is_checked = agree.checked;
     const is_checked1 = agree1.checked;
     const is_checked2 = agree2.checked;
     const is_checked3 = agree3.checked;
 
-    if((input_id.value.length >= 6 && input_id.value.length <= 12) && (input_password.value == input_password_check.value) && (input_password.value.length > 0) && ((is_checked1==true)&&(is_checked2==true)&&(is_checked3==true))){
+    if((input_id.value.length >= 6 && input_id.value.length <= 12) &&
+    (input_password.value == input_password_check.value) && 
+    (input_password.value.length > 0) && 
+    ((is_checked1==true)&&(is_checked2==true)&&(is_checked3==true))){
         join_btn.disabled = false;
         join_btn.style.backgroundColor = "#ff4808";
     } else {

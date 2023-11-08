@@ -10,7 +10,7 @@
     background-color: #171717;
     margin: 0 auto;
     border-radius: 6px;
-    margin-top: 15px;
+    margin-top: 50px;
     opacity: 0.96;
 }
 
@@ -104,7 +104,7 @@
     width: 100%;
     height: 230px;
     background-color: #171717;
-    margin-top: 100px;
+    margin-top: 227px;
     opacity: 0.95;
     font-size: 11px;
     text-align: center;
@@ -149,16 +149,6 @@
     cursor: pointer;
 }
 
-.container {
-    /* background-image: url(/1project/login/login_image/넷플릭스배경.jpg);
-    max-width: 100%;
-    height: 100vh;
-    position: relative;
-    background-size: cover;
-    background-position: center; */
-    
-}
-
 .container::before{
     content: "";
     opacity: 0.5;
@@ -195,16 +185,29 @@ body {
     background-color: #171717;
     opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
     transition: opacity 1s; /* 투명도 전환 효과를 1초 동안 적용*/
+    overflow-x: hidden;
 }
 
 .login-video {
     margin: 0;
     max-width: 100%;
     width: 100%;
-    height: 1000px;
+    height: 1020px;
     filter: brightness(70%);
     position: absolute;
-    object-fit: fill;
+    transform: scaleY(1.4);
     top: 0px;
     background-size: cover;
+    object-fit: fill;
+    overflow: hidden;
 }
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* &::-webkit-scrollbar {
+    display: none;
+} */
