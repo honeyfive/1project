@@ -6,6 +6,8 @@
     <title>계정</title>
     <link href="/1project/css/mypage_css/id.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
     <style>
         body {
             opacity: 0; /* 페이지 로드시 초기 투명도를 0으로 설정*/
@@ -79,7 +81,7 @@
         <div class="container1">
             <div class="graybox"><span class="grayfont">멤버십</span></div>
             <div class="blackbox2">
-                <span class="blackfont2">씨클립 + 프리미엄(월간)</span><br>
+                <span class="blackfont2">씨클립 + 프리미엄(월간)</span>
                     <p>iTunes 통해 구독</p>
                
             </div>
@@ -100,7 +102,7 @@
                 </div>
             </div>
             
-            <div class="blackbox3"><span class="grayfont" style=" padding: 0px 0px 10px 0px;">계정 내 프로필에 대한 시청 제한을 관리하려면, <span class="redfont">'프로필 수정'</span>으로 이동해 프로필을 선택하세요.</span></div>
+            <div class="blackbox3"><span class="grayfont2" style=" padding: 0px 0px 10px 0px;">계정 내 프로필에 대한 시청 제한을 관리하려면, <span class="redfont">'프로필 수정'</span>으로 이동해 프로필을 선택하세요.</span></div>
         </div>
         <div class="container4"></a>
             <span>
@@ -138,6 +140,7 @@
 </body>
 
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 <script>
     $(document).ready(function() {
         $('body').css('opacity', '1');
@@ -146,18 +149,32 @@
     let flag = 0;
     const button = document.getElementsByClassName('button');
     button[0].addEventListener('click',()=>{
-
     
-    if(flag == 0 ){
-        flag =1;
-        alert('프로필 생성이 제한되었습니다.');
-       
-    }   else {
-        alert('프로필 생성제한이 풀렸습니다.');
-    };
-});
-   
-    
-        
+        if(flag == 0 ){
+            // alert('프로필 생성이 제한되었습니다.');
+            flag = 1;
+            Swal.fire({
+                        text: "프로필 생성이 제한되었습니다.",
+                        width: 300,
+                        padding: "2em",
+                        color: "#fff",
+                        background: "#2f2f2f",
+                        confirmButtonText: "확인",
+                        confirmButtonColor: "#ff4808"
+                        });
+        }   else {
+            // alert('프로필 생성제한이 풀렸습니다.');
+            flag = 0;
+            Swal.fire({
+                        text: "프로필 생성제한이 풀렸습니다.",
+                        width: 300,
+                        padding: "2em",
+                        color: "#fff",
+                        background: "#2f2f2f",
+                        confirmButtonText: "확인",
+                        confirmButtonColor: "#999"
+                        });
+        };
+    });
 </script>
 </html>
