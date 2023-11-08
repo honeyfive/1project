@@ -15,10 +15,12 @@ body{
     align-items: center;
 }
 #mon{
+    margin-top: 20px;
     color: white;
 }
 h1{
-    margin-top: 140px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     font-size: 40px;
     color: white;
 }
@@ -29,7 +31,7 @@ h1{
 }
 .mid{
     
-    height: 250px;
+    height: 200px;
 }
 span{
     color: white;
@@ -168,14 +170,12 @@ a:hover{
 #seq{
     width: 500px;
     height: 30px;
-    margin-top: -15px;
-    margin-left: -550px;
-    border: 0px;    
+    padding: 20px;
     font-size: 22px;
-    
-    
-   
+    border: 3px solid;
+    border-image: linear-gradient(to right, #ff5213, #c00707) 1;
 }
+
 #whiteimg{
    
     filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(298deg) brightness(101%) contrast(102%);
