@@ -86,7 +86,7 @@
     .profile-image {
         width: 40px;
         height: 40px;
-        background-image: url('/1project/resource/image/profile_img/avatar01.png');
+        background-image: url('../../resource/image/profile_img/avatar01.png');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -139,7 +139,7 @@
     .dropdown-profile-image {
         width: 40px;
         height: 40px;
-        background-image: url('/1project/resource/image/profile_img/avatar01.png');
+        background-image: url('../../resource/image/profile_img/avatar01.png');
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -207,7 +207,7 @@
         rgba(0, 0, 0, 0.3) 40%,
         rgba(0, 0, 0, 0.5) 65%,
         rgba(0, 0, 0, 0.8) 100%
-        ), url(/1project/resource/image/main_img/메인-영화.webp);
+        ), url('../../resource/image/main_img/메인-영화.webp');
         position: absolute;
         top: 0px;
         left: 0px;
