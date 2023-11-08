@@ -316,7 +316,7 @@ code{
 .profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/image/profile_img/avatar01.png');
+    background-image: url('/1project/resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -369,7 +369,7 @@ code{
 .dropdown-profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/image/profile_img/avatar01.png');
+    background-image: url('/1project/resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
