@@ -14,6 +14,7 @@ const fullVolumeButton = volumeButton.querySelector('.full-volume');
 const mutedButton = volumeButton.querySelector('.muted');
 const maximizeButton = fullScreenButton.querySelector('.maximize');
 const minimizeButton = fullScreenButton.querySelector('.minimize');
+const fullCloseBtn = document.getElementsByClassName('img-close');
 
 
 const progressBar = document.querySelector('.video-container .progress-controls .progress-bar');
@@ -38,6 +39,20 @@ const displayControls = () => {
     }, 5000);
 };
 
+window.onload = function() {
+    if (video.paused && video.muted) {
+        playButton.style.display = 'none';
+        pauseButton.style.display = '';
+        fullVolumeButton.style.display = 'none';
+        mutedButton.style.display = '';
+    } else {
+        playButton.style.display = '';
+        pauseButton.style.display = 'none';
+        fullVolumeButton.style.display = '';
+        mutedButton.style.display = 'none';
+    }
+};
+
 const playPause = () => {
     if (video.paused) {
         video.play();
@@ -49,17 +64,6 @@ const playPause = () => {
         pauseButton.style.display = 'none';
     }
 };
-
-const playPause2 = () => {
-    if (video.paused) {
-        playButton.style.display = '';
-        pauseButton.style.display = 'none';
-    } else {
-        playButton.style.display = 'none';
-        pauseButton.style.display = '';
-    }
-};
-
 
 const toggleMute = () => {
     video.muted = !video.muted;
@@ -87,6 +91,7 @@ document.addEventListener('fullscreenchange', () => {
     } else {
         maximizeButton.style.display = 'none';
         minimizeButton.style.display = '';
+        fullCloseBtn[0].style.display = 'none';
     }
 });
 
@@ -133,7 +138,7 @@ progressBar.addEventListener('click', (event) => {
     const pos = (event.pageX - (progressBar.offsetLeft + progressBar.offsetParent.offsetLeft)) / progressBar.offsetWidth;
     video.currentTime = pos * video.duration;
 });
-playPauseButton.addEventListener('load', playPause2);
+
 playPauseButton.addEventListener('click', playPause);
 
 
