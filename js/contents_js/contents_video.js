@@ -88,6 +88,7 @@ document.addEventListener('fullscreenchange', () => {
     if (!document.fullscreenElement) {
         maximizeButton.style.display = '';
         minimizeButton.style.display = 'none';
+        fullCloseBtn[0].style.display = '';
     } else {
         maximizeButton.style.display = 'none';
         minimizeButton.style.display = '';
