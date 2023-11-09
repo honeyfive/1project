@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
-    color: white;
+   
     
 }
 
@@ -187,9 +187,6 @@ p{
     font-size: 20px;
 }
 
-.home:hover, .movie:hover, .drama:hover {
-    color:#ff4808;
-}
 
 .second-navigation {
     width: 100px;
@@ -207,7 +204,7 @@ p{
 .profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/resource/image/profile_img/avatar01.png');
+    background-image: url('../../resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -260,7 +257,7 @@ p{
 .dropdown-profile-image {
     width: 40px;
     height: 40px;
-    background-image: url('/1project/resource/image/profile_img/avatar01.png');
+    background-image: url('../../resource/image/profile_img/avatar01.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -392,4 +389,7 @@ float: left;
 }
 a{
 text-decoration: none;
+}
+.home:hover, .movie:hover, .drama:hover {
+    color:#ff4808;
 }
