@@ -115,17 +115,21 @@ for (let i = 0; i < wishRecommend.length; i++) {
         wishRecommend[i].style.backgroundColor = "rgba(255, 255, 255, 0.2)";
     });
 }
-let flagWishRecommend = 0;
+
+// 추천컨텐츠 플러스 버튼 변경
+let flagWishRecommend = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
 for (let i = 0; i < wishRecommend.length; i++) {
     wishRecommend[i].addEventListener('click', () => {
-        const wishRecommendToggle = document.getElementsByName("plus-recommend")[i].src = "../../resource/image/contents_img/free-icon-plus-3524388.png";
-        if (flagWishRecommend == 0) {
-            document.getElementsByName("plus-recommend")[i].src = "../../resource/image/contents_img/check.png";
-            flagWishRecommend = 1;
+        const plusRecommendImage = document.getElementsByName("plus-recommend")[i];
+
+        if (flagWishRecommend[i] === 0) {
+            plusRecommendImage.src = "../../resource/image/contents_img/check.png";
+            flagWishRecommend[i] = 1;
         } else {
-            wishRecommendToggle;
-            flagWishRecommend = 0;
-        };
+            plusRecommendImage.src = "../../resource/image/contents_img/free-icon-plus-3524388.png";
+            flagWishRecommend[i] = 0;
+        }
     });
 }
 
